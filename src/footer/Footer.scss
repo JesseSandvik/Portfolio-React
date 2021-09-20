@@ -1,5 +1,17 @@
 @import "../config";
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     letter-spacing: .15rem;
+
+    .social {
+
+        &-icon {
+            color: $primary-color;
+            padding: 1rem;
+            text-shadow: -1px 3px 10px set-text-color($primary-color);
+        }
+    }
 }

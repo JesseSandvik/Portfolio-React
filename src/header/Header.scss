@@ -4,13 +4,6 @@
     display: flex;
     flex-direction: row;
 
-    &-name {
-        color: set-text-color($primary-color);
-        font-family: Orbitron, 'Segoe UI', Tahoma, sans-serif;
-        letter-spacing: .2rem;
-        padding: 0 1rem;
-    }
-
     &-icon {
         color: $primary-color;
         font-size: 5rem;
