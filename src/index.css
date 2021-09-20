@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@-webkit-keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #52DEE5;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #52DEE5;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
 }
+
+@-webkit-keyframes anim-hover-text-shadow-meteor {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+@keyframes anim-hover-text-shadow-meteor {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+html {
+  background: #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FDF7FA;
+  font-family: Jura, 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.layout {
+  display: -ms-grid;
+  display: grid;
+  height: 95vh;
+  grid-gap: .1rem;
+  -ms-grid-columns: auto (1fr)[1];
+      grid-template-columns: auto repeat(1, 1fr);
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+.layout-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000000;
+  -webkit-box-shadow: inset 0 0 0 0.4rem rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 0.4rem rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.layout-item.item1 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))), url("./images/space-wallpaper-bw.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("./images/space-wallpaper-bw.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 0.1rem ridge #E6C79C;
+  grid-column: 1 / -1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.layout-item.item2 {
+  background: url("./images/space-wallpaper-bw.jpg");
+  background-position: top;
+  background-size: cover;
+  border: 0.1rem ridge #E6C79C;
+  grid-column: 1 / -1;
+  grid-row: -1;
+}
+
+.layout-item.item3 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.9))), url("./images/geometric-wallpaper-1.png");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("./images/geometric-wallpaper-1.png");
+  background-size: cover;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+  margin: 1rem .5rem;
+}
+
+.layout-item.item4 {
+  grid-column: 2 / -1;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+  margin: 1.5rem;
+}
+/*# sourceMappingURL=index.css.map */

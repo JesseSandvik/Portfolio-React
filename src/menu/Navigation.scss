@@ -1,0 +1,52 @@
+@import "../config";
+
+.nav {
+    font-family: Orbitron, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .5rem;
+
+    &-icon {
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+    }
+
+    &-active {
+        color: $primary-color;
+        text-shadow: 0 2px 5px $transition-color;
+        @include transition-ease;
+
+        &:hover {
+            transform: translate(0, -33%);
+            @include hover-text-shadow-animation-meteor;
+            @include transition-ease;
+        }
+    }
+
+    &-menu {
+        list-style-type: none;
+        padding: 1rem;
+        text-align: center;
+
+        &_item {
+            padding: 1rem;
+
+            &.link {
+                color: $primary-color;
+                text-decoration: none;
+                text-shadow: -2px 2px 0 $accent-color;
+                text-transform: uppercase;
+
+                &:hover {
+                    @include hover-text-shadow-animation;
+                }
+            }
+
+        }
+
+    }
+
+}

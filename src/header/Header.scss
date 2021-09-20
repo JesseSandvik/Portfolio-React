@@ -1,0 +1,21 @@
+@import "../config";
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+    &-name {
+        color: set-text-color($primary-color);
+        font-family: Orbitron, 'Segoe UI', Tahoma, sans-serif;
+        letter-spacing: .2rem;
+        padding: 0 1rem;
+    }
+
+    &-icon {
+        color: $primary-color;
+        font-size: 5rem;
+        padding: 1rem;
+        text-shadow: -1px 3px 10px set-text-color($primary-color);
+    }
+
+}

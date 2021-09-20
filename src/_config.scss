@@ -1,0 +1,42 @@
+$primary-color: #000000;
+$secondary-color: #333138;
+$text-color: #FDF7FA;
+$accent-color: #E6C79C;
+$active-color: #52DEE5;
+$transition-color: #6BF178;
+$meteor-transition-one: #F39C6B;
+$meteor-transition-two: #FF3864;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;    
+}
+
+@mixin hover-text-shadow-animation {
+    animation-name: anim-hover-text-shadow;
+    animation-duration: 6s;
+    text-shadow: -1px 1px 3px $transition-color;
+}
+
+@mixin hover-text-shadow-animation-meteor {
+    animation-name: anim-hover-text-shadow-meteor;
+    animation-duration: 5s;
+    text-shadow: 0 2px 5px $meteor-transition-two;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return $secondary-color;
+    } @else {
+        @return $text-color;
+    }
+}
+
+@keyframes anim-hover-text-shadow {
+    from {text-shadow: -1px 1px 2px $active-color};
+    to {text-shadow: -1px 1px 3px $transition-color};
+}
+
+@keyframes anim-hover-text-shadow-meteor {
+    from {text-shadow: 0 2px 5px $meteor-transition-one};
+    to {text-shadow: 0 2px 5px $meteor-transition-two};
+}

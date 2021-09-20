@@ -1,0 +1,95 @@
+@-webkit-keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #52DEE5;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #52DEE5;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@-webkit-keyframes anim-hover-text-shadow-meteor {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+@keyframes anim-hover-text-shadow-meteor {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+.nav {
+  font-family: Orbitron, 'Segoe UI', Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .5rem;
+}
+
+.nav-icon {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+
+.nav-active {
+  color: #000000;
+  text-shadow: 0 2px 5px #6BF178;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-active:hover {
+  -webkit-transform: translate(0, -33%);
+          transform: translate(0, -33%);
+  -webkit-animation-name: anim-hover-text-shadow-meteor;
+          animation-name: anim-hover-text-shadow-meteor;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  text-shadow: 0 2px 5px #FF3864;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-menu_item {
+  padding: 1rem;
+}
+
+.nav-menu_item.link {
+  color: #000000;
+  text-decoration: none;
+  text-shadow: -2px 2px 0 #E6C79C;
+  text-transform: uppercase;
+}
+
+.nav-menu_item.link:hover {
+  -webkit-animation-name: anim-hover-text-shadow;
+          animation-name: anim-hover-text-shadow;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  text-shadow: -1px 1px 3px #6BF178;
+}
+/*# sourceMappingURL=Navigation.css.map */

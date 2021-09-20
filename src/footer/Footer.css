@@ -1,0 +1,40 @@
+@-webkit-keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #52DEE5;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #52DEE5;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@-webkit-keyframes anim-hover-text-shadow-meteor {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+@keyframes anim-hover-text-shadow-meteor {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+.footer {
+  letter-spacing: .15rem;
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,71 @@
+@import "./config";
+
+html {
+  background: $primary-color;
+  box-sizing: border-box;
+  color: set-text-color($secondary-color);
+  font-family: Jura, 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.layout {
+  display: grid;
+  height: 95vh;
+  grid-gap: .1rem;
+  grid-template-columns: auto repeat(1, 1fr);
+  grid-template-rows: auto 1fr auto;
+
+  &-item {
+  align-items: center;
+  background: $primary-color;
+  box-shadow: inset 0 0 0 .4rem rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+
+    &.item1 {
+      background: linear-gradient(to right,
+      rgba($primary-color, 0),
+      rgba($primary-color, 0.2)),
+      url('./images/space-wallpaper-bw.jpg');
+      background-position: center;
+      background-size: cover;
+      border: .1rem ridge $accent-color;
+      grid-column: 1 / -1;
+      justify-content: flex-end;
+    }
+
+    &.item2 {
+      background: url('./images/space-wallpaper-bw.jpg');
+      background-position: top;
+      background-size: cover;
+      border: .1rem ridge $accent-color;
+      grid-column: 1 / -1;
+      grid-row: -1;
+    }
+
+    &.item3 {
+      background: linear-gradient(to right,
+      rgba($primary-color, 0.1),
+      rgba($primary-color, 0.9)),
+      url('./images/geometric-wallpaper-1.png');
+      background-size: cover;
+      grid-column: 1 / 2;
+      grid-row: 2 / 2;
+      margin: 1rem .5rem;
+    }
+
+    &.item4 {
+      grid-column: 2 / -1;
+      grid-row: 2 / 2;
+      margin: 1.5rem;
+    }
+
+  }
+
+}
