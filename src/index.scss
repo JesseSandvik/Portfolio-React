@@ -33,7 +33,7 @@ html {
       rgba($primary-color, 0),
       rgba($primary-color, 0.2)),
       url('./images/space-wallpaper-bw.jpg');
-      background-position: center;
+      background-position: top;
       background-size: cover;
       border: .1rem ridge $accent-color;
       grid-column: 1 / -1;
@@ -61,8 +61,15 @@ html {
     }
 
     &.item4 {
+      align-items: unset;
+      background: linear-gradient(to right,
+      rgba($primary-color, 1.0),
+      rgba($primary-color, 0.1)),
+      url('./images/space-wallpaper-bw.jpg');
+      background-position: center;
       grid-column: 2 / -1;
       grid-row: 2 / 2;
+      justify-content: center;
       margin: 1.5rem;
     }
 

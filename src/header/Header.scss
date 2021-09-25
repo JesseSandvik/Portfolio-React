@@ -4,6 +4,29 @@
     display: flex;
     flex-direction: row;
 
+    .morning {
+        color: $accent-color;
+        font-size: 2rem;
+        position: absolute;
+        padding: 1rem;
+        text-shadow: 0 1px 4px $transition-color;
+    }
+
+    .afternoon {
+        color: $transition-color;
+        font-size: 2rem;
+        position: absolute;
+        padding: 1rem;
+        text-shadow: 0 2px 2px $accent-color;
+    }
+    .evening {
+        color: $active-color;
+        font-size: 2rem;
+        position: absolute;
+        padding: 1rem;
+        text-shadow: -1px 3px 10px set-text-color($primary-color);
+    }
+
     &-icon {
         color: $primary-color;
         font-size: 5rem;

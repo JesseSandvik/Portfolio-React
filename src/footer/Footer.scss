@@ -3,15 +3,19 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     letter-spacing: .15rem;
+    padding: 0 0 1rem 0;
+    text-align: center;
 
-    .social {
+    .icon {
+        color: $accent-color;
+        padding: 0 1.5rem;
+        @include transition-ease;
 
-        &-icon {
+        &:hover {
             color: $primary-color;
-            padding: 1rem;
-            text-shadow: -1px 3px 10px set-text-color($primary-color);
+            text-shadow: -1px 2px 5px set-text-color($primary-color);
+            @include transition-ease;
         }
     }
 }
