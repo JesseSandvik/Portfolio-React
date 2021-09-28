@@ -1,21 +1,21 @@
 @import "../config";
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    letter-spacing: .15rem;
-    padding: 0 0 1rem 0;
+    letter-spacing: .2rem;
     text-align: center;
 
-    .icon {
+    .morning {
         color: $accent-color;
-        padding: 0 1.5rem;
-        @include transition-ease;
-
-        &:hover {
-            color: $primary-color;
-            text-shadow: -1px 2px 5px set-text-color($primary-color);
-            @include transition-ease;
-        }
+        text-shadow: 0 1px 0 $transition-color;
     }
+
+    .afternoon {
+        color: $transition-color;
+        text-shadow: 0 1px 0 $accent-color;
+    }
+    .evening {
+        color: $secondary-color;
+        text-shadow: 1px 1px 0 $active-color;
+    }
+
 }

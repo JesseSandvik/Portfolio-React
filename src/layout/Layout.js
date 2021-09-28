@@ -2,8 +2,9 @@ import React from "react";
 
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-import Home from "../home/Home";
 import Navigation from "../menu/Navigation";
+import Routes from "./Routes";
+import Title from "../title/Title";
 
 function Layout() {
     return (
@@ -11,7 +12,8 @@ function Layout() {
             <div className="layout-item item1"><Header /></div>
             <div className="layout-item item2"><Footer /></div>
             <div className="layout-item item3"><Navigation /></div>
-            <div className="layout-item item4"><Home /></div>
+            <div className="layout-item item4"><Title /></div>
+            <div className="layout-item item5"><Routes /></div>
         </div>
     )
 }

@@ -1,0 +1,77 @@
+@-webkit-keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #E6C79C;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #E6C79C;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@-webkit-keyframes anim-hover-text-shadow-meteor {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+@keyframes anim-hover-text-shadow-meteor {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: .5rem 2rem;
+}
+
+.title-item {
+  font-family: Gruppo, 'Courier New', Courier, monospace, sans-serif;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  text-align: center;
+}
+
+.title-item.item3 {
+  font-family: Orbitron, 'Segoe UI', Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+.title-item.item3 .morning {
+  color: #E6C79C;
+  text-shadow: -1px 5px 10px #6BF178;
+}
+
+.title-item.item3 .afternoon {
+  color: #6BF178;
+  text-shadow: -1px 5px 10px #E6C79C;
+}
+
+.title-item.item3 .evening {
+  color: #52DEE5;
+  text-shadow: -1px 5px 10px #FDF7FA;
+}
+/*# sourceMappingURL=Title.css.map */

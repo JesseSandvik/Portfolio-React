@@ -2,47 +2,57 @@
 
 .home {
     display: grid;
-    grid-template-columns: auto repeat(1, 1fr);
-    grid-template-rows: auto 1fr;
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 1px $primary-color;
 
-    &-item {
-        display: flex;
+    &-intro {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        letter-spacing: .1rem;
+        padding: 0 .5rem;
 
-        &.item1 {
-            align-items: center;
-            flex-direction: column;
-            font-family: Orbitron, 'Segoe UI', Tahoma, sans-serif;
-            font-size: 1.8rem;
-            font-weight: 600;
-            grid-column: 1 / -1;
-            grid-row: 1 / 1;
-            letter-spacing: .8rem;
-            padding: 1rem;
-
-            .morning {
-                color: $accent-color;
-                text-shadow: -1px 3px 10px $transition-color;
+        .devIcons {
+            font-size: 2.5rem;
+    
+            .icon {
+                padding: 1rem;
+    
+                &-js {
+                    color: #f7df1e;
+                }
+                &-html {
+                    color: #f06529;
+                }
+                &-css {
+                    color: #2965f1;
+                }
+                &-react {
+                    color: #7cc5d9;
+                }
+                &-database {
+                    color: #0064a5;
+                }
+                &-git {
+                    color: #f34f29;
+                }
+    
             }
-        
-            .afternoon {
-                color: $transition-color;
-                text-shadow: -1px 3px 10px $accent-color;
-            }
-            .evening {
-                color: $active-color;
-                text-shadow: -1px 3px 10px set-text-color($primary-color);
-            }
-
-            hr {
-                width: 85%;
-            }
-
+    
         }
 
-        &.item2 {
-        }
-
+    }
+    
+    img {
+        box-shadow: inset 0 0 0 .4rem rgba(255, 255, 255, 0.1);
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+        margin-left: auto;
+        margin-right: auto;
+        padding: .5rem;
+        max-width: 100%;
     }
 
 }

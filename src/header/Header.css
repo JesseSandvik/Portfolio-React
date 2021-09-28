@@ -44,11 +44,28 @@
           flex-direction: row;
 }
 
-.header-name {
-  color: #FDF7FA;
-  font-family: Orbitron, 'Segoe UI', Tahoma, sans-serif;
-  letter-spacing: .2rem;
-  padding: 0 1rem;
+.header .morning {
+  color: #E6C79C;
+  font-size: 2rem;
+  position: absolute;
+  padding: 1rem;
+  text-shadow: 0 1px 4px #6BF178;
+}
+
+.header .afternoon {
+  color: #6BF178;
+  font-size: 2rem;
+  position: absolute;
+  padding: 1rem;
+  text-shadow: 0 2px 2px #E6C79C;
+}
+
+.header .evening {
+  color: #52DEE5;
+  font-size: 2rem;
+  position: absolute;
+  padding: 1rem;
+  text-shadow: -1px 3px 10px #FDF7FA;
 }
 
 .header-icon {

@@ -1,0 +1,39 @@
+@import "../config";
+
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 2rem;
+
+    &-item {
+        font-family: Gruppo, 'Courier New', Courier, monospace, sans-serif;
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        text-align: center;
+
+        &.item3 {
+            font-family: Orbitron, 'Segoe UI', Tahoma, sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+
+            .morning {
+                color: $accent-color;
+                text-shadow: -1px 5px 10px $transition-color;
+            }
+        
+            .afternoon {
+                color: $transition-color;
+                text-shadow: -1px 5px 10px $accent-color;
+            }
+            .evening {
+                color: $active-color;
+                text-shadow: -1px 5px 10px set-text-color($primary-color);
+            }
+
+        }
+
+    }
+
+}

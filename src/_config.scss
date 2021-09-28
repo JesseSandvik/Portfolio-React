@@ -4,8 +4,8 @@ $text-color: #FDF7FA;
 $accent-color: #E6C79C;
 $active-color: #52DEE5;
 $transition-color: #6BF178;
-$meteor-transition-one: #F39C6B;
-$meteor-transition-two: #FF3864;
+$code-transition-one: #F39C6B;
+$code-transition-two: #FF3864;
 
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;    
@@ -17,10 +17,10 @@ $meteor-transition-two: #FF3864;
     text-shadow: -1px 1px 3px $transition-color;
 }
 
-@mixin hover-text-shadow-animation-meteor {
-    animation-name: anim-hover-text-shadow-meteor;
+@mixin hover-text-shadow-animation-code {
+    animation-name: anim-hover-text-shadow-code;
     animation-duration: 5s;
-    text-shadow: 0 2px 5px $meteor-transition-two;
+    text-shadow: 0 2px 5px $code-transition-two;
 }
 
 @function set-text-color($color) {
@@ -32,11 +32,11 @@ $meteor-transition-two: #FF3864;
 }
 
 @keyframes anim-hover-text-shadow {
-    from {text-shadow: -1px 1px 2px $active-color};
+    from {text-shadow: -1px 1px 2px $accent-color};
     to {text-shadow: -1px 1px 3px $transition-color};
 }
 
-@keyframes anim-hover-text-shadow-meteor {
-    from {text-shadow: 0 2px 5px $meteor-transition-one};
-    to {text-shadow: 0 2px 5px $meteor-transition-two};
+@keyframes anim-hover-text-shadow-code {
+    from {text-shadow: 0 2px 5px $code-transition-one};
+    to {text-shadow: 0 2px 5px $code-transition-two};
 }

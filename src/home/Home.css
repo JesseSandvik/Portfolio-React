@@ -1,0 +1,104 @@
+@-webkit-keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #E6C79C;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #E6C79C;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@-webkit-keyframes anim-hover-text-shadow-code {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+@keyframes anim-hover-text-shadow-code {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+.home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 1px #000000;
+}
+
+.home-intro {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  letter-spacing: .1rem;
+  padding: 0 .5rem;
+}
+
+.home-intro .devIcons {
+  font-size: 2.5rem;
+}
+
+.home-intro .devIcons .icon {
+  padding: 1rem;
+}
+
+.home-intro .devIcons .icon-js {
+  color: #f7df1e;
+}
+
+.home-intro .devIcons .icon-html {
+  color: #f06529;
+}
+
+.home-intro .devIcons .icon-css {
+  color: #2965f1;
+}
+
+.home-intro .devIcons .icon-react {
+  color: #7cc5d9;
+}
+
+.home-intro .devIcons .icon-database {
+  color: #0064a5;
+}
+
+.home-intro .devIcons .icon-git {
+  color: #f34f29;
+}
+
+.home img {
+  -webkit-box-shadow: inset 0 0 0 0.4rem rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 0.4rem rgba(255, 255, 255, 0.1);
+  grid-column: 2 / -1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5rem;
+  max-width: 100%;
+}
+/*# sourceMappingURL=Home.css.map */

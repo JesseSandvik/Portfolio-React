@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #52DEE5;
+    text-shadow: -1px 1px 2px #E6C79C;
   }
   to {
     text-shadow: -1px 1px 3px #6BF178;
@@ -9,7 +9,7 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #52DEE5;
+    text-shadow: -1px 1px 2px #E6C79C;
   }
   to {
     text-shadow: -1px 1px 3px #6BF178;
@@ -35,6 +35,22 @@
 }
 
 .footer {
-  letter-spacing: .15rem;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.footer .morning {
+  color: #E6C79C;
+  text-shadow: 0 1px 0 #6BF178;
+}
+
+.footer .afternoon {
+  color: #6BF178;
+  text-shadow: 0 1px 0 #E6C79C;
+}
+
+.footer .evening {
+  color: #333138;
+  text-shadow: 1px 1px 0 #52DEE5;
 }
 /*# sourceMappingURL=Footer.css.map */
