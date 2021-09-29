@@ -9,7 +9,8 @@ function Navigation() {
     return (
         <nav className="nav">
             <ul className="nav-menu">
-                <li className="nav-menu_item"><Link className="nav-menu_item link">Home(<i className="fas fa-code nav-active"></i>)</Link></li>
+                <li className="nav-menu_item"><Link className="nav-menu_item link" to="/
+                ">Home(<i className="fas fa-code nav-active"></i>)</Link></li>
                 <li className="nav-menu_item"><Link className="nav-menu_item link">About()</Link></li>
                 <li className="nav-menu_item"><Link className="nav-menu_item link">Projects()</Link></li>
                 <li className="nav-menu_item"><Link className="nav-menu_item link">Contact()</Link></li>
