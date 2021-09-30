@@ -9,11 +9,10 @@ function Navigation() {
     return (
         <nav className="nav">
             <ul className="nav-menu">
-                <li className="nav-menu_item"><Link className="nav-menu_item link" to="/
-                ">Home(<i className="fas fa-code nav-active"></i>)</Link></li>
-                <li className="nav-menu_item"><Link className="nav-menu_item link">About()</Link></li>
-                <li className="nav-menu_item"><Link className="nav-menu_item link">Projects()</Link></li>
-                <li className="nav-menu_item"><Link className="nav-menu_item link">Contact()</Link></li>
+                <li className="nav-menu_item"><Link className="nav-menu_item link" to="/">Home(<i className="fas fa-code nav-active"></i>)</Link></li>
+                <li className="nav-menu_item"><Link className="nav-menu_item link" to="/about">About()</Link></li>
+                <li className="nav-menu_item"><Link className="nav-menu_item link" to="/projects">Projects()</Link></li>
+                <li className="nav-menu_item"><Link className="nav-menu_item link" to="/contact">Contact()</Link></li>
             </ul>
             <SocialIcons />
         </nav>

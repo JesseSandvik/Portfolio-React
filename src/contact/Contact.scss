@@ -1,0 +1,11 @@
+@import "../config";
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 1px $primary-color;
+    width: 100vw;
+}

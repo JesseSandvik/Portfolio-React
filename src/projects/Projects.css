@@ -1,0 +1,49 @@
+@-webkit-keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #E6C79C;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #E6C79C;
+  }
+  to {
+    text-shadow: -1px 1px 3px #6BF178;
+  }
+}
+
+@-webkit-keyframes anim-hover-text-shadow-code {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+@keyframes anim-hover-text-shadow-code {
+  from {
+    text-shadow: 0 2px 5px #F39C6B;
+  }
+  to {
+    text-shadow: 0 2px 5px #FF3864;
+  }
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 1px #000000;
+  width: 100vw;
+}
+/*# sourceMappingURL=Projects.css.map */

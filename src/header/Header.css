@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #52DEE5;
+    text-shadow: -1px 1px 2px #E6C79C;
   }
   to {
     text-shadow: -1px 1px 3px #6BF178;
@@ -9,14 +9,14 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #52DEE5;
+    text-shadow: -1px 1px 2px #E6C79C;
   }
   to {
     text-shadow: -1px 1px 3px #6BF178;
   }
 }
 
-@-webkit-keyframes anim-hover-text-shadow-meteor {
+@-webkit-keyframes anim-hover-text-shadow-code {
   from {
     text-shadow: 0 2px 5px #F39C6B;
   }
@@ -25,7 +25,7 @@
   }
 }
 
-@keyframes anim-hover-text-shadow-meteor {
+@keyframes anim-hover-text-shadow-code {
   from {
     text-shadow: 0 2px 5px #F39C6B;
   }

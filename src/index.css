@@ -16,7 +16,7 @@
   }
 }
 
-@-webkit-keyframes anim-hover-text-shadow-meteor {
+@-webkit-keyframes anim-hover-text-shadow-code {
   from {
     text-shadow: 0 2px 5px #F39C6B;
   }
@@ -25,7 +25,7 @@
   }
 }
 
-@keyframes anim-hover-text-shadow-meteor {
+@keyframes anim-hover-text-shadow-code {
   from {
     text-shadow: 0 2px 5px #F39C6B;
   }
@@ -57,8 +57,8 @@ html {
   display: grid;
   height: 98vh;
   grid-gap: .5rem;
-  -ms-grid-columns: auto (1fr)[1];
-      grid-template-columns: auto repeat(1, 1fr);
+  -ms-grid-columns: auto (1fr)[2];
+      grid-template-columns: auto repeat(2, 1fr);
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
 }

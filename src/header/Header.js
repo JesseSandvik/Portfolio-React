@@ -8,8 +8,8 @@ function Header() {
     return (
         <header className="header">
             <div className="header=icons">
-            <ClockIcons />
-            <i className="fab fa-grav header-icon"></i>
+                <ClockIcons />
+                <i className="fab fa-grav header-icon"></i>
             </div>
         </header>
     );
