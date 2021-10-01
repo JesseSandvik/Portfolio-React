@@ -6,54 +6,15 @@ import { NavLink } from "react-router-dom";
 import SocialIcons from "../utils/SocialIcons";
 
 function Navigation() {
-    const [homeActive, setHomeActive] = useState(true);
-    const [aboutActive, setAboutActive] = useState(false);
-    const [projectsActive, setProjectsActive] = useState(false);
-    const [contactActive, setContactActive] = useState(false);
 
-    const homeActiveHandler = () => {
-        if(!homeActive) {
-            setHomeActive(true);
-            setAboutActive(false);
-            setProjectsActive(false);
-            setContactActive(false);
-        } else {
-            setHomeActive(false);
-        }
-    }
+    const navigationLinks = {
+        homeActive: true,
+        aboutActive: false,
+        projectsActive: false,
+        contactActive: false,
+    };
 
-    const aboutActiveHandler = () => {
-        if(!aboutActive) {
-            setHomeActive(false);
-            setAboutActive(true);
-            setProjectsActive(false);
-            setContactActive(false);
-        } else {
-            setAboutActive(false);
-        }
-    }
-
-    const projectsActiveHandler = () => {
-        if(!projectsActive) {
-            setHomeActive(false);
-            setAboutActive(false);
-            setProjectsActive(true);
-            setContactActive(false);
-        } else {
-            setProjectsActive(false);
-        }
-    }
-
-    const contactActiveHandler = () => {
-        if(!contactActive) {
-            setHomeActive(false);
-            setAboutActive(false);
-            setProjectsActive(false);
-            setContactActive(true);
-        } else {
-            setContactActive(false);
-        }
-    }
+    const [navigationLinkActive, setNavigationLinkActive] = useState(navigationLinks);
 
     return (
         <nav className="nav">
@@ -62,41 +23,61 @@ function Navigation() {
                     <NavLink
                         className="nav-menu_item link"
                         activeClassName="link-active"
-                        onClick={homeActiveHandler}
+                        onClick={() => setNavigationLinkActive({
+                            homeActive: true,
+                            aboutActive: false,
+                            projectsActive: false,
+                            contactActive: false,
+                        })}
                         exact={true}
                         to="/"
                         >
-                        Home({homeActive ? <i className="fas fa-meteor"></i> : null})
+                        Home({navigationLinkActive.homeActive ? <i className="fas fa-meteor"></i> : null})
                     </NavLink>
                 </li>
                 <li className="nav-menu_item">
                     <NavLink
                         className="nav-menu_item link"
                         activeClassName="link-active"
-                        onClick={aboutActiveHandler}
+                        onClick={() => setNavigationLinkActive({
+                            homeActive: false,
+                            aboutActive: true,
+                            projectsActive: false,
+                            contactActive: false,
+                        })}
                         to="/about"
                         >
-                        About({aboutActive ? <i className="fas fa-meteor"></i> : null})
+                        About({navigationLinkActive.aboutActive ? <i className="fas fa-meteor"></i> : null})
                     </NavLink>
                 </li>
                 <li className="nav-menu_item">
                     <NavLink
                     className="nav-menu_item link"
                     activeClassName="link-active"
-                    onClick={projectsActiveHandler}
+                    onClick={() => setNavigationLinkActive({
+                        homeActive: false,
+                        aboutActive: false,
+                        projectsActive: true,
+                        contactActive: false,
+                    })}
                     to="/projects"
                     >
-                    Projects({projectsActive ? <i className="fas fa-meteor"></i> : null})
+                    Projects({navigationLinkActive.projectsActive ? <i className="fas fa-meteor"></i> : null})
                     </NavLink>
                 </li>
                 <li className="nav-menu_item">
                     <NavLink
                     className="nav-menu_item link"
                     activeClassName="link-active"
-                    onClick={contactActiveHandler}
+                    onClick={() => setNavigationLinkActive({
+                        homeActive: false,
+                        aboutActive: false,
+                        projectsActive: false,
+                        contactActive: true,
+                    })}
                     to="/contact"
                     >
-                    Contact({contactActive ? <i className="fas fa-meteor"></i> : null})
+                    Contact({navigationLinkActive.contactActive ? <i className="fas fa-meteor"></i> : null})
                     </NavLink>
                 </li>
             </ul>
