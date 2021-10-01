@@ -14,7 +14,7 @@ $code-transition-two: #FF3864;
 @mixin hover-text-shadow-animation {
     animation-name: anim-hover-text-shadow;
     animation-duration: 6s;
-    text-shadow: -1px 1px 3px $transition-color;
+    text-shadow: -1px 1px 3px $active-color;
 }
 
 @mixin hover-text-shadow-animation-code {
@@ -32,8 +32,8 @@ $code-transition-two: #FF3864;
 }
 
 @keyframes anim-hover-text-shadow {
-    from {text-shadow: -1px 1px 2px $accent-color};
-    to {text-shadow: -1px 1px 3px $transition-color};
+    from {text-shadow: -1px 1px 2px $transition-color};
+    to {text-shadow: -1px 1px 3px $active-color};
 }
 
 @keyframes anim-hover-text-shadow-code {

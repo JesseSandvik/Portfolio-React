@@ -2,7 +2,7 @@ import React from "react";
 
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-import Navigation from "../menu/Navigation";
+import Navigation from "../navigation/Navigation";
 import Routes from "./Routes";
 import Title from "../title/Title";
 

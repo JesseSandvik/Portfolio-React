@@ -20,7 +20,7 @@ html {
   display: grid;
   height: 98vh;
   grid-gap: .5rem;
-  grid-template-columns: auto repeat(2, 1fr);
+  grid-template-columns: 275px repeat(2, 1fr);
   grid-template-rows: auto 1fr auto;
 
   &-item {
