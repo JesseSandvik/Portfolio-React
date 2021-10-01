@@ -26,6 +26,10 @@
 
                 &-active {
                     text-shadow: -1px 1px 3px $active-color;
+
+                    .icon {
+                        text-shadow: -1px 1px 3px set-text-color($primary-color);
+                    }
                 }
 
             }

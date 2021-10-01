@@ -32,7 +32,7 @@ function Navigation() {
                         exact={true}
                         to="/"
                         >
-                        Home({navigationLinkActive.homeActive ? <i className="fas fa-meteor"></i> : null})
+                        Home{navigationLinkActive.homeActive && <i className="fas fa-code icon"></i>}
                     </NavLink>
                 </li>
                 <li className="nav-menu_item">
@@ -47,7 +47,7 @@ function Navigation() {
                         })}
                         to="/about"
                         >
-                        About({navigationLinkActive.aboutActive ? <i className="fas fa-meteor"></i> : null})
+                        About{navigationLinkActive.aboutActive && <i className="fas fa-code icon"></i>}
                     </NavLink>
                 </li>
                 <li className="nav-menu_item">
@@ -62,7 +62,7 @@ function Navigation() {
                     })}
                     to="/projects"
                     >
-                    Projects({navigationLinkActive.projectsActive ? <i className="fas fa-meteor"></i> : null})
+                    Projects{navigationLinkActive.projectsActive && <i className="fas fa-code icon"></i>}
                     </NavLink>
                 </li>
                 <li className="nav-menu_item">
@@ -77,7 +77,7 @@ function Navigation() {
                     })}
                     to="/contact"
                     >
-                    Contact({navigationLinkActive.contactActive ? <i className="fas fa-meteor"></i> : null})
+                    Contact{navigationLinkActive.contactActive && <i className="fas fa-code icon"></i>}
                     </NavLink>
                 </li>
             </ul>
