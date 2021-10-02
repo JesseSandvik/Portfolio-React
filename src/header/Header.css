@@ -1,77 +1,76 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #E6C79C;
+    text-shadow: -1px 1px 2px #ACFCD9;
   }
   to {
-    text-shadow: -1px 1px 3px #6BF178;
+    text-shadow: -1px 1px 3px #52DEE5;
   }
 }
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #E6C79C;
+    text-shadow: -1px 1px 2px #ACFCD9;
   }
   to {
-    text-shadow: -1px 1px 3px #6BF178;
-  }
-}
-
-@-webkit-keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
-  }
-}
-
-@keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
+    text-shadow: -1px 1px 3px #52DEE5;
   }
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  padding: 2vh 5vw;
 }
 
-.header .morning {
-  color: #E6C79C;
-  font-size: 2rem;
-  position: absolute;
-  padding: 1rem;
-  text-shadow: 0 1px 4px #6BF178;
+.header .logo {
+  font-size: 2.5rem;
+  letter-spacing: -.3rem;
+  padding: 1rem 0 0;
 }
 
-.header .afternoon {
-  color: #6BF178;
-  font-size: 2rem;
-  position: absolute;
-  padding: 1rem;
-  text-shadow: 0 2px 2px #E6C79C;
+.header .logo .morning {
+  color: #ACFCD9;
 }
 
-.header .evening {
-  color: #52DEE5;
-  font-size: 2rem;
-  position: absolute;
-  padding: 1rem;
-  text-shadow: -1px 3px 10px #FDF7FA;
-}
-
-.header-icon {
+.header .logo .morning .icon {
   color: #000000;
-  font-size: 5rem;
-  padding: 1rem;
-  text-shadow: -1px 3px 10px #FDF7FA;
+  padding: .2rem;
+  text-shadow: -1px 0 5px #ACFCD9;
+}
+
+.header .logo .afternoon {
+  color: #51CB20;
+}
+
+.header .logo .afternoon .icon {
+  color: #000000;
+  text-shadow: -1px 0 5px #51CB20;
+}
+
+.header .logo .evening {
+  color: #7D70BA;
+}
+
+.header .logo .evening .icon {
+  color: #000000;
+  text-shadow: -1px 0 5px #7D70BA;
+}
+
+.header .logo-name {
+  letter-spacing: -.2rem;
+}
+
+.header .social {
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+.header .social .icon {
+  color: #FDF7FA;
+  padding: .5rem;
+  text-shadow: -2px 2px 0 #5D576B;
+}
+
+.header .social .icon:hover {
+  color: #000000;
+  text-shadow: 0 2px 0 #52DEE5;
 }
 /*# sourceMappingURL=Header.css.map */

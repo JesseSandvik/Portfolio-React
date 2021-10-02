@@ -1,59 +1,20 @@
 @import "../config";
 
 .nav {
-    font-family: Gruppo, 'Segoe UI', Tahoma, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: .4rem;
 
     &-menu {
-        list-style-type: none;
-        padding: 1rem 0;
-        text-align: center;
+        list-style: none;
 
         &_item {
-            padding: 1rem 0;
+            padding: .5rem 0;
 
             &.link {
-                color: $primary-color;
+                color: set-text-color($primary-color);
                 text-decoration: none;
-                text-shadow: -2px 2px 0 set-text-color($primary-color);
-                text-transform: uppercase;
-
-                &:hover {
-                    @include hover-text-shadow-animation;
-                }
-
-                &-active {
-                    text-shadow: -1px 1px 3px $active-color;
-
-                    .icon {
-                        text-shadow: -1px 1px 3px set-text-color($primary-color);
-                    }
-                }
-
             }
 
         }
 
-    }
-
-    .social {
-        font-size: 1rem;
-        text-align: center;
-
-        .icon {
-            color: set-text-color($primary-color);
-            padding: 0 .5rem;
-            text-shadow: 0 2px 10px $accent-color;
-            @include transition-ease;
-
-            &:hover {
-                color: $primary-color;
-                text-shadow: 0 3px 8px $accent-color;
-                @include transition-ease;
-            }
-        }
     }
 
 }

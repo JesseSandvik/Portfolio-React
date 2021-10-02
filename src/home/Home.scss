@@ -1,22 +1,14 @@
 @import "../config";
 
 .home {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: 100%;
     text-align: center;
-    text-shadow: 2px 2px 1px $primary-color;
-    width: 100vw;
 
     &-intro {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
         letter-spacing: .1rem;
         padding: 0 .5rem;
 
         .devIcons {
-            font-size: 2.5rem;
+            font-size: 3rem;
     
             .icon {
                 padding: 1rem;
@@ -46,15 +38,4 @@
 
     }
     
-    img {
-        box-shadow: inset 0 0 0 .4rem rgba(255, 255, 255, 0.1);
-        display: block;
-        grid-column: 2 / -1;
-        grid-row: 2 / 2;
-        margin-left: auto;
-        margin-right: auto;
-        padding: .5rem;
-        width: 95%;
-    }
-
 }

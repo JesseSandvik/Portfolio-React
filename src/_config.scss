@@ -1,11 +1,10 @@
 $primary-color: #000000;
-$secondary-color: #333138;
-$text-color: #FDF7FA;
-$accent-color: #E6C79C;
+$secondary-color: #FDF7FA;
+$accent-color-one: #ACFCD9;
+$accent-color-two: #51CB20;
+$accent-color-three: #7D70BA;
 $active-color: #52DEE5;
-$transition-color: #6BF178;
-$code-transition-one: #F39C6B;
-$code-transition-two: #FF3864;
+$muted-color: #5D576B;
 
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;    
@@ -17,26 +16,15 @@ $code-transition-two: #FF3864;
     text-shadow: -1px 1px 3px $active-color;
 }
 
-@mixin hover-text-shadow-animation-code {
-    animation-name: anim-hover-text-shadow-code;
-    animation-duration: 5s;
-    text-shadow: 0 2px 5px $code-transition-two;
-}
-
 @function set-text-color($color) {
     @if (lightness($color) > 40%) {
-        @return $secondary-color;
+        @return $primary-color;
     } @else {
-        @return $text-color;
+        @return $secondary-color;
     }
 }
 
 @keyframes anim-hover-text-shadow {
-    from {text-shadow: -1px 1px 2px $transition-color};
+    from {text-shadow: -1px 1px 2px $accent-color-one};
     to {text-shadow: -1px 1px 3px $active-color};
-}
-
-@keyframes anim-hover-text-shadow-code {
-    from {text-shadow: 0 2px 5px $code-transition-one};
-    to {text-shadow: 0 2px 5px $code-transition-two};
 }

@@ -9,7 +9,7 @@ function Title() {
     return (
         <div className="title">
             <div className="title-item item1">
-                <small>Hello, and welcome!</small>
+                <small>Hi there!</small>
             </div>
             <div className="title-item item2">
                 <small>My name is</small>

@@ -1,37 +1,64 @@
 @import "../config";
 
 .header {
-    display: flex;
-    flex-direction: row;
+    padding: 2vh 5vw;
 
-    .morning {
-        color: $accent-color;
-        font-size: 2rem;
-        position: absolute;
-        padding: 1rem;
-        text-shadow: 0 1px 4px $transition-color;
+    .logo {
+        font-size: 2.5rem;
+        letter-spacing: -.3rem;
+        padding: 1rem 0 0;
+
+        .morning {
+            color: $accent-color-one;
+
+            .icon {
+                color: $primary-color;
+                padding: .2rem;
+                text-shadow: -1px 0 5px $accent-color-one;
+            }
+
+        }
+
+        .afternoon {
+            color: $accent-color-two;
+
+            .icon {
+                color: $primary-color;
+                text-shadow: -1px 0 5px $accent-color-two;
+            }
+
+        }
+
+        .evening {
+            color: $accent-color-three;
+
+            .icon {
+                color: $primary-color;
+                text-shadow: -1px 0 5px $accent-color-three;
+            }
+
+        }
+
+        &-name {
+            letter-spacing: -.2rem;
+        }
+
     }
 
-    .afternoon {
-        color: $transition-color;
-        font-size: 2rem;
-        position: absolute;
-        padding: 1rem;
-        text-shadow: 0 2px 2px $accent-color;
-    }
-    .evening {
-        color: $active-color;
-        font-size: 2rem;
-        position: absolute;
-        padding: 1rem;
-        text-shadow: -1px 3px 10px set-text-color($primary-color);
-    }
+    .social {
+        font-size: 1.5rem;
+        text-align: end;
 
-    &-icon {
-        color: $primary-color;
-        font-size: 5rem;
-        padding: 1rem;
-        text-shadow: -1px 3px 10px set-text-color($primary-color);
+        .icon {
+            color: set-text-color($primary-color);
+            padding: .5rem;
+            text-shadow: -2px 2px 0 $muted-color;
+
+            &:hover {
+                color: $primary-color;
+                text-shadow: 0 2px 0 $active-color;
+            }
+        }
     }
 
 }

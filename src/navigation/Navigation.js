@@ -3,8 +3,6 @@ import "./Navigation.scss";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import SocialIcons from "../utils/SocialIcons";
-
 function Navigation() {
 
     const navigationLinks = {
@@ -81,7 +79,6 @@ function Navigation() {
                     </NavLink>
                 </li>
             </ul>
-            <SocialIcons />
         </nav>
     );
 }
