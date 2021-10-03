@@ -1,6 +1,8 @@
 @import "../config";
 
 .header {
+    display: flex;
+    flex-direction: column;
     padding: 2vh 5vw;
 
     .logo {
@@ -41,8 +43,16 @@
 
         &-name {
             letter-spacing: -.2rem;
+            padding: 0 .1rem;
         }
 
+    }
+
+    .description {
+        color: $muted-color;
+        font-family: Orbitron, 'Courier New', Courier, monospace;
+        letter-spacing: .1rem;
+        text-align: end;
     }
 
     .social {

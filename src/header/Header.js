@@ -31,9 +31,10 @@ function Header() {
                 <div className={timeOfDayByHour()}>
                     {displayIconByTimeOfDay()}
                     jesse
-                    <span className="logo-name"><strong>sandvik</strong></span> .
+                    <span className="logo-name"><strong>sandvik</strong></span>.
                 </div>
             </div>
+            <small className="description">Software Developer</small>
             <SocialIcons />
         </div>
     );

@@ -1,12 +1,22 @@
 @import "../config";
 
 .home {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    grid-template-rows: auto 1fr auto;
+    letter-spacing: .1rem;
     margin: 1rem;
     text-align: center;
+    width: 100vw;
 
     &-intro {
-        letter-spacing: .1rem;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    &-description {
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
 
         .devIcons {
             font-size: 3rem;
