@@ -1,17 +1,19 @@
 @import "../config";
 
 .home {
+    display: flex;
+    margin: 1rem;
     text-align: center;
 
     &-intro {
         letter-spacing: .1rem;
-        padding: 0 .5rem;
 
         .devIcons {
             font-size: 3rem;
     
             .icon {
                 padding: 1rem;
+                text-shadow: -1px 2px 0 $muted-color;
     
                 &-js {
                     color: #f7df1e;

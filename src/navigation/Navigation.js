@@ -3,6 +3,8 @@ import "./Navigation.scss";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import { timeOfDayByHour } from "../utils/timeOfDay/index";
+
 function Navigation() {
 
     const navigationLinks = {

@@ -28,12 +28,12 @@
         align-items: flex-start;
         grid-column: 1 / 2;
         grid-row: 2 / 2;
+        justify-content: flex-start;
       }
   
       &.item4 {
         grid-column: 2 / -1;
         grid-row: 2 / 2;
-        padding: 5vh 5vw;
       }
   
     }

@@ -2,12 +2,17 @@ import "./Footer.scss";
 
 import React from "react";
 
-import ClockFooter from "../utils/ClockFooter";
+import { timeOfDayByHour } from "../utils/timeOfDay/index";
+import SocialIcons from "../utils/SocialIcons";
 
 function Footer() {
     return (
         <footer className="footer">
-            <ClockFooter />
+            <div className={timeOfDayByHour()}>
+                &copy; jessesandvik.
+                <span className="year">2021</span>
+            </div>
+            <SocialIcons />
         </footer>
     );
 }

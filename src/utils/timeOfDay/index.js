@@ -1,5 +1,6 @@
 
-export function timeOfDayByTime(time) {
+export function timeOfDayByHour() {
+    const time = new Date().getHours();
     let timeOfDay;
 
         if (time < 12) {

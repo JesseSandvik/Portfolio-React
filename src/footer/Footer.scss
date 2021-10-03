@@ -1,7 +1,8 @@
 @import "../config";
 
 .footer {
-    letter-spacing: .1rem;
+    font-weight: 600;
+    padding: 1rem;
     text-align: center;
 
     .morning {
@@ -10,9 +11,34 @@
 
     .afternoon {
         color: $accent-color-two;
+
     }
     .evening {
         color: $accent-color-three;
+    }
+
+    .year {
+        color: $muted-color;
+        font-family: Oribtron, 'Courier New', Courier, monospace;
+        letter-spacing: .1rem;
+        padding: .5rem;
+    }
+
+    .social {
+
+        .icon {
+            color: set-text-color($primary-color);
+            padding: .5rem;
+            text-shadow: -2px 2px 0 $muted-color;
+            @include transition-ease;
+
+            &:hover {
+                color: $primary-color;
+                text-shadow: 0 0 5px $active-color;
+            }
+
+        }
+        
     }
 
 }

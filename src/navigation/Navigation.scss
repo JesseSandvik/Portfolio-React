@@ -1,16 +1,42 @@
 @import "../config";
 
 .nav {
+    font-size: 1.2rem;
+    font-family: Orbitron, 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    padding: 10vh 0 0;
 
     &-menu {
         list-style: none;
 
         &_item {
-            padding: .5rem 0;
+            padding: 1rem 0;
 
             &.link {
-                color: set-text-color($primary-color);
+                color: $muted-color;
                 text-decoration: none;
+                @include transition-ease;
+
+                &:hover {
+                    letter-spacing: .3rem;
+                    text-shadow: 0 0 10px $active-color;
+                    @include transition-ease;
+                }
+
+                &-active {
+                    color: set-text-color($primary-color);
+                    letter-spacing: .3rem;
+                    text-shadow: -5px 0 10px $active-color;
+                    @include transition-ease;
+
+                    .icon {
+                        color: $primary-color;
+                        padding: 0 .5rem;
+                        text-shadow: 0 0 10px $active-color;
+                    }
+                }
+
             }
 
         }

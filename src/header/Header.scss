@@ -56,9 +56,12 @@
 
             &:hover {
                 color: $primary-color;
-                text-shadow: 0 2px 0 $active-color;
+                text-shadow: 0 0 10px $active-color;
+                @include transition-ease;
             }
+
         }
+
     }
 
 }
