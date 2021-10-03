@@ -9,14 +9,12 @@
     &-item {
     align-items: center;
     background: $primary-color;
-    border: 1px solid ghostwhite;
     display: flex;
     justify-content: center;
   
       &.item1 {
         grid-column: 1 / -1;
         grid-row: 1 / 1;
-        justify-content: flex-end;
       }
   
       &.item2 {
@@ -33,9 +31,10 @@
   
       &.item4 {
         align-items: flex-start;
+        border-radius: 1rem;
+        box-shadow: 0 0 150px $muted-color;
         grid-column: 2 / -1;
-        grid-row: 2 / 2;
-        justify-content: flex-start;
+        grid-row: 2 / 2; 
       }
   
     }

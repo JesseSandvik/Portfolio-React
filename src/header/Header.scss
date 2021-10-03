@@ -4,19 +4,18 @@
     display: flex;
     flex-direction: column;
     padding: 2vh 5vw;
+    width: 100vw;
 
     .logo {
         font-size: 2.5rem;
         letter-spacing: -.3rem;
-        padding: 1rem 0 0;
 
         .morning {
             color: $accent-color-one;
 
             .icon {
                 color: $primary-color;
-                padding: .2rem;
-                text-shadow: -1px 0 5px $accent-color-one;
+                text-shadow: -1px 0 10px $accent-color-one;
             }
 
         }
@@ -26,7 +25,7 @@
 
             .icon {
                 color: $primary-color;
-                text-shadow: -1px 0 5px $accent-color-two;
+                text-shadow: -1px 0 10px $accent-color-two;
             }
 
         }
@@ -36,7 +35,7 @@
 
             .icon {
                 color: $primary-color;
-                text-shadow: -1px 0 5px $accent-color-three;
+                text-shadow: -1px 0 10px $accent-color-three;
             }
 
         }
@@ -52,21 +51,22 @@
         color: $muted-color;
         font-family: Orbitron, 'Courier New', Courier, monospace;
         letter-spacing: .1rem;
-        text-align: end;
+        padding: 0 3rem;
+        text-decoration: underline;
     }
 
     .social {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: end;
 
         .icon {
-            color: set-text-color($primary-color);
-            padding: .5rem;
-            text-shadow: -2px 2px 0 $muted-color;
+            color: $primary-color;
+            padding: 0 1rem;
+            text-shadow: 0 -1px 15px set-text-color($primary-color);
+            @include transition-ease;
 
             &:hover {
-                color: $primary-color;
-                text-shadow: 0 0 10px $active-color;
+                text-shadow: 0 0 8px $active-color;
                 @include transition-ease;
             }
 

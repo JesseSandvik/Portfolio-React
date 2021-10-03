@@ -35,7 +35,7 @@ function Header() {
                 </div>
             </div>
             <small className="description">Software Developer</small>
-            <SocialIcons />
+                    <SocialIcons />
         </div>
     );
 }
