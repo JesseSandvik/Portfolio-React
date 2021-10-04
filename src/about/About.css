@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #6BF178;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -9,28 +9,57 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #6BF178;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
   }
 }
 
-@-webkit-keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
-  }
+.about {
+  letter-spacing: .2rem;
+  margin: 5rem;
+  text-align: center;
+  width: 100vw;
 }
 
-@keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
-  }
+.about-title {
+  color: #000000;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  letter-spacing: .3rem;
+  text-align: start;
+  text-shadow: 0 0 10px #52DEE5;
+}
+
+.about-bio_title {
+  border-bottom: 1px solid #5D576B;
+  letter-spacing: .3rem;
+  padding: 1rem;
+}
+
+.about img {
+  width: 50%;
+}
+
+.about-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-skills_title {
+  border-bottom: 1px solid #5D576B;
+  color: #5D576B;
+}
+
+.about-skills li {
+  list-style: none;
 }
 /*# sourceMappingURL=About.css.map */

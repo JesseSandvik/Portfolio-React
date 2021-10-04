@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #6BF178;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -9,28 +9,10 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #6BF178;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
-  }
-}
-
-@-webkit-keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
-  }
-}
-
-@keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
   }
 }
 
@@ -49,7 +31,6 @@
       -ms-flex-align: center;
           align-items: center;
   background: #000000;
-  border: 1px solid ghostwhite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,9 +43,6 @@
   grid-column: 1 / -1;
   -ms-grid-row: 1;
   grid-row: 1 / 1;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .layout-item.item2 {
@@ -81,12 +59,18 @@
   grid-column: 1 / 2;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .layout-item.item4 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   grid-column: 2 / -1;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
-  padding: 5vh 5vw;
+  overflow-y: auto;
 }
 /*# sourceMappingURL=Layout.css.map */

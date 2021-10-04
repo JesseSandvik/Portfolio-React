@@ -27,16 +27,16 @@ function Header() {
 
     return (
         <div className="header">
-            <div className="logo">
-                <div className={timeOfDayByHour()}>
-                    {displayIconByTimeOfDay()}
-                    jesse
-                    <span className="logo-name"><strong>sandvik</strong></span>.
-                </div>
+        <div className="logo">
+            <div className={timeOfDayByHour()}>
+                {displayIconByTimeOfDay()}
+                jesse
+                <span className="logo-lastname"><strong>sandvik</strong></span>.
             </div>
-            <small className="description">Software Developer</small>
-                    <SocialIcons />
         </div>
+        <small className="description">Software Developer</small>
+                <SocialIcons />
+    </div>
     );
 }
 

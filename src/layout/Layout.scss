@@ -31,10 +31,9 @@
   
       &.item4 {
         align-items: flex-start;
-        border-radius: 1rem;
-        box-shadow: 0 0 150px $muted-color;
         grid-column: 2 / -1;
-        grid-row: 2 / 2; 
+        grid-row: 2 / 2;
+        overflow-y: auto;
       }
   
     }
