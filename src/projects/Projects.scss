@@ -26,12 +26,9 @@
     }
 
     &-list {
-        display: flex;
-        flex-direction: row;
+        margin: 5rem;
 
         .project {
-            display: flex;
-            flex-direction: column;
             list-style-type: none;
 
             &-name {
@@ -46,7 +43,7 @@
 
             a {
                 color: $primary-color;
-                padding: 0 1rem;
+                padding: .5rem;
                 text-decoration: none;
                 text-shadow: 0 0 10px set-text-color($primary-color);
                 @include transition-ease;
@@ -55,6 +52,18 @@
                     text-shadow: 0 0 5px $active-color;
                     @include transition-ease;
                 }
+
+            }
+
+            &-stack {
+                list-style-type: none;
+                padding: 2rem 1rem;            }
+
+            img {
+                box-shadow: 0 10px 20px set-text-color($primary-color);
+                margin: 0 auto;
+                padding: 1rem;
+                width: 50%;
             }
 
         }

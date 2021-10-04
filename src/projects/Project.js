@@ -4,10 +4,13 @@ function Project(props) {
     return (
         <li className="project">
             <h3 className="project-name">
-                <a href={props.project.link}>
+                {props.project.name}
+                <a href={props.project.website}>
                     <i className="fas fa-link"></i>
                 </a>
-                {props.project.name}
+                <a href={props.project.github}>
+                    <i className="fab fa-github-alt"></i>
+                </a>
             </h3>
             <small className="project-description">{props.project.description}</small>
             <br />
@@ -23,7 +26,7 @@ function Project(props) {
                 )}
             </ul>
             {props.project.images.map((image) => (
-                <img src={image.link} />
+                <img key={image.id} src={image.link} alt={image.alt} />
             ))}
         </li>
     );
