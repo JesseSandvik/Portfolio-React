@@ -36,8 +36,55 @@
 }
 
 .projects-recent_title {
-  border-bottom: 1px solid #5D576B;
+  border-bottom: 1px solid #52DEE5;
+  font-family: Gruppo, 'Times New Roman', Times, serif;
   letter-spacing: .3rem;
   padding: 1rem;
+}
+
+.projects-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projects-list .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+}
+
+.projects-list .project-name {
+  border-bottom: 1px solid #5D576B;
+  font-family: Gruppo, 'Times New Roman', Times, serif;
+  padding: 1rem;
+}
+
+.projects-list .project-description {
+  color: #5D576B;
+}
+
+.projects-list .project a {
+  color: #000000;
+  padding: 0 1rem;
+  text-decoration: none;
+  text-shadow: 0 0 10px #FDF7FA;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects-list .project a:hover {
+  text-shadow: 0 0 5px #52DEE5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 /*# sourceMappingURL=Projects.css.map */

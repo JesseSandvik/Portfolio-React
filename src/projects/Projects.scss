@@ -19,9 +19,46 @@
     }
 
     &-recent_title {
-        border-bottom: 1px solid $muted-color;
+        border-bottom: 1px solid $active-color;
+        font-family: Gruppo, 'Times New Roman', Times, serif;
         letter-spacing: .3rem;
         padding: 1rem;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+
+            &-name {
+                border-bottom: 1px solid $muted-color;
+                font-family: Gruppo, 'Times New Roman', Times, serif;
+                padding: 1rem;
+            }
+
+            &-description {
+                color: $muted-color;
+            }
+
+            a {
+                color: $primary-color;
+                padding: 0 1rem;
+                text-decoration: none;
+                text-shadow: 0 0 10px set-text-color($primary-color);
+                @include transition-ease;
+
+                &:hover {
+                    text-shadow: 0 0 5px $active-color;
+                    @include transition-ease;
+                }
+            }
+
+        }
+
     }
 
 }

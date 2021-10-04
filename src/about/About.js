@@ -11,7 +11,7 @@ function About() {
         <div className="about">
             <div className="about-title"><h1>About</h1></div>
             <div className="about-body">
-                <h2 className="about-bio_title">Bio</h2>
+                <h2 className="about-section_title">Bio</h2>
                 <div className="about-bio_body">
                     <p className="about-paraphrase">I am a <strong>full-stack software engineer</strong> who specializes in <strong>front-end web development</strong>.</p>
                     <img src={OfficeSelf} alt="Jesse Sandvik smiling" />
@@ -29,11 +29,11 @@ function About() {
                     </p>
                 </div>
                 <br />
-                <h2 className="about-skills_title">Skills</h2>
+                <h2 className="about-section_title">Skills</h2>
                 <p className="about-paraphrase">Some of the technical skills and technologies I've worked with thus far.</p>
                 <DeveloperIcons />
                 <div className="about-skills">
-                    <ul className="about-skills_front">
+                <ul className="about-skills_front">
                         <h3 className="about-skills_title">Front-End Skills</h3>
                         <li>JavaScript</li>
                         <li>React</li>

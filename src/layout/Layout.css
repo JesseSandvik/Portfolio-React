@@ -71,6 +71,7 @@
   grid-column: 2 / -1;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 /*# sourceMappingURL=Layout.css.map */
