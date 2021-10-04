@@ -1,11 +1,23 @@
 @import "../config";
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-    grid-template-rows: repeat(3, 1fr);
-    height: 100%;
+    letter-spacing: .2rem;
+    margin: 5rem;
     text-align: center;
-    text-shadow: 2px 2px 1px $primary-color;
     width: 100vw;
+
+    &-title {
+        color: $primary-color;
+        font-family: Orbitron, 'Courier New', Courier, monospace;
+        letter-spacing: .3rem;
+        text-align: start;
+        text-shadow: 0 0 10px $active-color;
+    }
+
+    &-recent_title {
+        border-bottom: 1px solid $muted-color;
+        letter-spacing: .3rem;
+        padding: 1rem;
+    }
+
 }

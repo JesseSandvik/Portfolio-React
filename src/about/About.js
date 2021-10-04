@@ -11,21 +11,23 @@ function About() {
             <div className="about-body">
                 <h2 className="about-bio_title">Bio</h2>
                 <div className="about-bio_body">
-                    <p>I am a full-stack software engineer who specializes in front-end web development.</p>
+                    <p>I am a <strong>full-stack software engineer</strong> who specializes in <strong>front-end web development</strong>.</p>
                     <img src={OfficeSelf} alt="Jesse Sandvik smiling" />
-                    <p>I graduated from Thinkful's Full-Stack Engineering Flex program in the late summer of 2021.
+                    <p>I graduated from <b>Thinkful's Full-Stack Engineering Flex program</b> in the late summer of 2021.
                         During my time at Thinkful, I learned what it means to be a developer, from working through
-                        complex algorithms and data structures, to RESTFUL API principles and the concept of test-driven
-                        development. It was a difficult, yet extremely rewarding journey.
+                        complex <b>algorithms</b> and <b>data structures</b>, to <b>RESTFUL API</b> principles and the concept of <b>test-driven
+                        development</b>. It was a difficult, yet extremely rewarding journey.
                     </p>
                     <p>Which brings me to today. I am currently employed as a master-certified diagnostic technician for Mercedes-Benz.
                         The thing I have long loved about my work is the same thing that excites me most about software development;
                     </p>
-                    <p>my passion for <b>problem-solving</b>.</p>
+                    <p>my <i>passion</i> for <b>problem-solving</b>.</p>
                     <p>There is nothing that I love more than working through complex problems, learning the subtle nuances of different
-                        systems and components, and marveling in the incredible engineering feats that we as human-beings have developed.
+                        systems and components, and marveling in the incredible engineering feats that we as human-beings have managed to develop.
                     </p>
                 </div>
+                <br />
+                <h2 className="about-skills_title">Skills</h2>
                 <div className="about-skills">
                     <ul className="about-skills_front">
                         <h3 className="about-skills_title">Front-End Skills</h3>

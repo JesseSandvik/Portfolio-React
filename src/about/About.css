@@ -56,7 +56,8 @@
 
 .about-skills_title {
   border-bottom: 1px solid #5D576B;
-  color: #5D576B;
+  letter-spacing: .3rem;
+  padding: 1rem;
 }
 
 .about-skills li {

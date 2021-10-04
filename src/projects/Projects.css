@@ -1,49 +1,39 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #E6C79C;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
-    text-shadow: -1px 1px 3px #6BF178;
+    text-shadow: -1px 1px 3px #52DEE5;
   }
 }
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #E6C79C;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
-    text-shadow: -1px 1px 3px #6BF178;
-  }
-}
-
-@-webkit-keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
-  }
-}
-
-@keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
+    text-shadow: -1px 1px 3px #52DEE5;
   }
 }
 
 .projects {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-  height: 100%;
+  letter-spacing: .2rem;
+  margin: 5rem;
   text-align: center;
-  text-shadow: 2px 2px 1px #000000;
   width: 100vw;
+}
+
+.projects-title {
+  color: #000000;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  letter-spacing: .3rem;
+  text-align: start;
+  text-shadow: 0 0 10px #52DEE5;
+}
+
+.projects-recent_title {
+  border-bottom: 1px solid #5D576B;
+  letter-spacing: .3rem;
+  padding: 1rem;
 }
 /*# sourceMappingURL=Projects.css.map */
