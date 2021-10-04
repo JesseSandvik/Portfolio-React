@@ -4,6 +4,8 @@ import React from "react";
 
 import OfficeSelf from "../images/self-office2-nobg.png";
 
+import DeveloperIcons from "../utils/DeveloperIcons";
+
 function About() {
     return (
         <div className="about">
@@ -11,7 +13,7 @@ function About() {
             <div className="about-body">
                 <h2 className="about-bio_title">Bio</h2>
                 <div className="about-bio_body">
-                    <p>I am a <strong>full-stack software engineer</strong> who specializes in <strong>front-end web development</strong>.</p>
+                    <p className="about-paraphrase">I am a <strong>full-stack software engineer</strong> who specializes in <strong>front-end web development</strong>.</p>
                     <img src={OfficeSelf} alt="Jesse Sandvik smiling" />
                     <p>I graduated from <b>Thinkful's Full-Stack Engineering Flex program</b> in the late summer of 2021.
                         During my time at Thinkful, I learned what it means to be a developer, from working through
@@ -28,6 +30,8 @@ function About() {
                 </div>
                 <br />
                 <h2 className="about-skills_title">Skills</h2>
+                <p className="about-paraphrase">Some of the technical skills and technologies I've worked with thus far.</p>
+                <DeveloperIcons />
                 <div className="about-skills">
                     <ul className="about-skills_front">
                         <h3 className="about-skills_title">Front-End Skills</h3>

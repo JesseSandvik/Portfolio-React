@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #ACFCD9;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -9,7 +9,7 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #ACFCD9;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -17,32 +17,38 @@
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 2vh 5vw;
+  width: 100vw;
 }
 
 .header .logo {
   font-size: 2.5rem;
-  letter-spacing: -.3rem;
-  padding: 1rem 0 0;
+  letter-spacing: -.4rem;
 }
 
 .header .logo .morning {
-  color: #ACFCD9;
+  color: #DEBA6F;
 }
 
 .header .logo .morning .icon {
   color: #000000;
-  padding: .2rem;
-  text-shadow: -1px 0 5px #ACFCD9;
+  text-shadow: -1px 0 10px #DEBA6F;
 }
 
 .header .logo .afternoon {
-  color: #51CB20;
+  color: #ACFCD9;
 }
 
 .header .logo .afternoon .icon {
   color: #000000;
-  text-shadow: -1px 0 5px #51CB20;
+  text-shadow: -1px 0 10px #ACFCD9;
 }
 
 .header .logo .evening {
@@ -51,26 +57,39 @@
 
 .header .logo .evening .icon {
   color: #000000;
-  text-shadow: -1px 0 5px #7D70BA;
+  text-shadow: -1px 0 10px #7D70BA;
 }
 
-.header .logo-name {
+.header .logo-lastname {
   letter-spacing: -.2rem;
+  padding: 0 .1rem;
+}
+
+.header .description {
+  color: #5D576B;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  letter-spacing: .1rem;
+  padding: 0 3rem;
+  text-decoration: underline;
 }
 
 .header .social {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 1rem 0;
   text-align: end;
 }
 
 .header .social .icon {
-  color: #FDF7FA;
-  padding: .5rem;
-  text-shadow: -2px 2px 0 #5D576B;
+  color: #000000;
+  padding: 0 1rem;
+  text-shadow: 0 -1px 15px #FDF7FA;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header .social .icon:hover {
-  color: #000000;
-  text-shadow: 0 2px 0 #52DEE5;
+  text-shadow: 0 0 8px #52DEE5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 /*# sourceMappingURL=Header.css.map */

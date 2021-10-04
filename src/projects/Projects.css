@@ -31,6 +31,10 @@
   text-shadow: 0 0 10px #52DEE5;
 }
 
+.projects-paraphrase {
+  color: #5D576B;
+}
+
 .projects-recent_title {
   border-bottom: 1px solid #5D576B;
   letter-spacing: .3rem;
