@@ -14,6 +14,13 @@
         text-shadow: 0 0 10px $active-color;
     }
 
+    &-section_title {
+        border-bottom: 1px solid $active-color;
+        font-family: Gruppo, 'Times New Roman', Times, serif;
+        letter-spacing: .3rem;
+        padding: 1rem;
+    }
+
     &-paraphrase {
         color: $muted-color;
     }
@@ -46,13 +53,6 @@
 
         }
 
-    }
-
-    &-section_title {
-        border-bottom: 1px solid $active-color;
-        font-family: Gruppo, 'Times New Roman', Times, serif;
-        letter-spacing: .3rem;
-        padding: 1rem;
     }
 
     img {

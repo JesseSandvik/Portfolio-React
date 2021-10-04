@@ -31,6 +31,13 @@
   text-shadow: 0 0 10px #52DEE5;
 }
 
+.about-section_title {
+  border-bottom: 1px solid #52DEE5;
+  font-family: Gruppo, 'Times New Roman', Times, serif;
+  letter-spacing: .3rem;
+  padding: 1rem;
+}
+
 .about-paraphrase {
   color: #5D576B;
 }
@@ -66,13 +73,6 @@
 
 .about .devIcons .icon-git {
   color: #f34f29;
-}
-
-.about-section_title {
-  border-bottom: 1px solid #52DEE5;
-  font-family: Gruppo, 'Times New Roman', Times, serif;
-  letter-spacing: .3rem;
-  padding: 1rem;
 }
 
 .about img {
