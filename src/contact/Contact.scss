@@ -1,6 +1,8 @@
 @import "../config";
 
 .contact {
+    display: flex;
+    flex-direction: column;
     letter-spacing: .2rem;
     margin: 5rem;
     text-align: center;
@@ -28,7 +30,6 @@
     &-item {
         display: flex;
         flex-direction: column;
-        margin: 5rem;
 
         &_title {
             border-bottom: 1px solid $muted-color;

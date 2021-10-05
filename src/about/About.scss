@@ -1,6 +1,8 @@
 @import "../config";
 
 .about {
+    display: flex;
+    flex-direction: column;
     letter-spacing: .2rem;
     margin: 5rem;
     text-align: center;
@@ -23,6 +25,10 @@
 
     &-paraphrase {
         color: $muted-color;
+    }
+
+    img {
+        width: 50%;
     }
 
     .devIcons {
@@ -55,20 +61,13 @@
 
     }
 
-    img {
-        width: 50%;
-    }
-
     &-skills {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
 
         &_title {
             border-bottom: 1px solid $muted-color;
             font-family: Gruppo, 'Times New Roman', Times, serif;
             letter-spacing: .3rem;
-            padding: 1rem;
+            padding: 1rem 0;
         }
 
         li {

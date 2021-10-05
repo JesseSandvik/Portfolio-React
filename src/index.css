@@ -16,6 +16,21 @@
   }
 }
 
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #DEBA6F;
+  }
+  to {
+    text-shadow: -1px 1px 3px #52DEE5;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .layout.item.item3 {
+    visibility: hidden;
+  }
+}
+
 html {
   background: #000000;
   -webkit-box-sizing: border-box;

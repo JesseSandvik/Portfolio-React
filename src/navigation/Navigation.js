@@ -3,7 +3,7 @@ import "./Navigation.scss";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function Navigation() {
+function Navigation(props) {
 
     const navigationLinks = {
         homeActive: true,
@@ -22,11 +22,12 @@ function Navigation() {
                         className="nav-menu_item link"
                         activeClassName="link-active"
                         onClick={() => setNavigationLinkActive({
-                            homeActive: true,
-                            aboutActive: false,
-                            projectsActive: false,
-                            contactActive: false,
-                        })}
+                                homeActive: true,
+                                aboutActive: false,
+                                projectsActive: false,
+                                contactActive: false,
+                            })
+                        }
                         exact={true}
                         to="/"
                         >

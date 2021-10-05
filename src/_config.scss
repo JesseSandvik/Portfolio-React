@@ -16,6 +16,18 @@ $muted-color: #5D576B;
     text-shadow: -1px 1px 3px $active-color;
 }
 
+@mixin media-mob {
+    @media screen and (max-width: 750px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 750px) {
+        @content;
+    }
+}
+
 @function set-text-color($color) {
     @if (lightness($color) > 40%) {
         @return $primary-color;

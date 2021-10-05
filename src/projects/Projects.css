@@ -42,10 +42,6 @@
   padding: 1rem;
 }
 
-.projects-list {
-  margin: 5rem;
-}
-
 .projects-list .project {
   list-style-type: none;
 }

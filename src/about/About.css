@@ -17,6 +17,13 @@
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   letter-spacing: .2rem;
   margin: 5rem;
   text-align: center;
@@ -40,6 +47,10 @@
 
 .about-paraphrase {
   color: #5D576B;
+}
+
+.about img {
+  width: 50%;
 }
 
 .about .devIcons {
@@ -75,28 +86,11 @@
   color: #f34f29;
 }
 
-.about img {
-  width: 50%;
-}
-
-.about-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .about-skills_title {
   border-bottom: 1px solid #5D576B;
   font-family: Gruppo, 'Times New Roman', Times, serif;
   letter-spacing: .3rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .about-skills li {

@@ -1,0 +1,50 @@
+@import "./config";
+
+@include media-mob {
+
+    .layout {
+
+        &-item {
+
+            &.item3 {
+                visibility: visible;
+            }
+
+            &.item4 {
+                visibility: hidden;
+            }
+
+            &.item5 {
+                grid-column: 1 / -1;
+            }
+
+        }
+
+    }
+
+}
+
+@include media-md {
+
+    .layout {
+
+        &-item {
+
+            &.item3 {
+                visibility: hidden;
+            }
+
+            &.item4 {
+                grid-column: 1 / 2;
+                visibility: visible;
+            }
+
+            &.item5 {
+                grid-column: 2 / -1;
+            }
+
+        }
+
+    }
+
+}

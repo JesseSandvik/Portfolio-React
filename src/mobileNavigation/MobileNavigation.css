@@ -1,0 +1,108 @@
+@-webkit-keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #DEBA6F;
+  }
+  to {
+    text-shadow: -1px 1px 3px #52DEE5;
+  }
+}
+
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #DEBA6F;
+  }
+  to {
+    text-shadow: -1px 1px 3px #52DEE5;
+  }
+}
+
+.mobile-menu {
+  cursor: pointer;
+  height: 20px;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  width: 28px;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile-menu_burger {
+  background: #FDF7FA;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile-menu_burger::before {
+  background: #FDF7FA;
+  content: '';
+  height: 3px;
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile-menu_burger::after {
+  background: #FDF7FA;
+  content: '';
+  height: 3px;
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile-menu_burger.open {
+  background: transparent;
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+
+.mobile-menu_burger.open::before {
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+          transform: rotate(45deg) translate(5px, 8px);
+}
+
+.mobile-menu_burger.open::after {
+  -webkit-transform: rotate(-45deg) translate(3px, -7px);
+          transform: rotate(-45deg) translate(3px, -7px);
+  width: 28px;
+}
+
+.mobile .nav {
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: .98;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile .nav-menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=MobileNavigation.css.map */
