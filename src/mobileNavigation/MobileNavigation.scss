@@ -1,81 +1,61 @@
 @import "../config";
 
-.mobile { 
+.mobileNav {
+    background: $primary-color;
+    box-shadow: 0 0 20px $active-color;
+    font-size: 1.2rem;
+    font-family: Orbitron, 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    padding: 10vh 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: .98;
+    visibility: hidden;
+    transform: translate(100%);
+    @include transition-ease;
 
-    &-menu {
-        cursor: pointer;
-        height: 20px;
-        position: fixed;
-        right: 1rem;
-        top: 1rem;
-        width: 28px;
-        z-index: 1;
+    &.open {
+        visibility: visible;
+        transform: translate(0);
         @include transition-ease;
-
-        &_burger {
-            background: set-text-color($primary-color);
-            height: 2px;
-            position: absolute;
-            right: 0;
-            top: 0.5rem;
-            width: 28px;
-            @include transition-ease;
-
-            &::before {
-                background: set-text-color($primary-color);
-                content: '';
-                height: 3px;
-                position: absolute;
-                top: -8px;
-                width: 28px;
-                @include transition-ease;
-            }
-
-            &::after {
-                background: set-text-color($primary-color);
-                content: '';
-                height: 3px;
-                position: absolute;
-                top: 8px;
-                width: 20px;
-                @include transition-ease;
-            }
-
-            &.open {
-                background: transparent;
-                transform: rotate(-270deg);
-
-                &::before {
-                    transform: rotate(45deg) translate(5px, 8px);
-                }
-
-                &::after {
-                    transform: rotate(-45deg) translate(3px, -7px);
-                    width: 28px;
-                }
-
-            }
-
-        }
-
     }
 
-    .nav {
-        background: $primary-color;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        opacity: .98;
+    &-menu {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 100vh;
+        overflow: hidden;
         @include transition-ease;
 
-        &-menu {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            overflow: hidden;
+        &_item {
+            padding: 2rem 0;
             @include transition-ease;
+
+            &.link {
+                color: $muted-color;
+                text-decoration: none;
+                @include transition-ease;
+
+                &:hover {
+                    letter-spacing: .4rem;
+                    text-shadow: 0 0 10px $active-color;
+                    @include transition-ease;
+                }
+
+                &-active {
+                    color: set-text-color($primary-color);
+                    letter-spacing: .4rem;
+                    text-shadow: -5px 0 10px $active-color;
+                    @include transition-ease;
+                }
+
+            }
+
         }
 
     }

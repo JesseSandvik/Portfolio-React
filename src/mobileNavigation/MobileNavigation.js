@@ -1,34 +1,61 @@
 import "./MobileNavigation.scss";
 
-import React, { useState } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 import classNames from "../utils/ClassNames";
-import Navigation from "../navigation/Navigation";
 
-function MobileNavigation() {
-    const [navOpen, setNavOpen] = useState(false);
+function MobileNavigation(props) {
 
-    const navToggleHandler = () => {
-        if (!navOpen) {
-            setNavOpen(true);
-        } else {
-            setNavOpen(false);
-        }
-
-    }
     return (
-        <div className="mobile">
-            <div className="mobile-menu"
-                 onClick={navToggleHandler}
-                 >
-                <div className={classNames({
-                    "mobile-menu_burger": !navOpen,
-                    "mobile-menu_burger open": navOpen,
-                })}>
-                </div>                
-            </div>
-            {navOpen && <Navigation navToggleHandler={navToggleHandler} />}
-        </div>
+        <nav className={classNames({
+            "mobileNav": !props.navOpen,
+            "mobileNav open": props.navOpen,
+        })}>
+            <ul className="mobileNav-menu">
+                <li className="mobileNav-menu_item">
+                    <NavLink
+                        className="mobileNav-menu_item link"
+                        activeClassName="link-active"
+                        onClick={props.navToggleHandler}
+                        exact={true}
+                        to="/"
+                        >
+                        Home
+                    </NavLink>
+                </li>
+                <li className="mobileNav-menu_item">
+                    <NavLink
+                        className="mobileNav-menu_item link"
+                        activeClassName="link-active"
+                        onClick={props.navToggleHandler}
+                        to="/about"
+                        >
+                        About
+                    </NavLink>
+                </li>
+                <li className="mobileNav-menu_item">
+                    <NavLink
+                    className="mobileNav-menu_item link"
+                    activeClassName="link-active"
+                    onClick={props.navToggleHandler}
+                    to="/projects"
+                    >
+                    Projects
+                    </NavLink>
+                </li>
+                <li className="mobileNav-menu_item">
+                    <NavLink
+                    className="mobileNav-menu_item link"
+                    activeClassName="link-active"
+                    onClick={props.navToggleHandler}
+                    to="/contact"
+                    >
+                    Contact
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
     );
 }
 
