@@ -25,7 +25,6 @@ export const projects = [{
     stack: {
         build: "React, React Hooks",
         front: "JavaScript, HTML, CSS, Bootstrap",
-        back: null,
         deployment: "Vercel",
     },
     images: [{

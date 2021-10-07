@@ -1,34 +1,30 @@
 @import "../config";
 
 .about {
-    display: flex;
-    flex-direction: column;
-    letter-spacing: .2rem;
-    margin: 5rem;
-    text-align: center;
-    width: 100vw;
+    @include section-default;
 
-    &-title {
-        color: $primary-color;
-        font-family: Orbitron, 'Courier New', Courier, monospace;
-        letter-spacing: .3rem;
-        text-align: start;
-        text-shadow: 0 0 10px $active-color;
+    h1 {
+        @include h1-default;
     }
 
-    &-section_title {
-        border-bottom: 1px solid $active-color;
-        font-family: Gruppo, 'Times New Roman', Times, serif;
-        letter-spacing: .3rem;
-        padding: 1rem;
+    h2 {
+        @include h2-default;
     }
 
-    &-paraphrase {
-        color: $muted-color;
+    h3 {
+        @include h3-default;
+    }
+
+    p {
+        @include paragraph-default;
+    }
+
+    small {
+        @include small-default;
     }
 
     img {
-        width: 50%;
+        @include image-default;
     }
 
     .devIcons {
@@ -57,21 +53,6 @@
                 color: #f34f29;
             }
 
-        }
-
-    }
-
-    &-skills {
-
-        &_title {
-            border-bottom: 1px solid $muted-color;
-            font-family: Gruppo, 'Times New Roman', Times, serif;
-            letter-spacing: .3rem;
-            padding: 1rem 0;
-        }
-
-        li {
-            list-style: none;
         }
 
     }

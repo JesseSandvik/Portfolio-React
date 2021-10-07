@@ -30,7 +30,7 @@
   width: 100vw;
 }
 
-.about-title {
+.about h1 {
   color: #000000;
   font-family: Orbitron, 'Courier New', Courier, monospace;
   letter-spacing: .3rem;
@@ -38,18 +38,30 @@
   text-shadow: 0 0 10px #52DEE5;
 }
 
-.about-section_title {
+.about h2 {
   border-bottom: 1px solid #52DEE5;
   font-family: Gruppo, 'Times New Roman', Times, serif;
   letter-spacing: .3rem;
   padding: 1rem;
 }
 
-.about-paraphrase {
+.about h3 {
+  color: #52DEE5;
+  border: 1px solid #5D576B;
+  border-radius: 5px;
+  margin: 2.5rem;
+}
+
+.about p {
+  padding: 1rem 0;
+}
+
+.about small {
   color: #5D576B;
 }
 
 .about img {
+  margin: 2vh auto;
   width: 50%;
 }
 
@@ -84,16 +96,5 @@
 
 .about .devIcons .icon-git {
   color: #f34f29;
-}
-
-.about-skills_title {
-  border-bottom: 1px solid #5D576B;
-  font-family: Gruppo, 'Times New Roman', Times, serif;
-  letter-spacing: .3rem;
-  padding: 1rem 0;
-}
-
-.about-skills li {
-  list-style: none;
 }
 /*# sourceMappingURL=About.css.map */

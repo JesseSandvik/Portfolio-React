@@ -33,6 +33,10 @@
   letter-spacing: -.4rem;
 }
 
+.header .logo:hover {
+  cursor: pointer;
+}
+
 .header .logo .morning {
   color: #DEBA6F;
 }

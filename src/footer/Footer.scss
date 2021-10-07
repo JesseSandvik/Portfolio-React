@@ -31,12 +31,6 @@
             padding: .5rem;
             text-shadow: -2px 2px 0 $muted-color;
             @include transition-ease;
-
-            &:hover {
-                color: $primary-color;
-                text-shadow: 0 0 5px $active-color;
-            }
-
         }
         
     }

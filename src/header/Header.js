@@ -1,11 +1,17 @@
 import "./Header.scss";
 
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import { timeOfDayByHour } from "../utils/timeOfDay/index";
 import SocialIcons from "../utils/SocialIcons";
 
 function Header() {
+    const history = useHistory();
+
+    const logoClickHandler = () => {
+        history.push("/");
+    }
 
     function displayIconByTimeOfDay() {
         let timeOfDay = timeOfDayByHour();
@@ -20,14 +26,15 @@ function Header() {
             return <i className="far fa-moon icon"></i>;
 
         } else {
-            return null;
+            return <></>;
         }
 
     };
 
     return (
         <div className="header">
-        <div className="logo">
+        <div className="logo"
+             onClick={logoClickHandler}>
             <div className={timeOfDayByHour()}>
                 {displayIconByTimeOfDay()}
                 jesse

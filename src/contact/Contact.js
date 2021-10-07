@@ -11,14 +11,14 @@ function Contact() {
             <div className="contact-item">
             <h3 className="contact-item_title">Email</h3>
             <small>Email me directly!</small>
-            <a href="mailto: sandvikjesse@gmail.com">
+            <a href="mailto: sandvikjesse@gmail.com" target="_blank" rel="noopener noreferrer">
                 <i className="fas fa-at icon"></i>
             </a>
             </div>
             <div className="contact-item">
             <h3 className="contact-item_title">LinkedIn</h3>
             <small>Connect with me on linkedIn!</small>
-            <a href="https://www.linkedin.com/in/jesse-sandvik-3b91b620a/">
+            <a href="https://www.linkedin.com/in/jesse-sandvik-3b91b620a/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin-in icon"></i>
             </a>
             </div>
