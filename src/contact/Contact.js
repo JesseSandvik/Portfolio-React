@@ -6,8 +6,8 @@ function Contact() {
     return (
         <div className="contact">
             <h1 className="contact-title">Contact</h1>
-            <h2 className="contact-section_title">Contact Me</h2>
-            <p className="contact-paraphrase">Contact me on social media or via email.</p>
+            <h2 className="contact-section_title">Networking & Inquiries</h2>
+            <p className="contact-paraphrase">Connect with me on social media or send me an email!</p>
             <div className="contact-item">
             <h3 className="contact-item_title">Email</h3>
             <small>Email me directly!</small>

@@ -32,18 +32,18 @@ function Header() {
     };
 
     return (
-        <div className="header">
-        <div className="logo"
-             onClick={logoClickHandler}>
-            <div className={timeOfDayByHour()}>
-                {displayIconByTimeOfDay()}
-                jesse
-                <span className="logo-lastname"><strong>sandvik</strong></span>.
+        <header className="header">
+            <div className="logo"
+                 onClick={logoClickHandler}>
+                <div className={timeOfDayByHour()}>
+                    {displayIconByTimeOfDay()}
+                    jesse
+                    <span className="logo-lastname"><strong>sandvik</strong></span>.
+                </div>
             </div>
-        </div>
-        <small className="description">Software Developer</small>
-                <SocialIcons />
-    </div>
+            <small className="description">Software Developer</small>
+            <SocialIcons />
+    </header>
     );
 }
 

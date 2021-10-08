@@ -12,8 +12,8 @@ function Projects() {
     return (
         <div className="projects">
             <div className="projects-title"><h1>Projects</h1></div>
-            <h2 className="projects-recent_title">Recent Projects</h2>
-            <p className="projects-paraphrase">A collection of some recent projects.</p>
+            <h2 className="projects-recent_title">Recent</h2>
+            <p className="projects-paraphrase">A collection of some recent applications.</p>
             <br />
             {projectsList}
         </div>
