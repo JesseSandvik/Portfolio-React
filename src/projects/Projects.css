@@ -17,13 +17,20 @@
 }
 
 .projects {
-  letter-spacing: .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: .22rem;
   margin: 5rem;
   text-align: center;
   width: 100vw;
 }
 
-.projects-title {
+.projects h1 {
   color: #000000;
   font-family: Orbitron, 'Courier New', Courier, monospace;
   letter-spacing: .3rem;
@@ -31,56 +38,60 @@
   text-shadow: 0 0 10px #52DEE5;
 }
 
-.projects-paraphrase {
-  color: #5D576B;
-}
-
-.projects-recent_title {
+.projects h2 {
   border-bottom: 1px solid #52DEE5;
   font-family: Gruppo, 'Times New Roman', Times, serif;
   letter-spacing: .3rem;
   padding: 1rem;
 }
 
-.projects-list .project {
-  list-style-type: none;
-}
-
-.projects-list .project-name {
-  border-bottom: 1px solid #5D576B;
-  font-family: Gruppo, 'Times New Roman', Times, serif;
+.projects h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 1rem;
+  color: #52DEE5;
+  border: 1px solid #5D576B;
+  border-radius: 5px;
+  margin: 2.5rem;
 }
 
-.projects-list .project-description {
+.projects p {
+  padding: 0 0 2rem;
+}
+
+.projects small {
   color: #5D576B;
+  letter-spacing: .1rem;
 }
 
-.projects-list .project a {
-  color: #000000;
-  padding: .5rem;
-  text-decoration: none;
-  text-shadow: 0 0 10px #FDF7FA;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.projects-list .project a:hover {
-  text-shadow: 0 0 5px #52DEE5;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.projects-list .project-stack {
-  list-style-type: none;
-  padding: 2rem 1rem;
-}
-
-.projects-list .project img {
-  -webkit-box-shadow: 0 10px 20px #FDF7FA;
-          box-shadow: 0 10px 20px #FDF7FA;
-  margin: 0 auto;
-  padding: 1rem;
+.projects img {
+  border: 1px solid #FDF7FA;
+  margin: 2vh auto;
   width: 50%;
+}
+
+.projects span {
+  color: #52DEE5;
+}
+
+.projects .icon {
+  color: #FDF7FA;
+  padding: 0 1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects .icon:hover {
+  color: #000000;
+  text-shadow: 0 0 8px #52DEE5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 /*# sourceMappingURL=Projects.css.map */

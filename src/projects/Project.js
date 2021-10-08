@@ -2,33 +2,33 @@ import React from "react";
 
 function Project(props) {
     return (
-        <li className="project">
-            <h3 className="project-name">
-                {props.project.name}
+        <article>
+            <h3>
                 <a href={props.project.website}>
-                    <i className="fas fa-link"></i>
+                    <i className="fas fa-link icon"></i>
                 </a>
+                {props.project.name}
                 <a href={props.project.github}>
-                    <i className="fab fa-github-alt"></i>
+                    <i className="fab fa-github-alt icon"></i>
                 </a>
             </h3>
-            <small className="project-description">{props.project.description}</small>
+            <small>{props.project.description}</small>
             <br />
-            <ul className="project-stack">
+            <div>
                 {props.project.stack.build && (
-                <li>Built using: {props.project.stack.build}</li>
+                <p><span>Built using:</span> {props.project.stack.build}</p>
                 )}
                 {props.project.stack.front && (
-                <li>Frontend: {props.project.stack.front}</li>
+                <p><span>Frontend:</span> {props.project.stack.front}</p>
                 )}
                 {props.project.stack.back && (
-                <li>Backend: {props.project.stack.back}</li>
+                <p><span>Backend:</span> {props.project.stack.back}</p>
                 )}
-            </ul>
+            </div>
             {props.project.images.map((image) => (
                 <img key={image.id} src={image.link} alt={image.alt} />
             ))}
-        </li>
+        </article>
     );
 }
 

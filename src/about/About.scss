@@ -1,29 +1,29 @@
 @import "../config";
 
-.about {
+.about{
     @include section-default;
 
-    h1 {
+    h1{
         @include h1-default;
     }
 
-    h2 {
+    h2{
         @include h2-default;
     }
 
-    h3 {
+    h3{
         @include h3-default;
     }
 
-    p {
+    p{
         @include paragraph-default;
     }
 
-    small {
+    small{
         @include small-default;
     }
 
-    img {
+    img{
         @include image-default;
     }
 

@@ -7,7 +7,8 @@ import { about } from "../utils/data/About";
 import DeveloperIcons from "../utils/DeveloperIcons";
 
 function About() {
-    return (
+    if (about){
+        return (
         <section className="about">
             <h1>About</h1>
             {about.map((article) => (
@@ -30,7 +31,8 @@ function About() {
             </article>
             ))}
         </section>
-    );
+        )}
+    return <p>Oops! There's nothing here!</p>
 }
 
 export default About;

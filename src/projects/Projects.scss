@@ -1,72 +1,51 @@
 @import "../config";
 
-.projects {
-    letter-spacing: .2rem;
-    margin: 5rem;
-    text-align: center;
-    width: 100vw;
+.projects{
+    @include section-default;
 
-    &-title {
-        color: $primary-color;
-        font-family: Orbitron, 'Courier New', Courier, monospace;
-        letter-spacing: .3rem;
-        text-align: start;
-        text-shadow: 0 0 10px $active-color;
+    h1{
+        @include h1-default;
     }
 
-    &-paraphrase {
-        color: $muted-color;
+    h2{
+        @include h2-default;
     }
 
-    &-recent_title {
-        border-bottom: 1px solid $active-color;
-        font-family: Gruppo, 'Times New Roman', Times, serif;
-        letter-spacing: .3rem;
+    h3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         padding: 1rem;
+        @include h3-default;
     }
 
-    &-list {
+    p{
+        @include paragraph-default;
+    }
 
-        .project {
-            list-style-type: none;
+    small{
+        @include small-default;
+    }
 
-            &-name {
-                border-bottom: 1px solid $muted-color;
-                font-family: Gruppo, 'Times New Roman', Times, serif;
-                padding: 1rem;
-            }
+    img{
+        border: 1px solid set-text-color($primary-color);
+        @include image-default;
+    }
 
-            &-description {
-                color: $muted-color;
-            }
+    span {
+        color: $active-color;
+    }
 
-            a {
-                color: $primary-color;
-                padding: .5rem;
-                text-decoration: none;
-                text-shadow: 0 0 10px set-text-color($primary-color);
-                @include transition-ease;
+    .icon {
+        color: set-text-color($primary-color);
+        padding: 0 1rem;
+        @include transition-ease;
 
-                &:hover {
-                    text-shadow: 0 0 5px $active-color;
-                    @include transition-ease;
-                }
-
-            }
-
-            &-stack {
-                list-style-type: none;
-                padding: 2rem 1rem;            }
-
-            img {
-                box-shadow: 0 10px 20px set-text-color($primary-color);
-                margin: 0 auto;
-                padding: 1rem;
-                width: 50%;
-            }
-
+        &:hover {
+            color: $primary-color;
+            text-shadow: 0 0 8px $active-color;
+            @include transition-ease;
         }
 
     }
-
 }

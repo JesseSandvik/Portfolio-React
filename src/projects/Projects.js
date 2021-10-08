@@ -7,16 +7,16 @@ import { projects } from "../utils/data/Projects";
 import Project from "./Project";
 
 function Projects() {
-    const projectsList = projects.map((project) => <ul className="projects-list" key={project.id}><Project project={project}/></ul>);
+    const projectsList = projects.map((project) => <div key={project.id}><Project project={project}/></div>);
 
     return (
-        <div className="projects">
-            <div className="projects-title"><h1>Projects</h1></div>
-            <h2 className="projects-recent_title">Recent</h2>
-            <p className="projects-paraphrase">A collection of some recent applications.</p>
+        <section className="projects">
+            <h1>Projects</h1>
+            <h2>Recent</h2>
+            <small>A collection of some recently built applications.</small>
             <br />
             {projectsList}
-        </div>
+        </section>
     );
 }
 

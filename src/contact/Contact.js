@@ -4,7 +4,7 @@ import React from "react";
 
 function Contact() {
     return (
-        <div className="contact">
+        <section className="contact">
             <h1 className="contact-title">Contact</h1>
             <h2 className="contact-section_title">Networking & Inquiries</h2>
             <p className="contact-paraphrase">Connect with me on social media or send me an email!</p>
@@ -22,7 +22,7 @@ function Contact() {
                 <i className="fab fa-linkedin-in icon"></i>
             </a>
             </div>
-        </div>
+        </section>
     );
 }
 
