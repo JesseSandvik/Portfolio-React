@@ -13,8 +13,8 @@ function Project(props) {
                 </a>
             </h3>
             <small>{props.project.description}</small>
-            <br />
             <div>
+                <br />
                 {props.project.stack.build && (
                 <p><span>Built using:</span> {props.project.stack.build}</p>
                 )}
