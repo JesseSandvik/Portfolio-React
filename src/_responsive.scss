@@ -12,12 +12,26 @@
 
             &.item4 {
                 visibility: hidden;
+                width: 0vw;
             }
 
             &.item5 {
                 grid-column: 1 / -1;
             }
 
+        }
+
+        .header{
+            text-align: center;
+
+            .social{
+                text-align: center;
+            }
+            
+        }
+
+        h1{
+            text-align: center;
         }
 
     }
@@ -43,6 +57,17 @@
                 grid-column: 2 / -1;
             }
 
+        }
+
+        .header{
+
+            .social{
+                text-align: end;
+            }
+        }
+
+        h1{
+            text-align: end;
         }
 
     }

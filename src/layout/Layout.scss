@@ -25,7 +25,6 @@
       &.item4 {
         align-items: flex-start;
         background: transparent;
-        grid-column: 1 / 2;
         grid-row: 2 / 2;
         justify-content: flex-start;
         position: absolute;
@@ -33,9 +32,7 @@
   
       &.item5 {
         align-items: flex-start;
-        grid-column: 1 / -1;
         grid-row: 2 / 2;
-        margin: 0 0 0 5rem;
         overflow-x: hidden;
         overflow-y: auto;
       }
