@@ -24,7 +24,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  letter-spacing: .2rem;
+  letter-spacing: .22rem;
   margin: 5rem;
   text-align: center;
   width: 100vw;
@@ -53,11 +53,12 @@
 }
 
 .about p {
-  padding: 1rem 0;
+  padding: 0 0 2rem;
 }
 
 .about small {
   color: #5D576B;
+  letter-spacing: .1rem;
 }
 
 .about img {
