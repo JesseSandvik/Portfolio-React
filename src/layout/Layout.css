@@ -54,6 +54,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background: transparent;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -62,14 +63,17 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: absolute;
 }
 
 .layout-item.item5 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  grid-column: 1 / -1;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
+  margin: 0 0 0 5rem;
   overflow-x: hidden;
   overflow-y: auto;
 }

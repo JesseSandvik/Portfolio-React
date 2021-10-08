@@ -8,6 +8,7 @@ import Navigation from "../navigation/Navigation";
 import Routes from "./Routes";
 
 function Layout() {
+
     return (
         <div className="layout">
             <div className="layout-item item1"><Header /></div>

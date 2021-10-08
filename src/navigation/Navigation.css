@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #6BF178;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -9,29 +9,19 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #6BF178;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
   }
 }
 
-@-webkit-keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
-  }
-}
-
-@keyframes anim-hover-text-shadow-code {
-  from {
-    text-shadow: 0 2px 5px #F39C6B;
-  }
-  to {
-    text-shadow: 0 2px 5px #FF3864;
-  }
+.nav {
+  font-size: 1.2rem;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  padding: 10vh 0 0;
 }
 
 .nav-menu {
@@ -39,11 +29,34 @@
 }
 
 .nav-menu_item {
-  padding: .5rem 0;
+  padding: 1rem 0;
 }
 
 .nav-menu_item.link {
-  color: #FDF7FA;
+  color: #5D576B;
   text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-menu_item.link:hover {
+  letter-spacing: .3rem;
+  text-shadow: 0 0 10px #52DEE5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-menu_item.link-active {
+  color: #FDF7FA;
+  letter-spacing: .3rem;
+  text-shadow: -5px 0 10px #52DEE5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-menu_item.link-active .icon {
+  color: #000000;
+  padding: 0 .5rem;
+  text-shadow: 0 0 10px #52DEE5;
 }
 /*# sourceMappingURL=Navigation.css.map */
