@@ -30,7 +30,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,6 +59,8 @@
   -ms-grid-column: 2;
   grid-column: 2 / 2;
   grid-row: -1;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .layout.morning .item1 .logo-name {
@@ -77,13 +78,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.layout.morning .item3 .home h1, .layout.morning .item3 .home h2 {
+.layout.morning .item3 .home h1, .layout.morning .item3 .home h2, .layout.morning .item3 .about h1, .layout.morning .item3 .about h2, .layout.morning .item3 .projects h1, .layout.morning .item3 .projects h2, .layout.morning .item3 .contact h1, .layout.morning .item3 .contact h2 {
   color: #DEBA6F;
-  text-shadow: 2px 2px 2px #5D576B;
-}
-
-.layout.morning .item3 .about h1, .layout.morning .item3 .projects h1, .layout.morning .item3 .contact h1 {
-  text-shadow: 0 0 10px #DEBA6F;
 }
 
 .layout.morning .item3 .about h2, .layout.morning .item3 .projects h2, .layout.morning .item3 .contact h2 {
@@ -113,13 +109,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.layout.afternoon .item3 .home h1, .layout.afternoon .item3 .home h2 {
+.layout.afternoon .item3 .home h1, .layout.afternoon .item3 .home h2, .layout.afternoon .item3 .about h1, .layout.afternoon .item3 .about h2, .layout.afternoon .item3 .projects h1, .layout.afternoon .item3 .projects h2, .layout.afternoon .item3 .contact h1, .layout.afternoon .item3 .contact h2 {
   color: #ACFCD9;
-  text-shadow: 2px 2px 2px #5D576B;
-}
-
-.layout.afternoon .item3 .about h1, .layout.afternoon .item3 .projects h1, .layout.afternoon .item3 .contact h1 {
-  text-shadow: 0 0 10px #ACFCD9;
 }
 
 .layout.afternoon .item3 .about h2, .layout.afternoon .item3 .projects h2, .layout.afternoon .item3 .contact h2 {
@@ -149,13 +140,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.layout.evening .item3 .home h1, .layout.evening .item3 .home h2 {
-  color: #ACFCD9;
-  text-shadow: 2px 2px 2px #5D576B;
-}
-
-.layout.evening .item3 .about h1, .layout.evening .item3 .projects h1, .layout.evening .item3 .contact h1 {
-  text-shadow: 0 0 10px #7D70BA;
+.layout.evening .item3 .home h1, .layout.evening .item3 .home h2, .layout.evening .item3 .about h1, .layout.evening .item3 .about h2, .layout.evening .item3 .projects h1, .layout.evening .item3 .projects h2, .layout.evening .item3 .contact h1, .layout.evening .item3 .contact h2 {
+  color: #7D70BA;
 }
 
 .layout.evening .item3 .about h2, .layout.evening .item3 .projects h2, .layout.evening .item3 .contact h2 {

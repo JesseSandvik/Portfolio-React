@@ -8,7 +8,6 @@
   
     &-item {
     align-items: center;
-    border: 1px solid white;
     display: flex;
     justify-content: center;
   
@@ -27,6 +26,8 @@
       &.item4 {
         grid-column: 2 / 2;
         grid-row: -1;
+        overflow-x: hidden;
+        overflow-y: auto;
       }
   
     }
@@ -62,17 +63,14 @@
 
       .item3 {
 
-        .home {
+        .home, .about, .projects, .contact {
           h1, h2 {
             color: $accent-color-one;
-            text-shadow: 2px 2px 2px $muted-color;
-          }
-        }
-        .about, .projects, .contact {
-          h1 {
-            text-shadow: 0 0 10px $accent-color-one;
           }
 
+        }
+
+        .about, .projects, .contact {
           h2 {
             border-bottom: 1px solid $accent-color-one;
           }
@@ -125,17 +123,14 @@
 
       .item3 {
 
-        .home {
+        .home, .about, .projects, .contact {
           h1, h2 {
             color: $accent-color-two;
-            text-shadow: 2px 2px 2px $muted-color;
-          }
-        }
-        .about, .projects, .contact {
-          h1 {
-            text-shadow: 0 0 10px $accent-color-two;
           }
 
+        }
+
+        .about, .projects, .contact {
           h2 {
             border-bottom: 1px solid $accent-color-two;
           }
@@ -188,17 +183,13 @@
 
       .item3 {
 
-        .home {
+        .home, .about, .projects, .contact {
           h1, h2 {
-            color: $accent-color-two;
-            text-shadow: 2px 2px 2px $muted-color;
+            color: $accent-color-three;
           }
         }
-        .about, .projects, .contact {
-          h1 {
-            text-shadow: 0 0 10px $accent-color-three;
-          }
 
+        .about, .projects, .contact {
           h2 {
             border-bottom: 1px solid $accent-color-three;
           }

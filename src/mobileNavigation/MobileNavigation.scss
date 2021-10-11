@@ -10,7 +10,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 75vw;
     opacity: .98;
     visibility: hidden;
     transform: translate(-100%);
@@ -23,7 +23,7 @@
     }
 
     &-menu {
-        align-items: center;
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -42,14 +42,14 @@
 
                 &:hover {
                     letter-spacing: .4rem;
-                    text-shadow: 0 0 10px $active-color;
+                    text-shadow: 0 0 10px #e71d36;
                     @include transition-ease;
                 }
 
                 &-active {
                     color: set-text-color($primary-color);
                     letter-spacing: .4rem;
-                    text-shadow: -5px 0 10px $active-color;
+                    text-shadow: -5px 0 10px #e71d36;
                     @include transition-ease;
                 }
 

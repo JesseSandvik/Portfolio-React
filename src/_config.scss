@@ -16,10 +16,12 @@ $muted-color: #5D576B;
 }
 
 @mixin h1-default {
-    color: $primary-color;
+    color: set-text-color($primary-color);
     font-family: Orbitron, 'Courier New', Courier, monospace;
+    font-size: 2rem;
     letter-spacing: .3rem;
-    text-shadow: 0 0 10px $active-color;
+    text-shadow: 2px 2px 2px $muted-color;
+    text-transform: capitalize;
 }
 
 @mixin h2-default {
@@ -27,12 +29,14 @@ $muted-color: #5D576B;
     font-family: Gruppo, 'Times New Roman', Times, serif;
     letter-spacing: .3rem;
     padding: 1rem;
+    text-shadow: 2px 2px 2px $muted-color;
 }
 
 @mixin h3-default {
     color: $active-color;
     border: 1px solid $muted-color;
     border-radius: 5px;
+    text-shadow: 2px 2px 2px $muted-color;
 }
 
 @mixin paragraph-default {

@@ -26,7 +26,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 75vw;
   opacity: .98;
   visibility: hidden;
   -webkit-transform: translate(-100%);
@@ -44,9 +44,9 @@
 }
 
 .mobileNav-menu {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +76,7 @@
 
 .mobileNav-menu_item.link:hover {
   letter-spacing: .4rem;
-  text-shadow: 0 0 10px #52DEE5;
+  text-shadow: 0 0 10px #e71d36;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -84,7 +84,7 @@
 .mobileNav-menu_item.link-active {
   color: #FDF7FA;
   letter-spacing: .4rem;
-  text-shadow: -5px 0 10px #52DEE5;
+  text-shadow: -5px 0 10px #e71d36;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }

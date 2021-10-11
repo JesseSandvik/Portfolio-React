@@ -40,7 +40,7 @@
 
 .nav-menu_item.link:hover {
   letter-spacing: .3rem;
-  text-shadow: 0 0 10px #52DEE5;
+  text-shadow: 0 0 10px #e71d36;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -48,7 +48,7 @@
 .nav-menu_item.link-active {
   color: #FDF7FA;
   letter-spacing: .3rem;
-  text-shadow: -5px 0 10px #52DEE5;
+  text-shadow: -5px 0 10px #e71d36;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -56,6 +56,6 @@
 .nav-menu_item.link-active .icon {
   color: #000000;
   padding: 0 .5rem;
-  text-shadow: 0 0 10px #52DEE5;
+  text-shadow: 0 0 10px #e71d36;
 }
 /*# sourceMappingURL=Navigation.css.map */

@@ -25,17 +25,18 @@
       -ms-flex-direction: column;
           flex-direction: column;
   letter-spacing: .22rem;
-  margin: 5rem;
+  margin: 5vh 15vw;
   text-align: center;
   width: 100vw;
 }
 
 .projects h1 {
-  color: #000000;
+  color: #FDF7FA;
   font-family: Orbitron, 'Courier New', Courier, monospace;
+  font-size: 2rem;
   letter-spacing: .3rem;
-  text-align: start;
-  text-shadow: 0 0 10px #52DEE5;
+  text-shadow: 2px 2px 2px #5D576B;
+  text-transform: capitalize;
 }
 
 .projects h2 {
@@ -43,6 +44,7 @@
   font-family: Gruppo, 'Times New Roman', Times, serif;
   letter-spacing: .3rem;
   padding: 1rem;
+  text-shadow: 2px 2px 2px #5D576B;
 }
 
 .projects h3 {
@@ -59,7 +61,7 @@
   color: #52DEE5;
   border: 1px solid #5D576B;
   border-radius: 5px;
-  margin: 2.5rem;
+  text-shadow: 2px 2px 2px #5D576B;
 }
 
 .projects p {
@@ -78,7 +80,7 @@
 }
 
 .projects span {
-  color: #52DEE5;
+  color: #e71d36;
 }
 
 .projects .icon {
@@ -90,7 +92,7 @@
 
 .projects .icon:hover {
   color: #000000;
-  text-shadow: 0 0 8px #52DEE5;
+  text-shadow: 0 0 8px #e71d36;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
