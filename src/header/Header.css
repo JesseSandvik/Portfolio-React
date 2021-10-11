@@ -16,84 +16,53 @@
   }
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2vh 5vw;
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  height: 10vh;
   width: 100vw;
 }
 
-.header .logo {
-  font-size: 2.5rem;
-  letter-spacing: -.4rem;
+header .item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
-.header .logo:hover {
-  cursor: pointer;
+header .item.item1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
 }
 
-.header .logo .morning {
-  color: #DEBA6F;
+header .item.item2 {
+  grid-column: 3 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.header .logo .morning .icon {
-  color: #000000;
-  text-shadow: -1px 0 10px #DEBA6F;
-}
-
-.header .logo .afternoon {
-  color: #ACFCD9;
-}
-
-.header .logo .afternoon .icon {
-  color: #000000;
-  text-shadow: -1px 0 10px #ACFCD9;
-}
-
-.header .logo .evening {
-  color: #7D70BA;
-}
-
-.header .logo .evening .icon {
-  color: #000000;
-  text-shadow: -1px 0 10px #7D70BA;
-}
-
-.header .logo-lastname {
-  letter-spacing: -.2rem;
-  padding: 0 .1rem;
-}
-
-.header .description {
-  color: #5D576B;
-  font-family: Orbitron, 'Courier New', Courier, monospace;
-  letter-spacing: .1rem;
-  padding: 0 3rem;
-  text-decoration: underline;
-}
-
-.header .social {
+header .item.item2 .social {
   font-size: 2rem;
-  padding: 1rem 0;
-  text-align: end;
 }
 
-.header .social .icon {
+header .item.item2 .social .icon {
   color: #000000;
-  padding: 0 1rem;
-  text-shadow: 0 -1px 15px #FDF7FA;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.header .social .icon:hover {
-  text-shadow: 0 0 8px #52DEE5;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  padding: 0 .8rem;
+  text-shadow: 0 0 12px #FDF7FA;
 }
 /*# sourceMappingURL=Header.css.map */

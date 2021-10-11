@@ -1,0 +1,19 @@
+@import "../config";
+
+.logo {
+
+    &-name {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        letter-spacing: -.2rem;
+    }
+
+    &-description {
+        color: $muted-color;
+        font-family: Orbitron, 'Courier New', Courier, monospace;
+        letter-spacing: .1rem;
+        text-decoration: underline;
+    }
+
+}

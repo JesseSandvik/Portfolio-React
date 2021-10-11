@@ -1,21 +1,9 @@
 @import "../config";
 
-.footer {
+footer {
     font-weight: 600;
     padding: 1rem;
     text-align: center;
-
-    .morning {
-        color: $accent-color-one;
-    }
-
-    .afternoon {
-        color: $accent-color-two;
-
-    }
-    .evening {
-        color: $accent-color-three;
-    }
 
     .year {
         color: $muted-color;
@@ -25,7 +13,6 @@
     }
 
     .social {
-
         .icon {
             color: set-text-color($primary-color);
             padding: .5rem;

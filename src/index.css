@@ -25,9 +25,24 @@
   }
 }
 
-@media screen and (max-width: 765px) {
-  .layout.item.item3 {
-    visibility: hidden;
+@media screen and (max-width: 750px) {
+  .layout .header {
+    text-align: center;
+  }
+  .layout .header .social {
+    text-align: center;
+  }
+  .layout h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .layout .header .social {
+    text-align: end;
+  }
+  .layout h1 {
+    text-align: end;
   }
 }
 
@@ -37,9 +52,7 @@ html {
           box-sizing: border-box;
   color: #FDF7FA;
   font-family: Quicksand, 'Courier New', Courier, monospace, sans-serif;
-  margin: 0;
   overflow: hidden;
-  padding: 0;
 }
 
 *:before,

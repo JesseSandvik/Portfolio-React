@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #ACFCD9;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -9,27 +9,31 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #ACFCD9;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
   }
 }
 
-.footer {
-  letter-spacing: .1rem;
+footer {
+  font-weight: 600;
+  padding: 1rem;
   text-align: center;
 }
 
-.footer .morning {
-  color: #ACFCD9;
+footer .year {
+  color: #5D576B;
+  font-family: Oribtron, 'Courier New', Courier, monospace;
+  letter-spacing: .1rem;
+  padding: .5rem;
 }
 
-.footer .afternoon {
-  color: #51CB20;
-}
-
-.footer .evening {
-  color: #7D70BA;
+footer .social .icon {
+  color: #FDF7FA;
+  padding: .5rem;
+  text-shadow: -2px 2px 0 #5D576B;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 /*# sourceMappingURL=Footer.css.map */

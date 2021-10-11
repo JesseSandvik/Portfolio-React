@@ -1,0 +1,37 @@
+@-webkit-keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #DEBA6F;
+  }
+  to {
+    text-shadow: -1px 1px 3px #52DEE5;
+  }
+}
+
+@keyframes anim-hover-text-shadow {
+  from {
+    text-shadow: -1px 1px 2px #DEBA6F;
+  }
+  to {
+    text-shadow: -1px 1px 3px #52DEE5;
+  }
+}
+
+.logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 2rem;
+  letter-spacing: -.2rem;
+}
+
+.logo-description {
+  color: #5D576B;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  letter-spacing: .1rem;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=HeaderLogo.css.map */

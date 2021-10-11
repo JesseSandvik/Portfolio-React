@@ -6,9 +6,12 @@ import Contact from "../contact/Contact";
 import Home from "../home/Home";
 import NotFound from "./NotFound";
 import Projects from "../projects/Projects";
+import ScrollToTop from "../utils/ScrollToTop";
 
 function Routes () {
     return (
+        <>
+        <ScrollToTop />
         <Switch>
             <Route exact path="/" render={() => <Home />} />
             <Route path="/about" render={() => <About />} />
@@ -16,6 +19,7 @@ function Routes () {
             <Route path="/contact" render={() => <Contact />} />
             <Route render={() => <NotFound />} />
         </Switch>
+        </>
     )
 }
 

@@ -13,7 +13,7 @@
     width: 100vw;
     opacity: .98;
     visibility: hidden;
-    transform: translate(100%);
+    transform: translate(-100%);
     @include transition-ease;
 
     &.open {

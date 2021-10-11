@@ -10,7 +10,7 @@ $muted-color: #5D576B;
     display: flex;
     flex-direction: column;
     letter-spacing: .22rem;
-    margin: 5rem;
+    margin: 5vh 15vw;
     text-align: center;
     width: 100vw;
 }
@@ -33,7 +33,6 @@ $muted-color: #5D576B;
     color: $active-color;
     border: 1px solid $muted-color;
     border-radius: 5px;
-    margin: 2.5rem;
 }
 
 @mixin paragraph-default {

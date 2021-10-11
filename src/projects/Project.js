@@ -4,11 +4,11 @@ function Project(props) {
     return (
         <article>
             <h3>
-                <a href={props.project.website}>
+                <a href={props.project.website} target="_blank" rel="noopener noreferrer">
                     <i className="fas fa-link icon"></i>
                 </a>
                 {props.project.name}
-                <a href={props.project.github}>
+                <a href={props.project.github} target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github-alt icon"></i>
                 </a>
             </h3>

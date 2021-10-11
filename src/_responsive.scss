@@ -4,30 +4,28 @@
 
     .layout {
 
-        &-item {
+        .item1 {
+            header {
+                height: 25vh;
+            }
+        }
 
-            &.item3 {
+        .item2 {
+            width: 0;
+
+            .mobile {
                 visibility: visible;
             }
 
-            &.item4 {
+            .desktop {
+                position: unset;
                 visibility: hidden;
-                width: 0vw;
-            }
-
-            &.item5 {
-                grid-column: 1 / -1;
             }
 
         }
 
-        .header{
-            text-align: center;
-
-            .social{
-                text-align: center;
-            }
-            
+        .item3 {
+            padding: 5vh 0;
         }
 
         h1{
@@ -42,28 +40,19 @@
 
     .layout {
 
-        &-item {
+        .item2 {
 
-            &.item3 {
+            .mobile {
                 visibility: hidden;
             }
 
-            &.item4 {
-                grid-column: 1 / 2;
+            .desktop {
+                left: 0;
+                top: 15vh;
+                position: fixed;
                 visibility: visible;
             }
 
-            &.item5 {
-                grid-column: 2 / -1;
-            }
-
-        }
-
-        .header{
-
-            .social{
-                text-align: end;
-            }
         }
 
         h1{

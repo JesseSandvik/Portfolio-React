@@ -1,77 +1,37 @@
 @import "../config";
 
-.header {
-    display: flex;
-    flex-direction: column;
-    padding: 2vh 5vw;
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    height: 10vh;
     width: 100vw;
 
-    .logo {
-        font-size: 2.5rem;
-        letter-spacing: -.4rem;
+    .item {
+        align-items: center;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
 
-        &:hover {
-            cursor: pointer;
+        &.item1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
         }
+        
+        &.item2 {
+            grid-column: 3 / -1;
+            grid-row: 1 / 2;
+            justify-content: flex-end;
 
-        .morning {
-            color: $accent-color-one;
+            .social {
+                font-size: 2rem;
 
-            .icon {
-                color: $primary-color;
-                text-shadow: -1px 0 10px $accent-color-one;
-            }
+                .icon {
+                    color: $primary-color;
+                    padding: 0 .8rem;
+                    text-shadow: 0 0 12px set-text-color($primary-color);
+                }
 
-        }
-
-        .afternoon {
-            color: $accent-color-two;
-
-            .icon {
-                color: $primary-color;
-                text-shadow: -1px 0 10px $accent-color-two;
-            }
-
-        }
-
-        .evening {
-            color: $accent-color-three;
-
-            .icon {
-                color: $primary-color;
-                text-shadow: -1px 0 10px $accent-color-three;
-            }
-
-        }
-
-        &-lastname {
-            letter-spacing: -.2rem;
-            padding: 0 .1rem;
-        }
-
-    }
-
-    .description {
-        color: $muted-color;
-        font-family: Orbitron, 'Courier New', Courier, monospace;
-        letter-spacing: .1rem;
-        padding: 0 3rem;
-        text-decoration: underline;
-    }
-
-    .social {
-        font-size: 2rem;
-        padding: 1rem 0;
-
-        .icon {
-            color: $primary-color;
-            padding: 0 1rem;
-            text-shadow: 0 -1px 15px set-text-color($primary-color);
-            @include transition-ease;
-
-            &:hover {
-                text-shadow: 0 0 8px $active-color;
-                @include transition-ease;
             }
 
         }
