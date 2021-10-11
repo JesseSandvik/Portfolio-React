@@ -13,3 +13,33 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.devIcons {
+  font-size: 3rem;
+
+  .icon {
+      padding: 1rem;
+      text-shadow: -1px 2px 0 $muted-color;
+
+      &-js {
+          color: #f7df1e;
+      }
+      &-html {
+          color: #f06529;
+      }
+      &-css {
+          color: #2965f1;
+      }
+      &-react {
+          color: #7cc5d9;
+      }
+      &-database {
+          color: #0064a5;
+      }
+      &-git {
+          color: #f34f29;
+      }
+
+  }
+
+}

@@ -26,11 +26,21 @@
 }
 
 @media screen and (max-width: 750px) {
-  .layout .header {
-    text-align: center;
+  .layout .item1 header {
+    height: 25vh;
   }
-  .layout .header .social {
-    text-align: center;
+  .layout .item2 {
+    width: 0;
+  }
+  .layout .item2 .mobile {
+    visibility: visible;
+  }
+  .layout .item2 .desktop {
+    position: unset;
+    visibility: hidden;
+  }
+  .layout .item3 {
+    padding: 5vh 0;
   }
   .layout h1 {
     text-align: center;
@@ -38,8 +48,14 @@
 }
 
 @media screen and (min-width: 750px) {
-  .layout .header .social {
-    text-align: end;
+  .layout .item2 .mobile {
+    visibility: hidden;
+  }
+  .layout .item2 .desktop {
+    left: 0;
+    top: 15vh;
+    position: fixed;
+    visibility: visible;
   }
   .layout h1 {
     text-align: end;
@@ -59,5 +75,38 @@ html {
 *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+.devIcons {
+  font-size: 3rem;
+}
+
+.devIcons .icon {
+  padding: 1rem;
+  text-shadow: -1px 2px 0 #5D576B;
+}
+
+.devIcons .icon-js {
+  color: #f7df1e;
+}
+
+.devIcons .icon-html {
+  color: #f06529;
+}
+
+.devIcons .icon-css {
+  color: #2965f1;
+}
+
+.devIcons .icon-react {
+  color: #7cc5d9;
+}
+
+.devIcons .icon-database {
+  color: #0064a5;
+}
+
+.devIcons .icon-git {
+  color: #f34f29;
 }
 /*# sourceMappingURL=index.css.map */

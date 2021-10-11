@@ -17,9 +17,6 @@
         grid-row: 1 / 1;
       }
 
-      &.item2 {
-      }
-
       &.item3 {
         align-items: flex-start;
         grid-column: 2 / 2;
@@ -34,6 +31,69 @@
   
     }
     
+    &.morning {
+
+      .item1 {
+        .logo-name {
+          color: $accent-color-one;
+  
+          .icon {
+            color: $primary-color;
+            text-shadow: 0 0 10px $accent-color-one;
+          }
+
+        }
+
+        .item2 {          
+          .social {
+            .icon {              
+              &:hover {
+                  text-shadow: 0 0 8px $accent-color-one;
+                  @include transition-ease;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .item3 {
+
+        .home {
+          h1, h2 {
+            color: $accent-color-one;
+            text-shadow: 2px 2px 2px $muted-color;
+          }
+        }
+        .about, .projects, .contact {
+          h1 {
+            text-shadow: 0 0 10px $accent-color-one;
+          }
+
+          h2 {
+            border-bottom: 1px solid $accent-color-one;
+          }
+
+          h3 {
+            color: $accent-color-one;
+          }
+
+        }
+
+      }
+
+      .item4 {
+        footer {
+          color: $accent-color-one;
+        }
+
+      }
+
+    }
+
     &.afternoon {
 
       .item1 {
@@ -64,6 +124,13 @@
       }
 
       .item3 {
+
+        .home {
+          h1, h2 {
+            color: $accent-color-two;
+            text-shadow: 2px 2px 2px $muted-color;
+          }
+        }
         .about, .projects, .contact {
           h1 {
             text-shadow: 0 0 10px $accent-color-two;
@@ -84,6 +151,69 @@
       .item4 {
         footer {
           color: $accent-color-two;
+        }
+
+      }
+
+    }
+
+    &.evening {
+
+      .item1 {
+        .logo-name {
+          color: $accent-color-three;
+  
+          .icon {
+            color: $primary-color;
+            text-shadow: 0 0 10px $accent-color-three;
+          }
+
+        }
+
+        .item2 {          
+          .social {
+            .icon {              
+              &:hover {
+                  text-shadow: 0 0 8px $accent-color-three;
+                  @include transition-ease;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .item3 {
+
+        .home {
+          h1, h2 {
+            color: $accent-color-two;
+            text-shadow: 2px 2px 2px $muted-color;
+          }
+        }
+        .about, .projects, .contact {
+          h1 {
+            text-shadow: 0 0 10px $accent-color-three;
+          }
+
+          h2 {
+            border-bottom: 1px solid $accent-color-three;
+          }
+
+          h3 {
+            color: $accent-color-three;
+          }
+
+        }
+
+      }
+
+      .item4 {
+        footer {
+          color: $accent-color-three;
         }
 
       }

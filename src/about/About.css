@@ -25,7 +25,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   letter-spacing: .22rem;
-  margin: 5rem;
+  margin: 5vh 15vw;
   text-align: center;
   width: 100vw;
 }
@@ -34,7 +34,6 @@
   color: #000000;
   font-family: Orbitron, 'Courier New', Courier, monospace;
   letter-spacing: .3rem;
-  text-align: start;
   text-shadow: 0 0 10px #52DEE5;
 }
 
@@ -49,7 +48,6 @@
   color: #52DEE5;
   border: 1px solid #5D576B;
   border-radius: 5px;
-  margin: 2.5rem;
 }
 
 .about p {
@@ -64,38 +62,5 @@
 .about img {
   margin: 2vh auto;
   width: 50%;
-}
-
-.about .devIcons {
-  font-size: 3rem;
-}
-
-.about .devIcons .icon {
-  padding: 1rem;
-  text-shadow: -1px 2px 0 #5D576B;
-}
-
-.about .devIcons .icon-js {
-  color: #f7df1e;
-}
-
-.about .devIcons .icon-html {
-  color: #f06529;
-}
-
-.about .devIcons .icon-css {
-  color: #2965f1;
-}
-
-.about .devIcons .icon-react {
-  color: #7cc5d9;
-}
-
-.about .devIcons .icon-database {
-  color: #0064a5;
-}
-
-.about .devIcons .icon-git {
-  color: #f34f29;
 }
 /*# sourceMappingURL=About.css.map */

@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #ACFCD9;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -9,7 +9,7 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #ACFCD9;
+    text-shadow: -1px 1px 2px #DEBA6F;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -17,43 +17,26 @@
 }
 
 .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: .22rem;
+  margin: 5vh 15vw;
   text-align: center;
+  width: 100vw;
 }
 
-.home-intro {
-  letter-spacing: .1rem;
-  padding: 0 .5rem;
-}
-
-.home-intro .devIcons {
-  font-size: 3rem;
-}
-
-.home-intro .devIcons .icon {
-  padding: 1rem;
-}
-
-.home-intro .devIcons .icon-js {
-  color: #f7df1e;
-}
-
-.home-intro .devIcons .icon-html {
-  color: #f06529;
-}
-
-.home-intro .devIcons .icon-css {
-  color: #2965f1;
-}
-
-.home-intro .devIcons .icon-react {
-  color: #7cc5d9;
-}
-
-.home-intro .devIcons .icon-database {
-  color: #0064a5;
-}
-
-.home-intro .devIcons .icon-git {
-  color: #f34f29;
+.home h1, .home h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  letter-spacing: .3rem;
+  text-shadow: 0 0 10px #52DEE5;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -1,57 +1,13 @@
 @import "../config";
 
 .home {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
-    grid-template-rows: auto 1fr auto;
-    letter-spacing: .1rem;
-    margin: 1rem;
-    text-align: center;
-    width: 100vw;
+    @include section-default;
 
-    h1{
+    h1, h2 {
+        font-size: 2rem;
         text-align: center;
+        text-transform: capitalize;
+        @include h1-default;
     }
 
-    &-intro {
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-    }
-
-    &-description {
-        grid-column: 1 / -1;
-        grid-row: 2 / 2;
-
-        .devIcons {
-            font-size: 3rem;
-    
-            .icon {
-                padding: 1rem;
-                text-shadow: -1px 2px 0 $muted-color;
-    
-                &-js {
-                    color: #f7df1e;
-                }
-                &-html {
-                    color: #f06529;
-                }
-                &-css {
-                    color: #2965f1;
-                }
-                &-react {
-                    color: #7cc5d9;
-                }
-                &-database {
-                    color: #0064a5;
-                }
-                &-git {
-                    color: #f34f29;
-                }
-    
-            }
-    
-        }
-
-    }
-    
 }
