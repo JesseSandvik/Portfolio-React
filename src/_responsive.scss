@@ -7,7 +7,13 @@
         .item1 {
             header {
                 height: 25vh;
+
+                .item1 {
+                    justify-content: center;
+                }
+                
             }
+
         }
 
         .item2 {

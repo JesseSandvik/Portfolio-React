@@ -15,6 +15,7 @@ header {
         &.item1 {
             grid-column: 1 / 2;
             grid-row: 1 / -1;
+            justify-content: flex-start;
         }
         
         &.item2 {

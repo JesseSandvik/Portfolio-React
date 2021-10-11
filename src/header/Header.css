@@ -43,6 +43,9 @@ header .item.item1 {
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 header .item.item2 {
