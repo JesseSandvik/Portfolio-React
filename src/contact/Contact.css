@@ -24,59 +24,51 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  letter-spacing: .2rem;
-  margin: 5rem;
+  letter-spacing: .22rem;
+  margin: 5vh 15vw;
   text-align: center;
   width: 100vw;
 }
 
-.contact-title {
+.contact h1 {
   color: #000000;
   font-family: Orbitron, 'Courier New', Courier, monospace;
   letter-spacing: .3rem;
-  text-align: end;
   text-shadow: 0 0 10px #52DEE5;
 }
 
-.contact-section_title {
+.contact h2 {
   border-bottom: 1px solid #52DEE5;
   font-family: Gruppo, 'Times New Roman', Times, serif;
   letter-spacing: .3rem;
   padding: 1rem;
 }
 
-.contact-paraphrase {
+.contact h3 {
+  color: #52DEE5;
+  border: 1px solid #5D576B;
+  border-radius: 5px;
+}
+
+.contact p {
+  padding: 0 0 2rem;
+}
+
+.contact small {
   color: #5D576B;
+  letter-spacing: .1rem;
 }
 
-.contact-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contact-item_title {
-  border-bottom: 1px solid #5D576B;
-  font-family: Gruppo, 'Times New Roman', Times, serif;
-  letter-spacing: .3rem;
-  padding: 1rem;
-}
-
-.contact-item .icon {
-  color: #000000;
-  font-size: 3rem;
-  padding: 2rem;
-  text-shadow: 0 0 15px #FDF7FA;
+.contact .icon {
+  color: #FDF7FA;
+  padding: 0 1rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.contact-item .icon:hover {
-  text-shadow: 0 0 10px #52DEE5;
+.contact .icon:hover {
+  color: #000000;
+  text-shadow: 0 0 8px #52DEE5;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
