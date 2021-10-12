@@ -19,20 +19,20 @@
 
                 &:hover {
                     letter-spacing: .3rem;
-                    text-shadow: 0 0 10px #e71d36;
+                    text-shadow: 0 0 10px $accent-color-one;
                     @include transition-ease;
                 }
 
                 &-active {
                     color: set-text-color($primary-color);
                     letter-spacing: .3rem;
-                    text-shadow: -5px 0 10px #e71d36;
+                    text-shadow: -5px 0 10px $accent-color-one;
                     @include transition-ease;
 
                     .icon {
                         color: $primary-color;
                         padding: 0 .5rem;
-                        text-shadow: 0 0 10px #e71d36;
+                        text-shadow: 0 0 10px $accent-color-one;
                     }
                 }
 

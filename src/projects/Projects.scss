@@ -33,7 +33,7 @@
     }
 
     span {
-        color: #e71d36;
+        color: $accent-color-one;
     }
 
     .icon {
@@ -43,7 +43,7 @@
 
         &:hover {
             color: $primary-color;
-            text-shadow: 0 0 8px #e71d36;
+            text-shadow: 0 0 8px $accent-color-one;
             @include transition-ease;
         }
 

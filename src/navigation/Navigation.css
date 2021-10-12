@@ -1,6 +1,6 @@
 @-webkit-keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #DEBA6F;
+    text-shadow: -1px 1px 2px #E6C79C;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -9,7 +9,7 @@
 
 @keyframes anim-hover-text-shadow {
   from {
-    text-shadow: -1px 1px 2px #DEBA6F;
+    text-shadow: -1px 1px 2px #E6C79C;
   }
   to {
     text-shadow: -1px 1px 3px #52DEE5;
@@ -40,7 +40,7 @@
 
 .nav-menu_item.link:hover {
   letter-spacing: .3rem;
-  text-shadow: 0 0 10px #e71d36;
+  text-shadow: 0 0 10px #E6C79C;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -48,7 +48,7 @@
 .nav-menu_item.link-active {
   color: #FDF7FA;
   letter-spacing: .3rem;
-  text-shadow: -5px 0 10px #e71d36;
+  text-shadow: -5px 0 10px #E6C79C;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -56,6 +56,6 @@
 .nav-menu_item.link-active .icon {
   color: #000000;
   padding: 0 .5rem;
-  text-shadow: 0 0 10px #e71d36;
+  text-shadow: 0 0 10px #E6C79C;
 }
 /*# sourceMappingURL=Navigation.css.map */
