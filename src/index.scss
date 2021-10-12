@@ -1,7 +1,7 @@
 @import "./config";
 @import "./responsive";
 
-html {
+body {
   background: $primary-color;
   box-sizing: border-box;
   color: set-text-color($primary-color);

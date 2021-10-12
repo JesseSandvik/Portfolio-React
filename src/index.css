@@ -29,6 +29,11 @@
   .layout .item1 header {
     height: 25vh;
   }
+  .layout .item1 header .item1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .layout .item2 {
     width: 0;
   }
@@ -62,7 +67,7 @@
   }
 }
 
-html {
+body {
   background: #000000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

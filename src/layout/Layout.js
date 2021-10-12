@@ -1,6 +1,7 @@
 import "./Layout.scss";
-import React from "react";
+import React, { useState } from "react";
 
+import DynamicBackground from "../dynamicBackground/DynamicBackground";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import MobileHamburgerButton from "../mobileHamburgerButton/MobileHamburgerButton";
@@ -9,6 +10,15 @@ import Routes from "./Routes";
 import { timeOfDayByHour } from "../utils/TimeOfDay";
 
 function Layout() {
+    const [backgroundToggle, setBackgroundToggle] = useState(true);
+
+    const backgroundToggleHandler = () => {
+        if (backgroundToggle) {
+            setBackgroundToggle(false);
+        } else {
+            setBackgroundToggle(true);
+        }
+    }
     
     const layoutClassNameByTime = () => {
         if (timeOfDayByHour()) {
@@ -18,6 +28,13 @@ function Layout() {
     }
 
     return (
+        <>
+        {backgroundToggle && <DynamicBackground
+                                backgroundToggle={backgroundToggle}
+                                backgroundToggleHandler={backgroundToggleHandler}
+                            />
+                            }
+            {!backgroundToggle && (
         <div className={layoutClassNameByTime()}>
             <div className="layout-item item1"><Header /></div>
             <div className="layout-item item2">
@@ -27,6 +44,8 @@ function Layout() {
             <div className="layout-item item3"><Routes /></div>
             <div className="layout-item item4"><Footer /></div>
         </div>
+        )}
+        </>
     )
 }
 

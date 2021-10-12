@@ -1,0 +1,85 @@
+@import "../config";
+
+.bg {
+    height: 99vh;
+    overflow: hidden;
+    display: flex;
+
+  &-item {
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    @include transition-ease;
+
+    &.bg1 {
+      background-image:
+      linear-gradient(to right,
+      rgba($primary-color, 0.1),
+      rgba($primary-color, 0.3)),
+      url('../images/self-desert-p1.jpg');
+      background-size: cover;
+      @include transition-ease;
+    }
+
+    &.bg2 {
+      background-image:
+      linear-gradient(to right,
+      rgba($primary-color, 0.3),
+      rgba($primary-color, 0.5)),
+      url('../images/self-desert-p2.jpg');
+      background-size: cover;
+      cursor: pointer;
+      @include transition-ease;
+
+      &:hover {
+        border: 1px solid set-text-color($primary-color);
+        @include transition-ease;
+      }
+
+      h5 {
+        color: $primary-color;
+        cursor: pointer;
+        font-family: Orbitron, 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        text-shadow: -2px 2px 5px set-text-color($primary-color);
+        @include transition-ease;
+
+        &:hover {
+          color: set-text-color($primary-color);
+          text-shadow: 2px -2px 5px $muted-color;
+          @include transition-ease;
+        }
+      }
+    }
+
+    &.bg3 {
+      background-image:
+      linear-gradient(to right,
+      rgba($primary-color, 0.5),
+      rgba($primary-color, 0.7)),
+      url('../images/self-desert-p3.jpg');
+      background-size: cover;
+      @include transition-ease;
+    }
+    &.bg4 {
+      background-image:
+      linear-gradient(to right,
+      rgba($primary-color, 0.7),
+      rgba($primary-color, 0.9)),
+      url('../images/self-desert-p4.jpg');
+      background-size: cover;
+      @include transition-ease;
+    }
+
+  }
+
+}
