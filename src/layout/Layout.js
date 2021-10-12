@@ -12,6 +12,7 @@ import classNames from "../utils/ClassNames";
 
 function Layout() {
     const [backgroundToggle, setBackgroundToggle] = useState(true);
+    const [timeOfDayManualToggle, setTimeOfDayManualToggle] = useState("");
 
     const backgroundToggleHandler = () => {
         if (!backgroundToggle) {
@@ -20,12 +21,36 @@ function Layout() {
             setBackgroundToggle(false);
         }
     }
+
+    function toggleTimeOfDayColor() {
+        if (timeOfDayManualToggle === "") {
+            setTimeOfDayManualToggle("morning");
+        } else if (timeOfDayManualToggle === "morning") {
+            setTimeOfDayManualToggle("afternoon");
+        } else if (timeOfDayManualToggle === "afternoon") {
+            setTimeOfDayManualToggle("evening");
+        } else if (timeOfDayManualToggle === "evening") {
+            setTimeOfDayManualToggle("morning");
+        }
+    }
+
+    function getTimeOfDay() {
+        let timeOfDay;
+
+        if (timeOfDayManualToggle !== "") {
+            timeOfDay = timeOfDayManualToggle;
+        } else {
+            timeOfDay = timeOfDayByHour();
+        }
+        return timeOfDay;
+    }
     
     const layoutClassNameByTime = () => {
-        if (timeOfDayByHour()) {
-            return `layout ${timeOfDayByHour()}`;
+        if (getTimeOfDay()) {
+            return `layout ${getTimeOfDay()}`;
+        } else {
+            return timeOfDayByHour();
         }
-        return null;
     }
 
     return (
@@ -44,7 +69,11 @@ function Layout() {
             "app open": !backgroundToggle,
         })}>
         <div className={layoutClassNameByTime()}>
-            <div className="layout-item item1"><Header /></div>
+            <div className="layout-item item1"><Header
+                                                toggleTimeOfDayColor={toggleTimeOfDayColor}
+                                                getTimeOfDay={getTimeOfDay}
+                                                />
+            </div>
             <div className="layout-item item2">
                 <span className="mobile"><MobileHamburgerButton /></span>
                 <span className="desktop"><Navigation /></span>

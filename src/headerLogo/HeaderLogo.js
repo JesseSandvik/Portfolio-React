@@ -2,12 +2,9 @@ import "./HeaderLogo.scss";
 
 import React from "react";
 
-import { timeOfDayByHour } from "../utils/TimeOfDay";
+function HeaderLogo(props) {
 
-function HeaderLogo() {
-
-    function displayIconByTimeOfDay() {
-        let timeOfDay = timeOfDayByHour();
+    function displayIconByTimeOfDay(timeOfDay) {
 
         if (timeOfDay === "morning") {
             return <i className="far fa-sun icon"></i>;
@@ -27,7 +24,7 @@ function HeaderLogo() {
     return (
         <div className="logo">
             <div className="logo-name">
-                jesse<strong>sandvik</strong>{displayIconByTimeOfDay()}
+                jesse<strong>sandvik</strong><div onClick={props.toggleTimeOfDayColor}>{displayIconByTimeOfDay(props.getTimeOfDay())}</div>
             </div>
             <small className="logo-description">Software Developer</small>
         </div>
