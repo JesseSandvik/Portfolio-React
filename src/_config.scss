@@ -1,6 +1,6 @@
 $primary-color: #000000;
 $secondary-color: #FDF7FA;
-$accent-color-one: #DEBA6F;
+$accent-color-one: #E6C79C;
 $accent-color-two: #ACFCD9;
 $accent-color-three: #7D70BA;
 $active-color: #52DEE5;
@@ -55,6 +55,10 @@ $muted-color: #5D576B;
 
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;    
+}
+
+@mixin transition-ease-long {
+    transition: all 1s ease-in-out;    
 }
 
 @mixin hover-text-shadow-animation {

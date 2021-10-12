@@ -2,15 +2,29 @@ import "./DynamicBackground.scss";
 
 import React from "react";
 
+import classNames from "../utils/ClassNames";
+
 function DynamicBackground(props) {
     return (
         <div className="bg">
-            <div className="bg-item bg1"></div>
-            <div className="bg-item bg2">
+            <div className={classNames({
+                "item bg1": props.backgroundToggle,
+                "item bg1 open": !props.backgroundToggle,
+            })}></div>
+            <div className={classNames({
+                "item bg2": props.backgroundToggle,
+                "item bg2 open": !props.backgroundToggle,
+            })}>
                 <h5 onClick={props.backgroundToggleHandler}>open</h5>
             </div>
-            <div className="bg-item bg3"></div>
-            <div className="bg-item bg4"></div>
+            <div className={classNames({
+                "item bg3": props.backgroundToggle,
+                "item bg3 open": !props.backgroundToggle,
+            })}></div>
+            <div className={classNames({
+                "item bg4": props.backgroundToggle,
+                "item bg4 open": !props.backgroundToggle,
+            })}></div>
         </div>
     );
 }

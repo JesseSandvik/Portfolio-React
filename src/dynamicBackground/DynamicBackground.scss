@@ -1,11 +1,13 @@
 @import "../config";
 
 .bg {
+  display: flex;
     height: 99vh;
     overflow: hidden;
-    display: flex;
+    position: fixed;
+    width: 99vw;
 
-  &-item {
+  .item {
     box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
     background-position: center;
     background-size: cover;
@@ -16,7 +18,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    @include transition-ease;
 
     &.bg1 {
       background-image:
@@ -25,7 +26,14 @@
       rgba($primary-color, 0.3)),
       url('../images/self-desert-p1.jpg');
       background-size: cover;
-      @include transition-ease;
+      @include transition-ease-long;
+
+      &.open {
+        background: transparent;
+        box-shadow: inset 0 0 0 1px $accent-color-one;
+        @include transition-ease-long;
+      }
+
     }
 
     &.bg2 {
@@ -38,8 +46,20 @@
       cursor: pointer;
       @include transition-ease;
 
+      &.open {
+        box-shadow: inset 0 0 0 1px $accent-color-one;
+        opacity: 30%;
+        transform: translate(-100%);
+        @include transition-ease-long;
+
+        h5 {
+          transform: translate(-250%);
+          @include transition-ease;
+        }
+      }
+
       &:hover {
-        border: 1px solid set-text-color($primary-color);
+        box-shadow: inset 0 0 0 1px $accent-color-one;
         @include transition-ease;
       }
 
@@ -50,12 +70,12 @@
         font-size: 3rem;
         letter-spacing: 1rem;
         text-transform: uppercase;
-        text-shadow: -2px 2px 5px set-text-color($primary-color);
+        text-shadow: -1px 1px 5px set-text-color($primary-color);
         @include transition-ease;
 
         &:hover {
-          color: set-text-color($primary-color);
-          text-shadow: 2px -2px 5px $muted-color;
+          color: $primary-color;
+          text-shadow: -1px 1px 8px $accent-color-one;
           @include transition-ease;
         }
       }
@@ -69,7 +89,16 @@
       url('../images/self-desert-p3.jpg');
       background-size: cover;
       @include transition-ease;
+
+      &.open {
+        box-shadow: inset 0 0 0 1px $accent-color-one;
+        opacity: 30%;
+        transform: translate(-100%);
+        @include transition-ease-long;
+      }
+
     }
+
     &.bg4 {
       background-image:
       linear-gradient(to right,
@@ -78,8 +107,16 @@
       url('../images/self-desert-p4.jpg');
       background-size: cover;
       @include transition-ease;
+
+      &.open {
+        box-shadow: inset 0 0 0 1px $accent-color-one;
+        opacity: 30%;
+        transform: translate(-100%);
+        @include transition-ease-long;
+      }
+
     }
 
   }
-
+  
 }

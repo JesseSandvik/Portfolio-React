@@ -8,15 +8,16 @@ import MobileHamburgerButton from "../mobileHamburgerButton/MobileHamburgerButto
 import Navigation from "../navigation/Navigation";
 import Routes from "./Routes";
 import { timeOfDayByHour } from "../utils/TimeOfDay";
+import classNames from "../utils/ClassNames";
 
 function Layout() {
     const [backgroundToggle, setBackgroundToggle] = useState(true);
 
     const backgroundToggleHandler = () => {
-        if (backgroundToggle) {
-            setBackgroundToggle(false);
-        } else {
+        if (!backgroundToggle) {
             setBackgroundToggle(true);
+        } else {
+            setBackgroundToggle(false);
         }
     }
     
@@ -29,12 +30,19 @@ function Layout() {
 
     return (
         <>
-        {backgroundToggle && <DynamicBackground
-                                backgroundToggle={backgroundToggle}
-                                backgroundToggleHandler={backgroundToggleHandler}
-                            />
-                            }
-            {!backgroundToggle && (
+        <div className={classNames({
+            "dynbg": backgroundToggle,
+            "dynbg open": !backgroundToggle,
+        })}>
+            <DynamicBackground
+                backgroundToggle={backgroundToggle}
+                backgroundToggleHandler={backgroundToggleHandler}
+            />
+        </div>
+        <div className={classNames({
+            "app": backgroundToggle,
+            "app open": !backgroundToggle,
+        })}>
         <div className={layoutClassNameByTime()}>
             <div className="layout-item item1"><Header /></div>
             <div className="layout-item item2">
@@ -43,8 +51,8 @@ function Layout() {
             </div>
             <div className="layout-item item3"><Routes /></div>
             <div className="layout-item item4"><Footer /></div>
+            </div>
         </div>
-        )}
         </>
     )
 }
