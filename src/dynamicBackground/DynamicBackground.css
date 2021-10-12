@@ -79,7 +79,7 @@
 .bg .item.bg2.open {
   -webkit-box-shadow: inset 0 0 0 1px #E6C79C;
           box-shadow: inset 0 0 0 1px #E6C79C;
-  opacity: 30%;
+  opacity: 0.3;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   -webkit-transition: all 1s ease-in-out;
@@ -130,7 +130,7 @@
 .bg .item.bg3.open {
   -webkit-box-shadow: inset 0 0 0 1px #E6C79C;
           box-shadow: inset 0 0 0 1px #E6C79C;
-  opacity: 30%;
+  opacity: 0.3;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   -webkit-transition: all 1s ease-in-out;
@@ -148,7 +148,7 @@
 .bg .item.bg4.open {
   -webkit-box-shadow: inset 0 0 0 1px #E6C79C;
           box-shadow: inset 0 0 0 1px #E6C79C;
-  opacity: 30%;
+  opacity: 0.3;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   -webkit-transition: all 1s ease-in-out;

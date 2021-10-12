@@ -48,7 +48,7 @@
 
       &.open {
         box-shadow: inset 0 0 0 1px $accent-color-one;
-        opacity: 30%;
+        opacity: 0.3;
         transform: translate(-100%);
         @include transition-ease-long;
 
@@ -92,7 +92,7 @@
 
       &.open {
         box-shadow: inset 0 0 0 1px $accent-color-one;
-        opacity: 30%;
+        opacity: 0.3;
         transform: translate(-100%);
         @include transition-ease-long;
       }
@@ -110,7 +110,7 @@
 
       &.open {
         box-shadow: inset 0 0 0 1px $accent-color-one;
-        opacity: 30%;
+        opacity: 0.3;
         transform: translate(-100%);
         @include transition-ease-long;
       }
