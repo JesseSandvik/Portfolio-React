@@ -7,7 +7,7 @@ import DeveloperIcons from "../utils/DeveloperIcons";
 function Home() {
     return (
         <section className="home">
-            <small>Try clicking the icon next to my name!</small>
+            <small>Psst! Try clicking the icon next to my name!</small>
             <br />
             <p><b>Hello</b> and <b>welcome</b>!</p>
             <small>My name is</small>

@@ -2,6 +2,10 @@
 
 .logo {
 
+    &-click {
+        padding: 0 0 0 9rem;
+    }
+
     &-name {
         display: flex;
         flex-direction: row;
@@ -11,6 +15,16 @@
 
         .icon {
             cursor: pointer;
+            position: absolute;
+            @include transition-ease-long;
+
+            &:hover {
+                font-size: 3rem;
+                text-shadow: 0 0 2px $muted-color;
+                transform: translate(25%) rotate(360deg);
+                @include hover-color-animation;
+                @include transition-ease-long;
+            }
         }
     }
 

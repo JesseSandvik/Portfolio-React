@@ -23,8 +23,11 @@ function HeaderLogo(props) {
 
     return (
         <div className="logo">
-            <div className="logo-name">
-                jesse<strong>sandvik</strong><div onClick={props.toggleTimeOfDayColor}>{displayIconByTimeOfDay(props.getTimeOfDay())}</div>
+            <small className="logo-click">Click me!</small>
+            <div className="logo-name"
+                 onClick={props.toggleTimeOfDayColor}
+            >
+                jesse<strong>sandvik</strong><div>{displayIconByTimeOfDay(props.getTimeOfDay())}</div>
             </div>
             <small className="logo-description">Software Developer</small>
         </div>

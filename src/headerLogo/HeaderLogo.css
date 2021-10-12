@@ -1,19 +1,23 @@
-@-webkit-keyframes anim-hover-text-shadow {
+@-webkit-keyframes anim-hover-color {
   from {
-    text-shadow: -1px 1px 2px #E6C79C;
+    color: #FDF7FA;
   }
   to {
-    text-shadow: -1px 1px 3px #52DEE5;
+    color: #5D576B;
   }
 }
 
-@keyframes anim-hover-text-shadow {
+@keyframes anim-hover-color {
   from {
-    text-shadow: -1px 1px 2px #E6C79C;
+    color: #FDF7FA;
   }
   to {
-    text-shadow: -1px 1px 3px #52DEE5;
+    color: #5D576B;
   }
+}
+
+.logo-click {
+  padding: 0 0 0 9rem;
 }
 
 .logo-name {
@@ -31,6 +35,23 @@
 
 .logo-name .icon {
   cursor: pointer;
+  position: absolute;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.logo-name .icon:hover {
+  font-size: 3rem;
+  text-shadow: 0 0 2px #5D576B;
+  -webkit-transform: translate(25%) rotate(360deg);
+          transform: translate(25%) rotate(360deg);
+  -webkit-animation-name: anim-hover-color;
+          animation-name: anim-hover-color;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  color: #FDF7FA;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .logo-description {
