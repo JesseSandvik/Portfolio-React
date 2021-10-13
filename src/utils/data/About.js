@@ -10,19 +10,19 @@ export const about = [{
     paragraphs: [{
         id: "1",
         body: <p>I graduated from <b>Thinkful's Full-Stack Engineering Flex program</b> in the late summer of 2021.
-                During my time at Thinkful, I learned and practiced the skills required to be a successful, impactful software developer. From working through complex <b>algorithms</b> and <b>data structures</b>, to <b>RESTFUL API</b> principles and the concept of <b>test-driven development</b>.
-                It was a difficult, yet extremely rewarding journey.</p>
+                During my time at Thinkful, I learned the concepts and skills necessary to become a successful, impactful software developer. From working through complex <b>algorithms</b> and <b>data structures</b>, to <b>RESTFUL API</b> principles and the concept of <b>test-driven development</b>,
+                I believe that I have developed a solid, well-rounded foundation with which to build upon and grow as a developer.</p>
     },
     {
         id: "2",
-        body: <p>Which brings me to today.</p>
+        body: <p>It has been a difficult, yet extremely rewarding journey.</p>
     },
     {
         id: "3",
-        body: <p>At this time, I am currently employed as a <i>master-certified diagnostic technician</i> for <b>Mercedes-Benz</b>. I am extremely grateful for the <b>valuable skills</b> I have gained working in this field, from my ability to <b>evalutate and diagnose complex systems</b>,
-            to my intimate relationship with <b>the important of time management</b>,
+        body: <p>At this time, I am still currently employed as a <i>master-certified diagnostic technician</i> for <b>Mercedes-Benz</b>. I am extremely grateful for the <b>valuable skills</b> I have gained working in this field, from my ability to <b>evalutate and diagnose complex systems</b>,
+            to my intimate relationship with <b>the importance of time management</b>,
             or even just <b>empathizing with client expectations</b> and concerns.
-            However, for me on a personal level, I have found that the thing I have long <i>loved</i> about my work is the same thing that excites me the most about <strong>software development</strong>;</p>
+            Personally, I have found that the thing I have <i>loved</i> most about my current profession is the very same thing that excites me the most about <strong>software development</strong>;</p>
     },
     {
         id: "4",
@@ -34,11 +34,7 @@ export const about = [{
     },
     {
         id: "6",
-        body: <p>I have always had an iniate curiosity for engineering, both <i>mechanical</i> and <b>technological</b>, and I believe <b><i>technology</i></b> to be the driver of modern human creation and innovation.</p>
-    },
-    {
-        id: "7",
-        body: <p>I am truly humbled at the opportunity to be a part of that process.</p>,
+        body: <p>I am <b>truly grateful</b> for the opportunity to be a piece in that puzzle.</p>,
     }],
 },
 {
