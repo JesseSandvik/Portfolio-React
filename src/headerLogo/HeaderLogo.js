@@ -2,18 +2,20 @@ import "./HeaderLogo.scss";
 
 import React from "react";
 
+import PortfolioOwnerName from "../portfolioOwnerName/PortfolioOwnerName";
+
 function HeaderLogo(props) {
 
     function displayIconByTimeOfDay(timeOfDay) {
 
         if (timeOfDay === "morning") {
-            return <i className="far fa-sun icon"></i>;
+            return <i title="morning icon" className="far fa-sun icon"></i>;
 
         } else if (timeOfDay === "afternoon") {
-            return <i className="fas fa-sun icon"></i>;
+            return <i title="afternoon icon" className="fas fa-sun icon"></i>;
 
         } else if (timeOfDay === "evening") {
-            return <i className="far fa-moon icon"></i>;
+            return <i title="evening icon" className="far fa-moon icon"></i>;
 
         } else {
             return <></>;
@@ -27,7 +29,8 @@ function HeaderLogo(props) {
             <div className="logo-name"
                  onClick={props.toggleTimeOfDayColor}
             >
-                jesse<strong>sandvik</strong><div>{displayIconByTimeOfDay(props.getTimeOfDay())}</div>
+                <PortfolioOwnerName />
+                <span title="icon">{displayIconByTimeOfDay(props.timeOfDayString)}</span>
             </div>
             <small className="logo-description">Software Developer</small>
         </div>

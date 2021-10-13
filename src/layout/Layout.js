@@ -14,6 +14,8 @@ function Layout() {
     const [backgroundToggle, setBackgroundToggle] = useState(true);
     const [timeOfDayManualToggle, setTimeOfDayManualToggle] = useState("");
 
+    const timeOfDayString = getTimeOfDay();
+
     const backgroundToggleHandler = () => {
         if (!backgroundToggle) {
             setBackgroundToggle(true);
@@ -71,7 +73,7 @@ function Layout() {
         <div className={layoutClassNameByTime()}>
             <div className="layout-item item1"><Header
                                                 toggleTimeOfDayColor={toggleTimeOfDayColor}
-                                                getTimeOfDay={getTimeOfDay}
+                                                timeOfDayString={timeOfDayString}
                                                 />
             </div>
             <div className="layout-item item2">

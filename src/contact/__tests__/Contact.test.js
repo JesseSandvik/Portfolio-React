@@ -7,12 +7,11 @@ describe("Contact", () => {
     it("renders the Contact page", () => {
         render(<Contact />);
     });
-});
 
-describe("Contact", () => {
     it("renders Contact as an h1 element", () => {
         render(<Contact />);
         const elementValue = screen.getByText(/Contact/);
         expect(elementValue).toBeInTheDocument();
     });
+    
 });

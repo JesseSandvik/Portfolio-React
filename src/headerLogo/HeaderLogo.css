@@ -3,7 +3,7 @@
     color: #FDF7FA;
   }
   to {
-    color: #5D576B;
+    color: #000000;
   }
 }
 
@@ -12,7 +12,7 @@
     color: #FDF7FA;
   }
   to {
-    color: #5D576B;
+    color: #000000;
   }
 }
 
@@ -35,7 +35,7 @@
 
 .logo-name .icon {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
@@ -47,8 +47,8 @@
           transform: translate(25%) rotate(360deg);
   -webkit-animation-name: anim-hover-color;
           animation-name: anim-hover-color;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   color: #FDF7FA;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;

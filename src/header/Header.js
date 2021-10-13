@@ -10,8 +10,8 @@ function Header(props) {
         <header>
             <div className="item item1"><HeaderLogo
                                             toggleTimeOfDayColor={props.toggleTimeOfDayColor}
-                                            getTimeOfDay={props.getTimeOfDay}
-                                            />
+                                            timeOfDayString={props.timeOfDayString}
+                                        />
             </div>
             <div className="item item2"><SocialIcons /></div>
         </header>

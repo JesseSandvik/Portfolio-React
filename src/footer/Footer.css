@@ -1,18 +1,18 @@
-@-webkit-keyframes anim-hover-text-shadow {
+@-webkit-keyframes anim-hover-color {
   from {
-    text-shadow: -1px 1px 2px #DEBA6F;
+    color: #FDF7FA;
   }
   to {
-    text-shadow: -1px 1px 3px #52DEE5;
+    color: #000000;
   }
 }
 
-@keyframes anim-hover-text-shadow {
+@keyframes anim-hover-color {
   from {
-    text-shadow: -1px 1px 2px #DEBA6F;
+    color: #FDF7FA;
   }
   to {
-    text-shadow: -1px 1px 3px #52DEE5;
+    color: #000000;
   }
 }
 

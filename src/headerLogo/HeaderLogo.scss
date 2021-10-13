@@ -15,7 +15,7 @@
 
         .icon {
             cursor: pointer;
-            position: absolute;
+            position: fixed;
             @include transition-ease-long;
 
             &:hover {
