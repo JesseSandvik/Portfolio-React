@@ -23,17 +23,37 @@
         @include small-default;
     }
 
-    .icon {
-        color: set-text-color($primary-color);
-        padding: 0 1rem;
-        @include transition-ease;
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 5rem;
 
-        &:hover {
-            color: $primary-color;
-            text-shadow: 0 0 8px $active-color;
-            @include transition-ease;
+        label {
+            @include h3-default;
         }
 
+        input, textarea {
+            background: $primary-color;
+            box-shadow: 0 0 2px set-text-color($primary-color);
+            color: $active-color;
+            margin: 1rem;
+        }
+
+        button {
+            background: $primary-color;
+            box-shadow: 0 0 2px set-text-color($primary-color);
+            color: $active-color;
+            cursor: pointer;
+            font-family: Orbitron, 'Times New Roman', Times, serif;
+            letter-spacing: .2rem;
+            @include transition-ease;
+            
+            &:hover {
+                box-shadow: 0 0 5px $active-color;
+                letter-spacing: .4rem;
+                @include transition-ease;
+            }
+        }
     }
 
 }
