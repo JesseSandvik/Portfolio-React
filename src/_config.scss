@@ -66,14 +66,14 @@ $muted-color: #5D576B;
     transition: all 1.5s ease-in-out;    
 }
 
-@mixin media-mob {
-    @media screen and (max-width: 750px) {
+@mixin media-mobile {
+    @media screen and (max-width: 1330px) {
         @content;
     }
 }
 
-@mixin media-md {
-    @media screen and (min-width: 750px) {
+@mixin media-desktop {
+    @media screen and (min-width: 1330px) {
         @content;
     }
 }

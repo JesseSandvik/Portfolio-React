@@ -1,6 +1,6 @@
 @import "./config";
 
-@include media-mob {
+@include media-mobile {
 
     .dynbg {
         visibility: hidden;
@@ -20,6 +20,13 @@
 
             .logo {
                 grid-column: 1 / -1;
+
+                .devLogo {
+
+                    .siteTitle {
+                        border-bottom: 1px solid $accent-color-one;
+                    }
+                }
             }
 
             .social {
@@ -84,12 +91,12 @@
         }
 
         footer {
-            margin: 83vh 0 0 0;
+            margin: 85vh 0 0 0;
         }
     }
 }
 
-@include media-md {
+@include media-desktop {
 
     .dynbg {
         visibility: visible;
@@ -105,10 +112,7 @@
         grid-template-columns: auto 1fr auto;
 
         header {
-            top: 0;
-            right: 0;
             bottom: 0;
-            left: 0;
             height: 12vh;
             transform: translateY(-38%);
             width: 100vw;
@@ -126,7 +130,9 @@
                     }
 
                     i {
-                        transform: translateX(-450%);
+                        margin: 1.2vh 0 0 1.5vw;
+                        padding: 5vh 0 0;
+                        transform: translateX(-350%);
                         @include transition-ease-long;
                     }
                 }
@@ -148,11 +154,13 @@
                     .devLogo {
 
                         .siteTitle {
+                            border-bottom: 1px solid $accent-color-one;
                             color: set-text-color($primary-color);
                             @include transition-ease-long;
                         }
 
                         i {
+                            color: $accent-color-one;
                             transform: translateX(0);
                             @include transition-ease-long;
                         }
@@ -184,7 +192,6 @@
             nav {
                 color: $primary-color;
                 position: fixed;
-                transform: translateY(200%);
                 visibility: hidden;
                 @include transition-ease-long;
             }
@@ -196,7 +203,6 @@
                 grid-column: 1 / 1;
                 grid-row: 2 / 2;
                 margin: 30vh 0 0 0;
-                transform: translateY(0);
                 visibility: visible;
                 width: 25vw;
                 @include transition-ease-long;
@@ -238,10 +244,6 @@
 
         footer {
             justify-content: flex-start;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
             margin: 89vh 0 0 0;
             transform: translateY(38%);
             @include transition-ease-long;

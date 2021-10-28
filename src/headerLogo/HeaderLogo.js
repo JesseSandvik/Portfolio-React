@@ -22,7 +22,7 @@ export default function HeaderLogo(props) {
     return (
         <div  className="devLogo" onClick={props.toggleTimeOfDayColor}>
             <div className="siteTitle">
-                <h1>jessesandvik</h1>
+                <h1>Jesse <strong>Sandvik</strong></h1>
                 <small>Software Developer</small>
             </div>
             <span>{displayIconByTimeOfDay(props.timeOfDayString)}</span>

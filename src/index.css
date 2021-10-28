@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1330px) {
   .dynbg {
     visibility: hidden;
   }
@@ -38,6 +38,9 @@
   }
   section header .logo {
     grid-column: 1 / -1;
+  }
+  section header .logo .devLogo .siteTitle {
+    border-bottom: 1px solid #E6C79C;
   }
   section header .social {
     grid-column: 1 / -1;
@@ -101,11 +104,11 @@
     width: 100vw;
   }
   section footer {
-    margin: 83vh 0 0 0;
+    margin: 85vh 0 0 0;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1330px) {
   .dynbg {
     visibility: visible;
   }
@@ -121,10 +124,7 @@
         grid-template-columns: auto 1fr auto;
   }
   section header {
-    top: 0;
-    right: 0;
     bottom: 0;
-    left: 0;
     height: 12vh;
     -webkit-transform: translateY(-38%);
             transform: translateY(-38%);
@@ -143,8 +143,10 @@
     transition: all 1s ease-in-out;
   }
   section header .logo .devLogo i {
-    -webkit-transform: translateX(-450%);
-            transform: translateX(-450%);
+    margin: 1.2vh 0 0 1.5vw;
+    padding: 5vh 0 0;
+    -webkit-transform: translateX(-350%);
+            transform: translateX(-350%);
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
@@ -164,11 +166,13 @@
     width: 25vw;
   }
   section header.open .logo .devLogo .siteTitle {
+    border-bottom: 1px solid #E6C79C;
     color: #FDF7FA;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
   section header.open .logo .devLogo i {
+    color: #E6C79C;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     -webkit-transition: all 1s ease-in-out;
@@ -192,8 +196,6 @@
   section .desktop nav {
     color: #000000;
     position: fixed;
-    -webkit-transform: translateY(200%);
-            transform: translateY(200%);
     visibility: hidden;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
@@ -205,8 +207,6 @@
     -ms-grid-row: 2;
     grid-row: 2 / 2;
     margin: 30vh 0 0 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
     visibility: visible;
     width: 25vw;
     -webkit-transition: all 1s ease-in-out;
@@ -252,10 +252,6 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     margin: 89vh 0 0 0;
     -webkit-transform: translateY(38%);
             transform: translateY(38%);
@@ -313,6 +309,9 @@ section header {
   -ms-grid-columns: auto 1fr auto;
       grid-template-columns: auto 1fr auto;
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -350,6 +349,10 @@ section header .logo .devLogo {
           justify-content: center;
 }
 
+section header .logo .devLogo strong {
+  letter-spacing: -.1rem;
+}
+
 section header .logo .devLogo .siteTitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,14 +368,9 @@ section header .logo .devLogo .siteTitle small {
   margin: -1.2rem 0;
 }
 
-section header .logo .devLogo i {
-  margin: 1.2vh 0 0 1.5vw;
-}
-
 section header .logo i {
   cursor: pointer;
   font-size: 2.5rem;
-  padding: 5vh 0 0;
 }
 
 section header .social {
@@ -395,7 +393,7 @@ section header .social {
 
 section header .social a {
   font-size: 2rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
   padding: 1rem .5rem;
 }
 
@@ -449,6 +447,10 @@ section footer {
   grid-row: 3 / -1;
   letter-spacing: .15rem;
   height: 15vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   position: fixed;
   width: 100%;
 }

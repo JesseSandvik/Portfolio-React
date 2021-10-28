@@ -46,13 +46,13 @@ export default function Layout() {
         return timeOfDay;
     }
     
-    const layoutClassNameByTime = () => {
+    /*const layoutClassNameByTime = () => {
         if (getTimeOfDay()) {
             return `layout ${getTimeOfDay()}`;
         } else {
             return timeOfDayByHour();
         }
-    }
+    }*/
 
     /*return (
         <>
