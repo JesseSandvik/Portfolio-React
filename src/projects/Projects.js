@@ -6,7 +6,7 @@ export default function Projects() {
     const projectsList = projects.map((project) => <div key={project.id}><Project project={project}/></div>);
 
     return (
-        <article>
+        <article className="projects">
             <h1>Projects</h1>
             <h2>Recent</h2>
             <small>A collection of some recently built applications.</small>

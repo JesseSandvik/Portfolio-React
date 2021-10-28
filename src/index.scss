@@ -118,6 +118,37 @@ section {
             padding: 5vh 3.5rem 20vh;
             text-align: center;
 
+            &.about, &.projects, &.contact {
+                letter-spacing: .3rem;
+                h1 {
+                    border-bottom: 1px solid set-text-color($primary-color);
+                    margin: 0 0 10vh 0;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+
+                small {
+                    color: $muted-color;
+                }
+
+                h2 {
+                    border-bottom: 1px solid $muted-color;
+                    color: set-text-color($primary-color);
+                    padding: 5rem 0 1rem;
+                    width: 100%;
+                }
+
+                h3 {
+                    border-bottom: 1px solid $muted-color;
+                    font-size: 1rem;
+                    padding: 5rem 0 2rem;
+                }
+
+                p {
+                    margin: 2rem 0;
+                }
+            }
+
             h1, h2, h3 {
                 font-size: 1.2rem;
                 font-family: Orbitron, 'Courier New', Courier, monospace;
@@ -129,6 +160,44 @@ section {
             img {
                 margin: 5vh auto;
                 max-width: 50%;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 5vh 0 0;
+
+                label {
+                    font-weight: 600;
+                    letter-spacing: .2rem;
+                    margin: 1rem;
+                }
+
+                input {
+                    background-color: $primary-color;
+                    border-radius: 5px;
+                    color: set-text-color($primary-color);
+                    box-shadow: 0 0 15px $secondary-color;
+                }
+
+                textarea {
+                    background-color: $primary-color;
+                    border-radius: 5px;
+                    box-shadow: 0 0 15px $secondary-color;
+                    color: set-text-color($primary-color);
+                }
+
+                button {
+                    background-color: $primary-color;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px $secondary-color;
+                    color: set-text-color($primary-color);
+                    cursor: pointer;
+                    font-family: Orbitron, 'Courier New', Courier, monospace;
+                    letter-spacing: .2rem;
+                    margin: 2rem auto;
+                    padding: .4rem;
+                }
             }
         }
     }

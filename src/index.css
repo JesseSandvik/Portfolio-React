@@ -569,6 +569,38 @@ section main article {
   text-align: center;
 }
 
+section main article.about, section main article.projects, section main article.contact {
+  letter-spacing: .3rem;
+}
+
+section main article.about h1, section main article.projects h1, section main article.contact h1 {
+  border-bottom: 1px solid #FDF7FA;
+  margin: 0 0 10vh 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+section main article.about small, section main article.projects small, section main article.contact small {
+  color: #5D576B;
+}
+
+section main article.about h2, section main article.projects h2, section main article.contact h2 {
+  border-bottom: 1px solid #5D576B;
+  color: #FDF7FA;
+  padding: 5rem 0 1rem;
+  width: 100%;
+}
+
+section main article.about h3, section main article.projects h3, section main article.contact h3 {
+  border-bottom: 1px solid #5D576B;
+  font-size: 1rem;
+  padding: 5rem 0 2rem;
+}
+
+section main article.about p, section main article.projects p, section main article.contact p {
+  margin: 2rem 0;
+}
+
 section main article h1, section main article h2, section main article h3 {
   font-size: 1.2rem;
   font-family: Orbitron, 'Courier New', Courier, monospace;
@@ -580,6 +612,52 @@ section main article h1, section main article h2, section main article h3 {
 section main article img {
   margin: 5vh auto;
   max-width: 50%;
+}
+
+section main article form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5vh 0 0;
+}
+
+section main article form label {
+  font-weight: 600;
+  letter-spacing: .2rem;
+  margin: 1rem;
+}
+
+section main article form input {
+  background-color: #000000;
+  border-radius: 5px;
+  color: #FDF7FA;
+  -webkit-box-shadow: 0 0 15px #FDF7FA;
+          box-shadow: 0 0 15px #FDF7FA;
+}
+
+section main article form textarea {
+  background-color: #000000;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px #FDF7FA;
+          box-shadow: 0 0 15px #FDF7FA;
+  color: #FDF7FA;
+}
+
+section main article form button {
+  background-color: #000000;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #FDF7FA;
+          box-shadow: 0 0 10px #FDF7FA;
+  color: #FDF7FA;
+  cursor: pointer;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  letter-spacing: .2rem;
+  margin: 2rem auto;
+  padding: .4rem;
 }
 
 section footer {

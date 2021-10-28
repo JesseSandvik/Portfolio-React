@@ -26,7 +26,7 @@ function EmailForm() {
             placeholder="Message"
             required
             rows="20"
-            cols="60"
+            cols="40"
             >
         </textarea>
         <button type="submit">Send</button>

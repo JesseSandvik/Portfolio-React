@@ -5,7 +5,7 @@ import DeveloperIcons from '../utils/DeveloperIcons';
 export default function About() {
     if (about){
         return (
-        <article>
+        <article className="about">
             <h1>About</h1>
             {about.map((data) => (
             <div key={data.id}>
