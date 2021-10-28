@@ -1,21 +1,3 @@
-@-webkit-keyframes anim-hover-color {
-  from {
-    color: #FDF7FA;
-  }
-  to {
-    color: #000000;
-  }
-}
-
-@keyframes anim-hover-color {
-  from {
-    color: #FDF7FA;
-  }
-  to {
-    color: #000000;
-  }
-}
-
 .mobile-menu {
   cursor: pointer;
   height: 20px;

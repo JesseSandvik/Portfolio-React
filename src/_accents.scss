@@ -1,0 +1,130 @@
+@import './config';
+
+.morning {
+    header {
+        &.open {
+            .logo {
+                .devLogo {
+                    .siteTitle {
+                        border-bottom: 1px solid $accent-color-one;
+                    }
+
+                    i {
+                        color: $accent-color-one;
+                    }
+                }
+            }
+            .social {
+                a {
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 0 0 15px $accent-color-one;
+                        @include transition-ease;
+                    }
+
+                    &:active {
+                        color: $primary-color;
+                        text-shadow: 0 0 15px $accent-color-one;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        .link-active {
+            color: $accent-color-one;
+        }
+    }
+    footer {
+        i {
+            color: $accent-color-one;
+        }
+    }
+}
+
+.afternoon {
+    header {
+        &.open {
+            .logo {
+                .devLogo {
+                    .siteTitle {
+                        border-bottom: 1px solid $accent-color-two;
+                    }
+
+                    i {
+                        color: $accent-color-two;
+                    }
+                }
+            }
+            .social {
+                a {
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 0 0 15px $accent-color-two;
+                        @include transition-ease;
+                    }
+
+                    &:active {
+                        color: $primary-color;
+                        text-shadow: 0 0 15px $accent-color-two;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        .link-active {
+            color: $accent-color-two;
+        }
+    }
+    footer {
+        i {
+            color: $accent-color-two;
+        }
+    }
+}
+
+.evening {
+    header {
+        &.open {
+            .logo {
+                .devLogo {
+                    .siteTitle {
+                        border-bottom: 1px solid $accent-color-three;
+                    }
+
+                    i {
+                        color: $accent-color-three;
+                    }
+                }
+            }
+            .social {
+                a {
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 0 0 15px $accent-color-three;
+                        @include transition-ease;
+                    }
+
+                    &:active {
+                        color: $primary-color;
+                        text-shadow: 0 0 15px $accent-color-three;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        .link-active {
+            color: $accent-color-three;
+        }
+    }
+    footer {
+        i {
+            color: $accent-color-three;
+        }
+    }
+}

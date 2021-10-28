@@ -1,5 +1,6 @@
-@import "./config";
-@import "./responsive";
+@import './config';
+@import './accents';
+@import './responsive';
 
 * {
     box-sizing: border-box;
@@ -71,7 +72,7 @@ section {
 
             i {
                 cursor: pointer;
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
         }
 
@@ -83,10 +84,23 @@ section {
             justify-content: center;
 
             a {
-                font-size: 2rem;
+                font-size: 1.7rem;
                 margin: 0 1rem;
                 padding: 1rem .5rem;
+                @include transition-ease-long;
             }
+        }
+    }
+
+    nav {
+
+        a {
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+        .link-active {
+            @include transition-ease;
         }
     }
 

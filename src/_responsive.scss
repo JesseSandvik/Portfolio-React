@@ -27,10 +27,15 @@
                         border-bottom: 1px solid $accent-color-one;
                     }
                 }
+
+                i {
+                    margin: 2vh 0 0 1vw;
+                }
             }
 
             .social {
                 grid-column: 1 / -1;
+                margin: 2vh 0;
             }
         }
 
@@ -118,6 +123,35 @@
             width: 100vw;
             @include transition-ease-long;
 
+            &.open {
+                transform: translateY(0);
+                @include transition-ease-long;
+
+                .logo {
+                    grid-column: 1 / 1;
+                    width: 25vw;
+
+                    .devLogo {
+
+                        .siteTitle {
+
+                            color: set-text-color($primary-color);
+                            @include transition-ease-long;
+                        }
+
+                        i {
+                            transform: translateX(0);
+                            @include transition-ease-long;
+                        }
+                    }
+                }
+
+                .social {
+                    grid-column: 3 / -1;
+                    width: 25vw;
+                }
+            }
+
             .logo {
                 grid-column: 1 / 1;
                 width: 25vw;
@@ -143,35 +177,6 @@
                 width: 25vw;
             }
 
-            &.open {
-                transform: translateY(0);
-                @include transition-ease-long;
-
-                .logo {
-                    grid-column: 1 / 1;
-                    width: 25vw;
-
-                    .devLogo {
-
-                        .siteTitle {
-                            border-bottom: 1px solid $accent-color-one;
-                            color: set-text-color($primary-color);
-                            @include transition-ease-long;
-                        }
-
-                        i {
-                            color: $accent-color-one;
-                            transform: translateX(0);
-                            @include transition-ease-long;
-                        }
-                    }
-                }
-
-                .social {
-                    grid-column: 3 / -1;
-                    width: 25vw;
-                }
-            }
         }
 
         .mobile {
@@ -253,6 +258,77 @@
                 @include transition-ease-long;
             }
         }
+    }
 
+    &.morning {
+        .dynbg {
+            .bg {
+                .item {
+                    &.bg2 {
+                        &.open {
+                            box-shadow: inset 0 0 0 5px $accent-color-one;
+                        }
+
+                        &:hover {
+                            box-shadow: inset 0 0 0 5px $accent-color-one;   
+                        }
+
+                        h5 {
+                            &:hover {
+                                text-shadow: -1px 1px 8px $accent-color-one;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.afternoon {
+        .dynbg {
+            .bg {
+                .item {
+                    &.bg2 {
+                        &.open {
+                            box-shadow: inset 0 0 0 5px $accent-color-two;
+                        }
+
+                        &:hover {
+                            box-shadow: inset 0 0 0 5px $accent-color-two;   
+                        }
+
+                        h5 {
+                            &:hover {
+                                text-shadow: -1px 1px 8px $accent-color-two;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.evening {
+        .dynbg {
+            .bg {
+                .item {
+                    &.bg2 {
+                        &.open {
+                            box-shadow: inset 0 0 0 5px $accent-color-three;
+                        }
+
+                        &:hover {
+                            box-shadow: inset 0 0 0 5px $accent-color-three;   
+                        }
+
+                        h5 {
+                            &:hover {
+                                text-shadow: -1px 1px 8px $accent-color-three;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

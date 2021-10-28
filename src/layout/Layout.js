@@ -46,111 +46,76 @@ export default function Layout() {
         return timeOfDay;
     }
     
-    /*const layoutClassNameByTime = () => {
+    
+    const classNameByTime = () => {
         if (getTimeOfDay()) {
-            return `layout ${getTimeOfDay()}`;
+            return `${getTimeOfDay()}`;
         } else {
             return timeOfDayByHour();
         }
-    }*/
-
-    /*return (
-        <>
-        <div className={classNames({
-            "dynbg": backgroundToggle,
-            "dynbg open": !backgroundToggle,
-        })}>
-            <DynamicBackground
-                backgroundToggle={backgroundToggle}
-                backgroundToggleHandler={backgroundToggleHandler}
-            />
-        </div>
-        <div className={classNames({
-            "app": backgroundToggle,
-            "app open": !backgroundToggle,
-        })}>
-        <div className={layoutClassNameByTime()}>
-            <div className="layout-item item1"><Header
-                                                toggleTimeOfDayColor={toggleTimeOfDayColor}
-                                                timeOfDayString={timeOfDayString}
-                                                />
-            </div>
-            <div className="layout-item item2">
-                <span className="mobile"><MobileHamburgerButton /></span>
-                <span className="desktop"><Navigation /></span>
-            </div>
-            <div className="layout-item item3"><Routes /></div>
-            <div className="layout-item item4"><Footer /></div>
-            </div>
-        </div>
-        </>
-    );*/
+    }
+    
     return (
-        <>
-        <div className={classNames({
-            "dynbg": backgroundToggle,
-            "dynbg open": !backgroundToggle,
-            })}
-        >
-            <DynamicBackground
-                backgroundToggle={backgroundToggle}
-                backgroundToggleHandler={backgroundToggleHandler}
-            />
-        </div>
-        <section className={classNames({
-            "app": backgroundToggle,
-            "app open": !backgroundToggle,
-            })
-        }
-        >
-            <header className={classNames({
-                "": backgroundToggle,
-                "open": !backgroundToggle,
-                })
-            }
-            >
-                <div className="logo">
-                    <HeaderLogo
-                        backgroundToggle={backgroundToggle}
-                        timeOfDayString={timeOfDayString}
-                        toggleTimeOfDayColor={toggleTimeOfDayColor}
-                    />
-                </div>
-                <div className="social">
-                    <SocialIcons />
-                </div>
-            </header>
+        <div className={classNameByTime()}>
             <div className={classNames({
-                "desktop": backgroundToggle,
-                "desktop open": !backgroundToggle,
-                })
-            }
+                "dynbg": backgroundToggle,
+                "dynbg open": !backgroundToggle,
+                })}
             >
-                <Navigation />
-            </div>
-            <main className={classNames({
-                "": backgroundToggle,
-                "open": !backgroundToggle,
-                })
-            }
-            >
-                <Routes />
-            </main>
-            <footer className={classNames({
-                "": backgroundToggle,
-                "open": !backgroundToggle,
-                })
-            }
-            >
-                <Footer 
+                <DynamicBackground
                     backgroundToggle={backgroundToggle}
+                    backgroundToggleHandler={backgroundToggleHandler}
                 />
-            </footer>
-            <div className="mobile">
-                <MobileHamburgerButton />
             </div>
-        </section>
-        </>
+            <section>
+                <div className={classNames({
+                    "desktop": backgroundToggle,
+                    "desktop open": !backgroundToggle,
+                    })
+                }
+                >
+                    <Navigation />
+                </div>
+                <main className={classNames({
+                    "": backgroundToggle,
+                    "open": !backgroundToggle,
+                    })
+                }
+                >
+                    <Routes />
+                </main>
+                <header className={classNames({
+                    "": backgroundToggle,
+                    "open": !backgroundToggle,
+                    })
+                }
+                >
+                    <div className="logo">
+                        <HeaderLogo
+                            backgroundToggle={backgroundToggle}
+                            timeOfDayString={timeOfDayString}
+                            toggleTimeOfDayColor={toggleTimeOfDayColor}
+                        />
+                    </div>
+                    <div className="social">
+                        <SocialIcons />
+                    </div>
+                </header>
+                <footer className={classNames({
+                    "": backgroundToggle,
+                    "open": !backgroundToggle,
+                    })
+                }
+                >
+                    <Footer 
+                        backgroundToggle={backgroundToggle}
+                    />
+                </footer>
+                <div className="mobile">
+                    <MobileHamburgerButton />
+                </div>
+            </section>
+        </div>
     );
 };
 

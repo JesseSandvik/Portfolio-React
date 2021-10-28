@@ -3,56 +3,7 @@ $secondary-color: #FDF7FA;
 $accent-color-one: #E6C79C;
 $accent-color-two: #ACFCD9;
 $accent-color-three: #7D70BA;
-$accent-color-four: #E71D36;
-$active-color: #52DEE5;
 $muted-color: #5D576B;
-
-@mixin section-default {
-    display: flex;
-    flex-direction: column;
-    letter-spacing: .22rem;
-    margin: 5vh 15vw;
-    text-align: center;
-    width: 100vw;
-}
-
-@mixin h1-default {
-    color: set-text-color($primary-color);
-    font-family: Orbitron, 'Courier New', Courier, monospace;
-    font-size: 2rem;
-    letter-spacing: .3rem;
-    text-shadow: 2px 2px 2px $muted-color;
-    text-transform: capitalize;
-}
-
-@mixin h2-default {
-    border-bottom: 1px solid $active-color;
-    font-family: Gruppo, 'Times New Roman', Times, serif;
-    letter-spacing: .3rem;
-    padding: 1rem;
-    text-shadow: 2px 2px 2px $muted-color;
-}
-
-@mixin h3-default {
-    color: $active-color;
-    border: 1px solid $muted-color;
-    border-radius: 5px;
-    text-shadow: 2px 2px 2px $muted-color;
-}
-
-@mixin paragraph-default {
-    padding: 0 0 2rem;
-}
-
-@mixin small-default {
-    color: $muted-color;
-    letter-spacing: .1rem;
-}
-
-@mixin image-default {
-    margin: 2vh auto;
-    width: 50%;
-}
 
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;    
@@ -78,21 +29,10 @@ $muted-color: #5D576B;
     }
 }
 
-@mixin hover-color-animation {
-    animation-name: anim-hover-color;
-    animation-duration: 8s;
-    color: set-text-color($primary-color)
-}
-
 @function set-text-color($color) {
     @if (lightness($color) > 40%) {
         @return $primary-color;
     } @else {
         @return $secondary-color;
     }
-}
-
-@keyframes anim-hover-color {
-    from {color: set-text-color($primary-color)};
-    to {color: $primary-color};
 }
