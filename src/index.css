@@ -22,6 +22,12 @@
   color: #E6C79C;
 }
 
+.morning main article h1, .morning main article h2, .morning main article h3 {
+  color: #E6C79C;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .morning footer i {
   color: #E6C79C;
 }
@@ -48,6 +54,12 @@
 
 .afternoon nav .link-active {
   color: #ACFCD9;
+}
+
+.afternoon main article h1, .afternoon main article h2, .afternoon main article h3 {
+  color: #ACFCD9;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .afternoon footer i {
@@ -78,6 +90,12 @@
   color: #7D70BA;
 }
 
+.evening main article h1, .evening main article h2, .evening main article h3 {
+  color: #7D70BA;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .evening footer i {
   color: #7D70BA;
 }
@@ -95,9 +113,6 @@
   }
   section header .logo {
     grid-column: 1 / -1;
-  }
-  section header .logo .devLogo .siteTitle {
-    border-bottom: 1px solid #E6C79C;
   }
   section header .logo i {
     margin: 2vh 0 0 1vw;
@@ -296,20 +311,40 @@
   }
   section main {
     color: #000000;
-    -ms-grid-column: 2;
-    grid-column: 2 / 2;
-    margin: 13vh 0 0 25vw;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-  }
-  section main.open {
-    color: #FDF7FA;
-    position: relative;
+    height: 0;
+    visibility: hidden;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
   section main article {
+    color: #000000;
+    font-size: .1rem;
+    letter-spacing: .7rem;
+    -webkit-transform: translate(-150%);
+            transform: translate(-150%);
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+  }
+  section main.open {
+    color: #FDF7FA;
+    -ms-grid-column: 2;
+    grid-column: 2 / 2;
+    height: inherit;
+    margin: 13vh 0 0 25vw;
+    position: relative;
+    visibility: visible;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  section main.open article {
+    color: #FDF7FA;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    -webkit-transform: translate(0);
+            transform: translate(0);
     width: 50vw;
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
   }
   section footer {
     -webkit-box-pack: start;
@@ -534,7 +569,16 @@ section main article {
   text-align: center;
 }
 
+section main article h1, section main article h2, section main article h3 {
+  font-size: 1.2rem;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  font-weight: 600;
+  letter-spacing: .5rem;
+  padding: 1rem;
+}
+
 section main article img {
+  margin: 5vh auto;
   max-width: 50%;
 }
 

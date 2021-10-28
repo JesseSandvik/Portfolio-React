@@ -4,9 +4,9 @@ import DeveloperIcons from '../utils/DeveloperIcons';
 export default function Home() {
     return (
         <article>
-            <p><b>Hello</b> and <b>welcome</b>!</p>
+            <h3><b>Welcome to my portfolio!</b></h3>
             <small>My name is</small>
-            <h1><strong>Jesse Sandvik</strong>.</h1>
+            <h1><strong>Jesse Sandvik</strong>,</h1>
             <p>I am a</p>
             <h2><strong>full-stack software developer</strong></h2>
             <p>specializing in</p>

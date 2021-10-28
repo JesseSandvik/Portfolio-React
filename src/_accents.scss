@@ -36,6 +36,16 @@
             color: $accent-color-one;
         }
     }
+
+    main {
+        article {
+            h1, h2, h3 {
+                color: $accent-color-one;
+                @include transition-ease-long;
+            }
+        }
+    }
+
     footer {
         i {
             color: $accent-color-one;
@@ -79,6 +89,16 @@
             color: $accent-color-two;
         }
     }
+
+    main {
+        article {
+            h1, h2, h3 {
+                color: $accent-color-two;
+                @include transition-ease-long;
+            }
+        }
+    }
+
     footer {
         i {
             color: $accent-color-two;
@@ -122,6 +142,16 @@
             color: $accent-color-three;
         }
     }
+
+    main {
+        article {
+            h1, h2, h3 {
+                color: $accent-color-three;
+                @include transition-ease-long;
+            }
+        }
+    }
+
     footer {
         i {
             color: $accent-color-three;
