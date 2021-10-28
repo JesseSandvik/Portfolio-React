@@ -1,29 +1,23 @@
-@-webkit-keyframes anim-hover-text-shadow {
+@-webkit-keyframes anim-hover-color {
   from {
-    text-shadow: -1px 1px 2px #E6C79C;
+    color: #FDF7FA;
   }
   to {
-    text-shadow: -1px 1px 3px #52DEE5;
+    color: #000000;
   }
 }
 
-@keyframes anim-hover-text-shadow {
+@keyframes anim-hover-color {
   from {
-    text-shadow: -1px 1px 2px #E6C79C;
+    color: #FDF7FA;
   }
   to {
-    text-shadow: -1px 1px 3px #52DEE5;
+    color: #000000;
   }
 }
 
 .bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 99vh;
-  overflow: hidden;
   position: fixed;
-  width: 99vw;
 }
 
 .bg .item {
@@ -31,17 +25,15 @@
           box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   background-position: center;
   background-size: cover;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,8 +64,8 @@
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/self-desert-p2.jpg");
   background-size: cover;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .bg .item.bg2.open {
@@ -82,8 +74,8 @@
   opacity: 0.3;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .bg .item.bg2.open h5 {
@@ -108,28 +100,26 @@
   letter-spacing: 1rem;
   text-transform: uppercase;
   text-shadow: -1px 1px 5px #FDF7FA;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .bg .item.bg2 h5:hover {
   color: #000000;
   text-shadow: -1px 1px 8px #E6C79C;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .bg .item.bg3 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../images/self-desert-p3.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/self-desert-p3.jpg");
   background-size: cover;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .bg .item.bg3.open {
-  -webkit-box-shadow: inset 0 0 0 1px #E6C79C;
-          box-shadow: inset 0 0 0 1px #E6C79C;
   opacity: 0.3;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
@@ -141,17 +131,15 @@
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url("../images/self-desert-p4.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../images/self-desert-p4.jpg");
   background-size: cover;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .bg .item.bg4.open {
-  -webkit-box-shadow: inset 0 0 0 1px #E6C79C;
-          box-shadow: inset 0 0 0 1px #E6C79C;
   opacity: 0.3;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 /*# sourceMappingURL=DynamicBackground.css.map */

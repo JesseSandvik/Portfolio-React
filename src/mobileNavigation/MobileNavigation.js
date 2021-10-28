@@ -1,21 +1,18 @@
-import "./MobileNavigation.scss";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import classNames from '../utils/ClassNames';
 
-import React from "react";
-import { NavLink } from "react-router-dom";
-
-import classNames from "../utils/ClassNames";
-
-function MobileNavigation(props) {
+export default function MobileNavigation(props) {
 
     return (
         <nav className={classNames({
-            "mobileNav": !props.navOpen,
-            "mobileNav open": props.navOpen,
-        })}>
-            <ul className="mobileNav-menu">
-                <li className="mobileNav-menu_item">
+            "": !props.navOpen,
+            "open": props.navOpen,
+        })}
+        >
+            <ul>
+                <li>
                     <NavLink
-                        className="mobileNav-menu_item link"
                         activeClassName="link-active"
                         onClick={props.navToggleHandler}
                         exact={true}
@@ -24,9 +21,8 @@ function MobileNavigation(props) {
                         Home
                     </NavLink>
                 </li>
-                <li className="mobileNav-menu_item">
+                <li>
                     <NavLink
-                        className="mobileNav-menu_item link"
                         activeClassName="link-active"
                         onClick={props.navToggleHandler}
                         to="/about"
@@ -34,9 +30,8 @@ function MobileNavigation(props) {
                         About
                     </NavLink>
                 </li>
-                <li className="mobileNav-menu_item">
+                <li>
                     <NavLink
-                    className="mobileNav-menu_item link"
                     activeClassName="link-active"
                     onClick={props.navToggleHandler}
                     to="/projects"
@@ -44,9 +39,8 @@ function MobileNavigation(props) {
                     Projects
                     </NavLink>
                 </li>
-                <li className="mobileNav-menu_item">
+                <li>
                     <NavLink
-                    className="mobileNav-menu_item link"
                     activeClassName="link-active"
                     onClick={props.navToggleHandler}
                     to="/contact"
@@ -57,6 +51,4 @@ function MobileNavigation(props) {
             </ul>
         </nav>
     );
-}
-
-export default MobileNavigation;
+};

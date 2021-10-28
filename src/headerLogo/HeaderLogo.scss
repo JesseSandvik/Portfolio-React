@@ -16,15 +16,7 @@
         .icon {
             cursor: pointer;
             position: fixed;
-            @include transition-ease-long;
-
-            &:hover {
-                font-size: 3rem;
-                text-shadow: 0 0 2px $muted-color;
-                transform: translate(25%) rotate(360deg);
-                @include hover-color-animation;
-                @include transition-ease-long;
-            }
+            @include transition-ease;
         }
     }
 

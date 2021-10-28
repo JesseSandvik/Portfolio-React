@@ -2,69 +2,255 @@
 
 @include media-mob {
 
-    .layout {
-
-        .item1 {
-            header {
-                height: 25vh;
-
-                .item1 {
-                    justify-content: center;
-                }
-                
-            }
-
-        }
-
-        .item2 {
-            width: 0;
-
-            .mobile {
-                visibility: visible;
-            }
-
-            .desktop {
-                position: unset;
-                visibility: hidden;
-            }
-
-        }
-
-        .item3 {
-            padding: 5vh 0;
-        }
-
-        h1{
-            text-align: center;
-        }
-
+    .dynbg {
+        visibility: hidden;
     }
+    
+    section {
+        background-image:
+            linear-gradient(to right,
+            rgba($primary-color, 0.5),
+            rgba($primary-color, 0.8)),
+            url('./images/self-desert-bw.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
+        header {
+
+            .logo {
+                grid-column: 1 / -1;
+            }
+
+            .social {
+                grid-column: 1 / -1;
+            }
+        }
+
+        .mobile {
+            visibility: visible;
+
+            nav {
+                background: $primary-color;
+                font-size: 1.2rem;
+                font-family: Orbitron, 'Courier New', Courier, monospace;
+                font-weight: 600;
+                height: 100%;
+                left: 0;
+                letter-spacing: .2rem;
+                position: fixed;
+                top: 0;
+                transform: translate(-100%);
+                visibility: hidden;
+                width: 100%;
+                @include transition-ease;
+
+                &.open {
+                    visibility: visible;
+                    transform: translate(0);
+                    @include transition-ease;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    overflow: hidden;
+                    @include transition-ease;
+                }
+            }
+        }
+
+        .desktop {
+            visibility: hidden;
+
+            nav {
+                height: 0;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                visibility: hidden;
+                width: 0;
+            }
+        }
+
+        main {
+            grid-column: 1 / -1;
+
+            article {
+                margin: 33vh 0 15vh;
+                width: 100vw;
+            }
+        }
+
+        footer {
+            margin: 83vh 0 0 0;
+        }
+    }
 }
 
 @include media-md {
 
-    .layout {
+    .dynbg {
+        visibility: visible;
 
-        .item2 {
+        .bg {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+    }
 
-            .mobile {
-                visibility: hidden;
+    section {
+        grid-template-columns: auto 1fr auto;
+
+        header {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 12vh;
+            transform: translateY(-38%);
+            width: 100vw;
+            @include transition-ease-long;
+
+            .logo {
+                grid-column: 1 / 1;
+                width: 25vw;
+
+                .devLogo {
+
+                    .siteTitle {
+                        color: $primary-color;
+                        @include transition-ease-long;
+                    }
+
+                    i {
+                        transform: translateX(-450%);
+                        @include transition-ease-long;
+                    }
+                }
             }
 
-            .desktop {
-                left: 0;
-                top: 15vh;
+            .social {
+                grid-column: 3 / -1;
+                width: 25vw;
+            }
+
+            &.open {
+                transform: translateY(0);
+                @include transition-ease-long;
+
+                .logo {
+                    grid-column: 1 / 1;
+                    width: 25vw;
+
+                    .devLogo {
+
+                        .siteTitle {
+                            color: set-text-color($primary-color);
+                            @include transition-ease-long;
+                        }
+
+                        i {
+                            transform: translateX(0);
+                            @include transition-ease-long;
+                        }
+                    }
+                }
+
+                .social {
+                    grid-column: 3 / -1;
+                    width: 25vw;
+                }
+            }
+        }
+
+        .mobile {
+            visibility: hidden;
+
+            nav {
+                height: 0;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                visibility: hidden;
+                width: 0;
+            }
+        }
+
+        .desktop {
+
+            nav {
+                color: $primary-color;
                 position: fixed;
+                transform: translateY(200%);
+                visibility: hidden;
+                @include transition-ease-long;
+            }
+
+            &.open {
+
+            nav {
+                color: set-text-color($primary-color);
+                grid-column: 1 / 1;
+                grid-row: 2 / 2;
+                margin: 30vh 0 0 0;
+                transform: translateY(0);
                 visibility: visible;
+                width: 25vw;
+                @include transition-ease-long;
+
+                ul {
+                    align-items: center;
+                    font-family: Orbitron, 'Courier New', Courier, monospace;
+                    font-weight: 600;
+                    letter-spacing: .2rem;
+                    width: 100%;
+
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 2rem;
+                    }
+                }
             }
 
         }
+        }
 
-        h1{
-            text-align: end;
+        main {
+            color: $primary-color;
+            grid-column: 2 / 2;
+            margin: 13vh 0 0 25vw;
+            @include transition-ease-long;
+
+            &.open {
+                color: set-text-color($primary-color);
+                position: relative;
+                @include transition-ease-long;
+            }
+
+            article {
+                width: 50vw;
+            }
+        }
+
+        footer {
+            justify-content: flex-start;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: 89vh 0 0 0;
+            transform: translateY(38%);
+            @include transition-ease-long;
+
+            &.open {
+                transform: translateY(0);
+                @include transition-ease-long;
+            }
         }
 
     }
-
 }

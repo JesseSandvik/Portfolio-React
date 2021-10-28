@@ -1,16 +1,15 @@
-import "./Layout.scss";
 import React, { useState } from "react";
-
 import DynamicBackground from "../dynamicBackground/DynamicBackground";
 import Footer from "../footer/Footer";
-import Header from "../header/Header";
+import HeaderLogo from "../headerLogo/HeaderLogo";
 import MobileHamburgerButton from "../mobileHamburgerButton/MobileHamburgerButton";
 import Navigation from "../navigation/Navigation";
 import Routes from "./Routes";
 import { timeOfDayByHour } from "../utils/TimeOfDay";
 import classNames from "../utils/ClassNames";
+import SocialIcons from "../utils/SocialIcons";
 
-function Layout() {
+export default function Layout() {
     const [backgroundToggle, setBackgroundToggle] = useState(true);
     const [timeOfDayManualToggle, setTimeOfDayManualToggle] = useState("");
 
@@ -55,7 +54,7 @@ function Layout() {
         }
     }
 
-    return (
+    /*return (
         <>
         <div className={classNames({
             "dynbg": backgroundToggle,
@@ -85,7 +84,74 @@ function Layout() {
             </div>
         </div>
         </>
-    )
-}
+    );*/
+    return (
+        <>
+        <div className={classNames({
+            "dynbg": backgroundToggle,
+            "dynbg open": !backgroundToggle,
+            })}
+        >
+            <DynamicBackground
+                backgroundToggle={backgroundToggle}
+                backgroundToggleHandler={backgroundToggleHandler}
+            />
+        </div>
+        <section className={classNames({
+            "app": backgroundToggle,
+            "app open": !backgroundToggle,
+            })
+        }
+        >
+            <header className={classNames({
+                "": backgroundToggle,
+                "open": !backgroundToggle,
+                })
+            }
+            >
+                <div className="logo">
+                    <HeaderLogo
+                        backgroundToggle={backgroundToggle}
+                        timeOfDayString={timeOfDayString}
+                        toggleTimeOfDayColor={toggleTimeOfDayColor}
+                    />
+                </div>
+                <div className="social">
+                    <SocialIcons />
+                </div>
+            </header>
+            <div className={classNames({
+                "desktop": backgroundToggle,
+                "desktop open": !backgroundToggle,
+                })
+            }
+            >
+                <Navigation />
+            </div>
+            <main className={classNames({
+                "": backgroundToggle,
+                "open": !backgroundToggle,
+                })
+            }
+            >
+                <Routes />
+            </main>
+            <footer className={classNames({
+                "": backgroundToggle,
+                "open": !backgroundToggle,
+                })
+            }
+            >
+                <Footer 
+                    backgroundToggle={backgroundToggle}
+                />
+            </footer>
+            <div className="mobile">
+                <MobileHamburgerButton />
+            </div>
+        </section>
+        </>
+    );
+};
 
-export default Layout;
+//<div className="mobile"><MobileHamburgerButton /></div>

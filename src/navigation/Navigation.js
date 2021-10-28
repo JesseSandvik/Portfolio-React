@@ -1,9 +1,7 @@
-import "./Navigation.scss";
-
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function Navigation() {
+export default function Navigation() {
 
     const navigationLinks = {
         homeActive: true,
@@ -15,11 +13,10 @@ function Navigation() {
     const [navigationLinkActive, setNavigationLinkActive] = useState(navigationLinks);
 
     return (
-        <nav className="nav">
-            <ul className="nav-menu">
-                <li className="nav-menu_item">
+        <nav>
+            <ul>
+                <li>
                     <NavLink
-                        className="nav-menu_item link"
                         activeClassName="link-active"
                         onClick={() => setNavigationLinkActive({
                             homeActive: true,
@@ -30,12 +27,11 @@ function Navigation() {
                         exact={true}
                         to="/"
                         >
-                        Home{navigationLinkActive.homeActive && <i className="fas fa-code icon"></i>}
+                        Home{navigationLinkActive.homeActive && <i className="fas fa-code"></i>}
                     </NavLink>
                 </li>
-                <li className="nav-menu_item">
+                <li>
                     <NavLink
-                        className="nav-menu_item link"
                         activeClassName="link-active"
                         onClick={() => setNavigationLinkActive({
                             homeActive: false,
@@ -45,12 +41,11 @@ function Navigation() {
                         })}
                         to="/about"
                         >
-                        About{navigationLinkActive.aboutActive && <i className="fas fa-code icon"></i>}
+                        About{navigationLinkActive.aboutActive && <i className="fas fa-code"></i>}
                     </NavLink>
                 </li>
-                <li className="nav-menu_item">
+                <li>
                     <NavLink
-                    className="nav-menu_item link"
                     activeClassName="link-active"
                     onClick={() => setNavigationLinkActive({
                         homeActive: false,
@@ -60,12 +55,11 @@ function Navigation() {
                     })}
                     to="/projects"
                     >
-                    Projects{navigationLinkActive.projectsActive && <i className="fas fa-code icon"></i>}
+                    Projects{navigationLinkActive.projectsActive && <i className="fas fa-code"></i>}
                     </NavLink>
                 </li>
-                <li className="nav-menu_item">
+                <li>
                     <NavLink
-                    className="nav-menu_item link"
                     activeClassName="link-active"
                     onClick={() => setNavigationLinkActive({
                         homeActive: false,
@@ -75,12 +69,10 @@ function Navigation() {
                     })}
                     to="/contact"
                     >
-                    Contact{navigationLinkActive.contactActive && <i className="fas fa-code icon"></i>}
+                    Contact{navigationLinkActive.contactActive && <i className="fas fa-code"></i>}
                     </NavLink>
                 </li>
             </ul>
         </nav>
     );
-}
-
-export default Navigation;
+};

@@ -1,18 +1,12 @@
 @import "../config";
 
 .bg {
-  display: flex;
-    height: 99vh;
-    overflow: hidden;
-    position: fixed;
-    width: 99vw;
-
+  position: fixed;
+  
   .item {
     box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
     background-position: center;
     background-size: cover;
-    text-align: center;
-    align-items: center;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -44,13 +38,13 @@
       url('../images/self-desert-p2.jpg');
       background-size: cover;
       cursor: pointer;
-      @include transition-ease;
+      @include transition-ease-extra-long;
 
       &.open {
         box-shadow: inset 0 0 0 1px $accent-color-one;
         opacity: 0.3;
         transform: translate(-100%);
-        @include transition-ease-long;
+        @include transition-ease-extra-long;
 
         h5 {
           transform: translate(-250%);
@@ -71,12 +65,12 @@
         letter-spacing: 1rem;
         text-transform: uppercase;
         text-shadow: -1px 1px 5px set-text-color($primary-color);
-        @include transition-ease;
+        @include transition-ease-long;
 
         &:hover {
           color: $primary-color;
           text-shadow: -1px 1px 8px $accent-color-one;
-          @include transition-ease;
+          @include transition-ease-long;
         }
       }
     }
@@ -88,10 +82,9 @@
       rgba($primary-color, 0.7)),
       url('../images/self-desert-p3.jpg');
       background-size: cover;
-      @include transition-ease;
+      @include transition-ease-long;
 
       &.open {
-        box-shadow: inset 0 0 0 1px $accent-color-one;
         opacity: 0.3;
         transform: translate(-100%);
         @include transition-ease-long;
@@ -106,13 +99,12 @@
       rgba($primary-color, 0.9)),
       url('../images/self-desert-p4.jpg');
       background-size: cover;
-      @include transition-ease;
+      @include transition-ease-extra-long;
 
       &.open {
-        box-shadow: inset 0 0 0 1px $accent-color-one;
         opacity: 0.3;
         transform: translate(-100%);
-        @include transition-ease-long;
+        @include transition-ease-extra-long;
       }
 
     }

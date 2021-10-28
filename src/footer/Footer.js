@@ -1,19 +1,22 @@
-import "./Footer.scss";
-
-import React from "react";
-
-import PortfolioOwnerName from "../portfolioOwnerName/PortfolioOwnerName";
+import React from 'react';
+import classNames from "../utils/ClassNames";
 import SocialIcons from "../utils/SocialIcons";
 
-function Footer() {
-    return (
-        <footer>
-            &copy;
-            <PortfolioOwnerName />
-            <span className="year">2021</span>
-            <SocialIcons />
-        </footer>
-    );
-}
+export default function Footer(props) {
 
-export default Footer;
+    const { backgroundToggle } = props;
+
+    return (
+        <div>
+            <h6>&copy; jessesandvik 2021</h6>
+            <div className={classNames({
+                "social": backgroundToggle,
+                "social open": !backgroundToggle,
+                })
+            }
+            >
+                <SocialIcons />
+            </div>
+        </div>
+    );
+};

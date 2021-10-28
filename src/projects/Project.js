@@ -1,8 +1,7 @@
 import React from "react";
-
 function Project(props) {
     return (
-        <article>
+        <div>
             <h3>
                 <a href={props.project.website} target="_blank" rel="noopener noreferrer">
                     <i className="fas fa-link icon"></i>
@@ -28,7 +27,7 @@ function Project(props) {
             {props.project.images.map((image) => (
                 <img key={image.id} src={image.link} alt={image.alt} />
             ))}
-        </article>
+        </div>
     );
 }
 

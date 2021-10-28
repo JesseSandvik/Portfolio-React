@@ -62,6 +62,10 @@ $muted-color: #5D576B;
     transition: all 1s ease-in-out;    
 }
 
+@mixin transition-ease-extra-long {
+    transition: all 1.5s ease-in-out;    
+}
+
 @mixin media-mob {
     @media screen and (max-width: 750px) {
         @content;

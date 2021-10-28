@@ -1,21 +1,17 @@
-import "./HeaderLogo.scss";
+import React from 'react';
 
-import React from "react";
-
-import PortfolioOwnerName from "../portfolioOwnerName/PortfolioOwnerName";
-
-function HeaderLogo(props) {
+export default function HeaderLogo(props) {
 
     function displayIconByTimeOfDay(timeOfDay) {
 
         if (timeOfDay === "morning") {
-            return <i title="morning icon" className="far fa-sun icon"></i>;
+            return <i title="morning icon" className="far fa-sun"></i>;
 
         } else if (timeOfDay === "afternoon") {
-            return <i title="afternoon icon" className="fas fa-sun icon"></i>;
+            return <i title="afternoon icon" className="fas fa-sun"></i>;
 
         } else if (timeOfDay === "evening") {
-            return <i title="evening icon" className="far fa-moon icon"></i>;
+            return <i title="evening icon" className="far fa-moon"></i>;
 
         } else {
             return <></>;
@@ -24,17 +20,12 @@ function HeaderLogo(props) {
     };
 
     return (
-        <div className="logo">
-            <small className="logo-click">Click me!</small>
-            <div className="logo-name"
-                 onClick={props.toggleTimeOfDayColor}
-            >
-                <PortfolioOwnerName />
-                <span title="icon">{displayIconByTimeOfDay(props.timeOfDayString)}</span>
+        <div  className="devLogo" onClick={props.toggleTimeOfDayColor}>
+            <div className="siteTitle">
+                <h1>jessesandvik</h1>
+                <small>Software Developer</small>
             </div>
-            <small className="logo-description">Software Developer</small>
+            <span>{displayIconByTimeOfDay(props.timeOfDayString)}</span>
         </div>
     );
-}
-
-export default HeaderLogo;
+};
