@@ -35,6 +35,14 @@ export default function Layout() {
         }
     }
 
+    function classNameByTime(){
+        if (getTimeOfDay()) {
+            return `${getTimeOfDay()}`;
+        } else {
+            return timeOfDayByHour();
+        }
+    };
+
     function getTimeOfDay() {
         let timeOfDay;
 
@@ -45,16 +53,7 @@ export default function Layout() {
         }
         return timeOfDay;
     }
-    
-    
-    const classNameByTime = () => {
-        if (getTimeOfDay()) {
-            return `${getTimeOfDay()}`;
-        } else {
-            return timeOfDayByHour();
-        }
-    }
-    
+
     return (
         <div className={classNameByTime()}>
             <div className={classNames({

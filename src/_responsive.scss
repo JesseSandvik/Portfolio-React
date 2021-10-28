@@ -54,7 +54,7 @@
                 top: 0;
                 transform: translate(-100%);
                 visibility: hidden;
-                width: 100%;
+                width: 80vw;
                 @include transition-ease;
 
                 &.open {
@@ -66,9 +66,14 @@
                 ul {
                     display: flex;
                     flex-direction: column;
-                    list-style: none;
+                    height: 100%;
                     overflow: hidden;
+                    width: 100%;
                     @include transition-ease;
+
+                    li {
+                        margin: 2.5rem;
+                    }
                 }
             }
         }
