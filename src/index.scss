@@ -118,11 +118,32 @@ section {
             padding: 5vh 3rem 20vh;
             text-align: center;
 
-            &.about, &.projects {
+            &.about, &.projects, &.contact {
                 img {
                     border-radius: 10px;
                     margin: 5vh auto;
                     max-width: 100%;
+                }
+            }
+
+            &.contact {
+
+                .item {
+                    margin: 5vh 0;
+                    a {
+                        align-items: center;
+                        border: 3px outset $muted-color;;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 1rem;
+                        text-align: center;
+
+                        i {
+                            font-size: 3rem;
+                            padding: 1rem;
+                        }
+                    }
                 }
             }
 

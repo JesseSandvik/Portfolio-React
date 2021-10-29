@@ -629,10 +629,38 @@ section main article {
   text-align: center;
 }
 
-section main article.about img, section main article.projects img {
+section main article.about img, section main article.projects img, section main article.contact img {
   border-radius: 10px;
   margin: 5vh auto;
   max-width: 100%;
+}
+
+section main article.contact .item {
+  margin: 5vh 0;
+}
+
+section main article.contact .item a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px outset #5D576B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+section main article.contact .item a i {
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 section main article.about, section main article.projects, section main article.contact {
