@@ -183,6 +183,36 @@
     margin: 33vh 0 15vh;
     width: 100vw;
   }
+  section main article.projects .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section main article.projects .links a {
+    background-color: #000000;
+    border: 3px outset #5D576B;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50vw;
+  }
+  section main article.projects .links a i {
+    font-size: 1.7rem;
+    padding: .5rem;
+  }
   section footer {
     margin: 85vh 0 0 0;
   }
@@ -345,6 +375,36 @@
     width: 50vw;
     -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
+  }
+  section main.open article.projects .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section main.open article.projects .links a {
+    background-color: #000000;
+    border: 3px outset #5D576B;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    width: 15vw;
+  }
+  section main.open article.projects .links a i {
+    font-size: 1.7rem;
+    padding: .5rem;
   }
   section footer {
     -webkit-box-pack: start;
@@ -569,13 +629,9 @@ section main article {
   text-align: center;
 }
 
-section main article.projects small {
-  margin: 0 0 5vh;
-}
-
 section main article.about img, section main article.projects img {
   border-radius: 10px;
-  margin: 1vh auto;
+  margin: 5vh auto;
   max-width: 100%;
 }
 

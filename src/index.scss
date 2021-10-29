@@ -118,16 +118,10 @@ section {
             padding: 5vh 3rem 20vh;
             text-align: center;
 
-            &.projects {
-                small {
-                    margin: 0 0 5vh;
-                }
-            }
-
             &.about, &.projects {
                 img {
                     border-radius: 10px;
-                    margin: 1vh auto;
+                    margin: 5vh auto;
                     max-width: 100%;
                 }
             }
