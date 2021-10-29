@@ -115,14 +115,28 @@ section {
             flex-direction: column;
             grid-column: 2 / 3;
             justify-content: flex-start;
-            padding: 5vh 3.5rem 20vh;
+            padding: 5vh 3rem 20vh;
             text-align: center;
+
+            &.projects {
+                small {
+                    margin: 0 0 5vh;
+                }
+            }
+
+            &.about, &.projects {
+                img {
+                    border-radius: 10px;
+                    margin: 1vh auto;
+                    max-width: 100%;
+                }
+            }
 
             &.about, &.projects, &.contact {
                 letter-spacing: .3rem;
                 h1 {
                     border-bottom: 1px solid set-text-color($primary-color);
-                    margin: 0 0 10vh 0;
+                    margin: 0 0 5vh 0;
                     text-transform: uppercase;
                     width: 100%;
                 }
@@ -134,7 +148,7 @@ section {
                 h2 {
                     border-bottom: 1px solid $muted-color;
                     color: set-text-color($primary-color);
-                    padding: 5rem 0 1rem;
+                    padding: 10vh 0 1rem;
                     width: 100%;
                 }
 
@@ -155,11 +169,6 @@ section {
                 font-weight: 600;
                 letter-spacing: .5rem;
                 padding: 1rem;
-            }
-
-            img {
-                margin: 5vh auto;
-                max-width: 50%;
             }
 
             form {
@@ -227,28 +236,35 @@ section {
 .devIcons {
   font-size: 3rem;
 
-  .icon {
-      padding: 1rem;
-      text-shadow: -1px 2px 0 $muted-color;
+    .icon {
+        margin: 2rem 0;
+        padding: 1rem;
+        text-shadow: -1px 2px 0 $muted-color;
 
-      &-js {
-          color: #f7df1e;
-      }
-      &-html {
-          color: #f06529;
-      }
-      &-css {
-          color: #2965f1;
-      }
-      &-react {
-          color: #7cc5d9;
-      }
-      &-database {
-          color: #0064a5;
-      }
-      &-git {
+        &-js {
+            color: #f7df1e;
+    }
+        &-react {
+            color: #7cc5d9;
+    }
+        &-html {
+            color: #f06529;
+    }
+        &-css {
+            color: #2965f1;
+    }
+        &-sass {
+            color: #cd6799;
+    }
+        &-node {
+            color: #68a063;
+        }
+        &-npm {
+            color: #cc3534;
+        }
+        &-git {
           color: #f34f29;
-      }
+    }
 
   }
 

@@ -565,8 +565,18 @@ section main article {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 5vh 3.5rem 20vh;
+  padding: 5vh 3rem 20vh;
   text-align: center;
+}
+
+section main article.projects small {
+  margin: 0 0 5vh;
+}
+
+section main article.about img, section main article.projects img {
+  border-radius: 10px;
+  margin: 1vh auto;
+  max-width: 100%;
 }
 
 section main article.about, section main article.projects, section main article.contact {
@@ -575,7 +585,7 @@ section main article.about, section main article.projects, section main article.
 
 section main article.about h1, section main article.projects h1, section main article.contact h1 {
   border-bottom: 1px solid #FDF7FA;
-  margin: 0 0 10vh 0;
+  margin: 0 0 5vh 0;
   text-transform: uppercase;
   width: 100%;
 }
@@ -587,7 +597,7 @@ section main article.about small, section main article.projects small, section m
 section main article.about h2, section main article.projects h2, section main article.contact h2 {
   border-bottom: 1px solid #5D576B;
   color: #FDF7FA;
-  padding: 5rem 0 1rem;
+  padding: 10vh 0 1rem;
   width: 100%;
 }
 
@@ -607,11 +617,6 @@ section main article h1, section main article h2, section main article h3 {
   font-weight: 600;
   letter-spacing: .5rem;
   padding: 1rem;
-}
-
-section main article img {
-  margin: 5vh auto;
-  max-width: 50%;
 }
 
 section main article form {
@@ -693,12 +698,17 @@ section footer i {
 }
 
 .devIcons .icon {
+  margin: 2rem 0;
   padding: 1rem;
   text-shadow: -1px 2px 0 #5D576B;
 }
 
 .devIcons .icon-js {
   color: #f7df1e;
+}
+
+.devIcons .icon-react {
+  color: #7cc5d9;
 }
 
 .devIcons .icon-html {
@@ -709,12 +719,16 @@ section footer i {
   color: #2965f1;
 }
 
-.devIcons .icon-react {
-  color: #7cc5d9;
+.devIcons .icon-sass {
+  color: #cd6799;
 }
 
-.devIcons .icon-database {
-  color: #0064a5;
+.devIcons .icon-node {
+  color: #68a063;
+}
+
+.devIcons .icon-npm {
+  color: #cc3534;
 }
 
 .devIcons .icon-git {
