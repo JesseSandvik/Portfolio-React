@@ -1,11 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import keyboard from '../images/shadow-keyboard.png';
 import periodicTablesOne from '../images/projects/periodicTables/PeriodicTables1.png';
 import pomodoroTimerOne from '../images/projects/pomodoroTimer/PomodoroTimer1.png';
+import ScrollToTop from '../utils/ScrollToTop';
 
-export default function Projects() {
+export default function Projects({ initialMotion, animateMotion, exitMotion, transition }) {
     return (
-        <article className="projects">
+        <>
+        <ScrollToTop />
+        <motion.article
+            className="projects"
+            initial={initialMotion}
+            animate={animateMotion}
+            exit={exitMotion}
+            transition={transition}
+        >
             <h1>Projects</h1>
             <img src={keyboard} alt="computer keyboard" />
             <p>
@@ -57,6 +67,7 @@ export default function Projects() {
                     <small> GitHub Repo</small>
                 </a>
             </div>
-        </article>
+        </motion.article>
+        </>
     );
 };

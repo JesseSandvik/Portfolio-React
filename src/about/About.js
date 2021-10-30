@@ -1,12 +1,24 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import officeSelfie from '../images/self-office2-nobg.png';
 import DeveloperIcons from '../utils/DeveloperIcons';
+import ScrollToTop from '../utils/ScrollToTop';
 
-export default function About() {
+export default function About({ initialMotion, animateMotion, exitMotion, transition }) {
     return (
-        <article className="about">
+        <>
+        <ScrollToTop />
+        <motion.article
+            initial={initialMotion}
+            animate={animateMotion}
+            exit={exitMotion}
+            transition={transition}
+            className="about">
             <h1>About</h1>
-            <img src={officeSelfie} alt="Jesse Sandvik" />
+            <img
+                src={officeSelfie}
+                alt="Jesse Sandvik"
+            />
             <p>
                 My name is Jesse Sandvik, and I am a full-stack software developer from Long Island, NY.
                 I graduated from Thinkful's Full-Stack Engineering Flex program in the summer of 2021.
@@ -45,6 +57,7 @@ export default function About() {
             <p>GitHub</p>
             <p>Vercel</p>
             <p>Heroku</p>
-        </article>
+        </motion.article>
+        </>
     );
 };

@@ -630,6 +630,8 @@ section main article {
 }
 
 section main article.about img, section main article.projects img, section main article.contact img {
+  background-color: #000000;
+  border: 1px solid #5D576B;
   border-radius: 10px;
   margin: 5vh auto;
   max-width: 100%;
@@ -643,6 +645,7 @@ section main article.contact .item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #000000;
   border: 3px outset #5D576B;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -670,6 +673,7 @@ section main article.about, section main article.projects, section main article.
 section main article.about h1, section main article.projects h1, section main article.contact h1 {
   border-bottom: 1px solid #FDF7FA;
   margin: 0 0 5vh 0;
+  margin: 10vh 0 0;
   text-transform: uppercase;
   width: 100%;
 }
@@ -704,6 +708,9 @@ section main article h1, section main article h2, section main article h3 {
 }
 
 section main article form {
+  background-color: #000000;
+  border: 3px solid #5D576B;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,13 +718,13 @@ section main article form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5vh 0 0;
+  padding: 5vh 5vw 0;
 }
 
 section main article form label {
   font-weight: 600;
   letter-spacing: .2rem;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 section main article form input {
