@@ -1,18 +1,49 @@
 import React from 'react';
 
 export default function HeaderLogo(props) {
+    const { timeOfDayString, toggleTimeOfDayColor } = props;
 
-    function displayIconByTimeOfDay(timeOfDay) {
-        if (timeOfDay === "morning") {
-            return <i title="morning icon" className="far fa-sun"></i>;
-        } else if (timeOfDay === "afternoon") {
-            return <i title="afternoon icon" className="fas fa-sun"></i>;
-        } else if (timeOfDay === "evening") {
-            return <i title="evening icon" className="far fa-moon"></i>;
+    function setTitleByTimeOfDay() {
+        let titleByTimeOfDay = "";
+        if (timeOfDayString === "morning") {
+            titleByTimeOfDay = "morning icon";
+        } else if (timeOfDayString === "afternoon") {
+            titleByTimeOfDay = "afternoon icon";
+        } else if (timeOfDayString === "evening") {
+            titleByTimeOfDay = "evening icon";
         } else {
-            return <></>;
+            titleByTimeOfDay = "";            
         }
+        return titleByTimeOfDay;
     };
+
+    function setClassNameByTimeOfDay() {
+        let classNameByTimeOfDay = "";
+        if (timeOfDayString === "morning") {
+            classNameByTimeOfDay = "far fa-sun";
+        } else if (timeOfDayString === "afternoon") {
+            classNameByTimeOfDay = "fas fa-sun";
+        } else if (timeOfDayString === "evening") {
+            classNameByTimeOfDay = "far fa-moon";
+        } else {
+            classNameByTimeOfDay = "";            
+        }
+        return classNameByTimeOfDay;
+    };
+
+    function setMessageByTimeOfDay() {
+        let messageByTimeOfDay = "";
+        if (timeOfDayString === "morning") {
+            messageByTimeOfDay = "Good Morning."
+        } else if (timeOfDayString === "afternoon") {
+            messageByTimeOfDay = "Good Afternoon."
+        } else if (timeOfDayString === "evening") {
+            messageByTimeOfDay = "Good Evening."
+        } else {
+            messageByTimeOfDay = "";            
+        }
+        return messageByTimeOfDay;
+    }
 
     return (
         <div  className="devLogo" onClick={props.toggleTimeOfDayColor}>
@@ -20,7 +51,15 @@ export default function HeaderLogo(props) {
                 <h1>Jesse <strong>Sandvik</strong></h1>
                 <small>Software Developer</small>
             </div>
-            <span>{displayIconByTimeOfDay(props.timeOfDayString)}</span>
+            <small className="timeMessage">{setMessageByTimeOfDay()}</small>
+            <span>
+                <i
+                    title={setTitleByTimeOfDay()}
+                    className={setClassNameByTimeOfDay()}
+                    onClick={toggleTimeOfDayColor}
+                    >
+                </i>
+            </span>
         </div>
     );
 };

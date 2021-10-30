@@ -7,23 +7,7 @@ import Home from "../home/Home";
 import NotFound from "./NotFound";
 import Projects from "../projects/Projects";
 
-export default function Routes () {
-    const transition = {
-        duration: 0.3,
-        ease: [0.6, 0.01, -0.05, 0.9],
-    };
-    
-    const initialMotion = {
-        opacity: 0,
-    };
-    
-    const animateMotion = {
-        opacity: 1,
-    };
-
-    const exitMotion = {
-        opacity: 0,
-    };
+export default function Routes ({ initialMotion, animateMotion, exitMotion, transition }) {
 
     return (
         <>

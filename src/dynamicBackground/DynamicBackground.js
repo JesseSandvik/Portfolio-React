@@ -1,7 +1,5 @@
 import "./DynamicBackground.scss";
-
 import React from "react";
-
 import classNames from "../utils/ClassNames";
 
 function DynamicBackground(props) {

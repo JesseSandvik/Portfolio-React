@@ -1,15 +1,33 @@
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
+import { timeOfDayByHour } from "../utils/TimeOfDay";
 import DynamicBackground from "../dynamicBackground/DynamicBackground";
 import Footer from "../footer/Footer";
 import HeaderLogo from "../headerLogo/HeaderLogo";
 import MobileHamburgerButton from "../mobileHamburgerButton/MobileHamburgerButton";
 import Navigation from "../navigation/Navigation";
 import Routes from "./Routes";
-import { timeOfDayByHour } from "../utils/TimeOfDay";
 import classNames from "../utils/ClassNames";
 import SocialIcons from "../utils/SocialIcons";
 
 export default function Layout() {
+    const transition = {
+        duration: 0.3,
+        ease: [0.6, 0.01, -0.05, 0.9],
+    };
+    
+    const initialMotion = {
+        opacity: 0,
+    };
+    
+    const animateMotion = {
+        opacity: 1,
+    };
+
+    const exitMotion = {
+        opacity: 0,
+    };
+
     const [backgroundToggle, setBackgroundToggle] = useState(true);
     const [timeOfDayManualToggle, setTimeOfDayManualToggle] = useState("");
 
@@ -66,7 +84,12 @@ export default function Layout() {
                     backgroundToggleHandler={backgroundToggleHandler}
                 />
             </div>
-            <section>
+            <motion.section
+                initial={initialMotion}
+                animate={animateMotion}
+                exit={exitMotion}
+                transition={transition}
+            >
                 <div className={classNames({
                     "desktop": backgroundToggle,
                     "desktop open": !backgroundToggle,
@@ -81,7 +104,12 @@ export default function Layout() {
                     })
                 }
                 >
-                    <Routes />
+                    <Routes
+                        initialMotion={initialMotion}
+                        animateMotion={animateMotion}
+                        exitMotion={exitMotion}
+                        transition={transition}
+                    />
                 </main>
                 <header className={classNames({
                     "": backgroundToggle,
@@ -113,7 +141,7 @@ export default function Layout() {
                 <div className="mobile">
                     <MobileHamburgerButton />
                 </div>
-            </section>
+            </motion.section>
         </div>
     );
 };

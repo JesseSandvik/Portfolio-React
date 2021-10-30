@@ -117,6 +117,11 @@
   section header .logo i {
     margin: 2vh 0 0 1vw;
   }
+  section header .logo .timeMessage {
+    font-size: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
   section header .social {
     grid-column: 1 / -1;
     margin: 2vh 0;
@@ -255,6 +260,8 @@
   }
   section header.open .logo .devLogo .siteTitle {
     color: #FDF7FA;
+    font-size: inherit;
+    opacity: 1;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
@@ -263,6 +270,14 @@
             transform: translateX(0);
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+  }
+  section header.open .logo .devLogo .timeMessage {
+    color: #000000;
+    font-size: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
   }
   section header.open .social {
     grid-column: 3 / -1;
@@ -275,16 +290,28 @@
   }
   section header .logo .devLogo .siteTitle {
     color: #000000;
+    font-size: 0;
+    opacity: 1;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
   section header .logo .devLogo i {
+    color: #5D576B;
     margin: 1.2vh 0 0 1.5vw;
-    padding: 5vh 0 0;
-    -webkit-transform: translateX(-350%);
-            transform: translateX(-350%);
+    padding: 6vh 0 0;
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+  }
+  section header .logo .devLogo .timeMessage {
+    color: #5D576B;
+    font-family: Orbitron, 'Courier New', Courier, monospace;
+    letter-spacing: .3rem;
+    margin: 9vh 0 0 5vw;
+    position: fixed;
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
   }
   section header .social {
     grid-column: 3 / -1;
@@ -585,7 +612,7 @@ section header .social {
 section header .social a {
   font-size: 1.7rem;
   margin: 0 1rem;
-  padding: 1rem .5rem;
+  padding: .7rem .5rem;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }

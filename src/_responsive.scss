@@ -24,6 +24,12 @@
                 i {
                     margin: 2vh 0 0 1vw;
                 }
+
+                .timeMessage {
+                    font-size: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
             }
 
             .social {
@@ -157,14 +163,23 @@
                     .devLogo {
 
                         .siteTitle {
-
                             color: set-text-color($primary-color);
+                            font-size: inherit;
+                            opacity: 1;
                             @include transition-ease-long;
                         }
 
                         i {
                             transform: translateX(0);
                             @include transition-ease-long;
+                        }
+
+                        .timeMessage {
+                            color: $primary-color;
+                            font-size: 0;
+                            opacity: 0;
+                            visibility: hidden;
+                            @include transition-ease-extra-long;
                         }
                     }
                 }
@@ -183,15 +198,28 @@
 
                     .siteTitle {
                         color: $primary-color;
+                        font-size: 0;
+                        opacity: 1;
                         @include transition-ease-long;
                     }
 
                     i {
+                        color: $muted-color;
                         margin: 1.2vh 0 0 1.5vw;
-                        padding: 5vh 0 0;
-                        transform: translateX(-350%);
+                        padding: 6vh 0 0;
+                        transform: translateX(-300%);
                         @include transition-ease-long;
                     }
+
+                    .timeMessage {
+                        color: $muted-color;
+                        font-family: Orbitron, 'Courier New', Courier, monospace;
+                        letter-spacing: .3rem;
+                        margin: 9vh 0 0 5vw;
+                        position: fixed;
+                        @include transition-ease-extra-long;
+                    }
+
                 }
             }
 
