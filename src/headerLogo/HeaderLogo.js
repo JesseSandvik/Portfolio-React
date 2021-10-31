@@ -34,11 +34,11 @@ export default function HeaderLogo(props) {
     function setMessageByTimeOfDay() {
         let messageByTimeOfDay = "";
         if (timeOfDayString === "morning") {
-            messageByTimeOfDay = "Good Morning."
+            messageByTimeOfDay = "Good Morning"
         } else if (timeOfDayString === "afternoon") {
-            messageByTimeOfDay = "Good Afternoon."
+            messageByTimeOfDay = "Good Afternoon"
         } else if (timeOfDayString === "evening") {
-            messageByTimeOfDay = "Good Evening."
+            messageByTimeOfDay = "Good Evening"
         } else {
             messageByTimeOfDay = "";            
         }
@@ -46,20 +46,20 @@ export default function HeaderLogo(props) {
     }
 
     return (
-        <div  className="devLogo" onClick={props.toggleTimeOfDayColor}>
+        <div className="devLogo" onClick={props.toggleTimeOfDayColor}>
             <div className="siteTitle">
                 <h1>Jesse <strong>Sandvik</strong></h1>
                 <small>Software Developer</small>
             </div>
-            <small className="timeMessage">{setMessageByTimeOfDay()}</small>
-            <span>
+            <div className="landingTitle">
                 <i
                     title={setTitleByTimeOfDay()}
                     className={setClassNameByTimeOfDay()}
                     onClick={toggleTimeOfDayColor}
                     >
                 </i>
-            </span>
+                <small className="timeMessage">{setMessageByTimeOfDay()}</small>
+            </div>
         </div>
     );
 };

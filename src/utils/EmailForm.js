@@ -29,7 +29,7 @@ function EmailForm() {
             cols="40"
             >
         </textarea>
-        <button type="submit">Send</button>
+        <button title="Send Email" type="submit">Send</button>
     </form>
 
     );

@@ -7,12 +7,12 @@
 }
 
 body {
-  background-color: $primary-color;
-  color: set-text-color($primary-color);
-  font-family: Quicksand, 'Courier New', Courier, monospace, sans-serif;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    font-family: Quicksand, 'Courier New', Courier, monospace, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
 }
 
 a {
@@ -31,42 +31,45 @@ section {
     width: 100vw;
 
     header {
+        align-items: center;
         background-color: $primary-color;
         display: grid;
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         grid-template-columns: auto 1fr auto;
+        justify-content: center;
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
-        width: 100%;
+        text-align: center;
+        width: 100vw;
 
         .logo {
             align-items: center;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            justify-content: center;
 
             .devLogo {
-                align-items: center;
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
-
-                strong {
-                    letter-spacing: -.1rem;
-                }
 
                 .siteTitle {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: end;
+                    cursor: pointer;
 
-                    small {
-                        margin: -1.2rem 0;
+                    h1 {
+                        margin: 0;
                     }
+                }
+
+                .landingTitle {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    text-align: center;
                 }
             }
 
@@ -77,16 +80,16 @@ section {
         }
 
         .social {
-            align-items: flex-end;
+            align-items: center;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            height: 100%;
             justify-content: center;
+            text-align: center;
 
-            a {
-                font-size: 1.7rem;
-                margin: 0 1rem;
-                padding: .7rem .5rem;
+            i {
+                font-size: 1.8rem;
                 @include transition-ease-long;
             }
         }
@@ -115,47 +118,19 @@ section {
             flex-direction: column;
             grid-column: 2 / 3;
             justify-content: flex-start;
-            padding: 5vh 3rem 20vh;
+            letter-spacing: .3rem;
+            padding: 15vh 3vw 30vh;
             text-align: center;
 
-            &.about, &.projects, &.contact {
                 img {
                     background-color: $primary-color;
                     border: 1px solid $muted-color;
                     border-radius: 10px;
-                    margin: 5vh auto;
                     max-width: 100%;
                 }
-            }
 
-            &.contact {
-
-                .item {
-                    margin: 5vh 0;
-                    a {
-                        align-items: center;
-                        background-color: $primary-color;
-                        border: 3px outset $muted-color;;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        padding: 1rem;
-                        text-align: center;
-
-                        i {
-                            font-size: 3rem;
-                            padding: 1rem;
-                        }
-                    }
-                }
-            }
-
-            &.about, &.projects, &.contact {
-                letter-spacing: .3rem;
                 h1 {
                     border-bottom: 1px solid set-text-color($primary-color);
-                    margin: 0 0 5vh 0;
-                    margin: 10vh 0 0;
                     text-transform: uppercase;
                     width: 100%;
                 }
@@ -167,67 +142,104 @@ section {
                 h2 {
                     border-bottom: 1px solid $muted-color;
                     color: set-text-color($primary-color);
-                    padding: 10vh 0 1rem;
                     width: 100%;
                 }
 
                 h3 {
                     border-bottom: 1px solid $muted-color;
                     font-size: 1rem;
-                    padding: 5rem 0 2rem;
                 }
 
-                p {
-                    margin: 2rem 0;
+                .project {
+                    align-items: center;
+                    background-color: $primary-color;
+                    border: 3px solid $muted-color;
+                    border-radius: 5px;
+                    box-shadow: 0 0 3px $secondary-color;
+                    color: set-text-color($primary-color);
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Orbitron, 'Courier New', Courier, monospace;
+                    justify-content: center;
+                    letter-spacing: .2rem;
+                    text-align: center;
+
+                    button {
+                        width: 40vw;
+                    }
+
+                    img {
+                        opacity: 0.9;
+                    }
                 }
-            }
 
             h1, h2, h3 {
                 font-size: 1.2rem;
                 font-family: Orbitron, 'Courier New', Courier, monospace;
                 font-weight: 600;
                 letter-spacing: .5rem;
-                padding: 1rem;
             }
 
-            form {
+            button {
+                align-items: center;
                 background-color: $primary-color;
                 border: 3px solid $muted-color;
                 border-radius: 5px;
+                box-shadow: 0 0 3px $secondary-color;
+                color: set-text-color($primary-color);
+                cursor: pointer;
                 display: flex;
                 flex-direction: column;
-                padding: 5vh 5vw 0;
+                font-family: Orbitron, 'Courier New', Courier, monospace;
+                justify-content: center;
+                letter-spacing: .2rem;
+                text-align: center;
+
+                i {
+                    font-size: 2rem;
+                }
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            form {
+                align-items: center;
+                background-color: $primary-color;
+                border: 3px solid $muted-color;
+                border-radius: 5px;
+                box-shadow: 0 0 3px $secondary-color;
+                color: set-text-color($primary-color);
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                font-family: Orbitron, 'Courier New', Courier, monospace;
+                justify-content: center;
+                letter-spacing: .2rem;
+                text-align: center;
 
                 label {
                     font-weight: 600;
                     letter-spacing: .2rem;
-                    margin: 2rem;
                 }
 
                 input {
                     background-color: $primary-color;
-                    border-radius: 5px;
+                    border: 1px solid $muted-color;
+                    border-radius: 1px;
                     color: set-text-color($primary-color);
-                    box-shadow: 0 0 15px $secondary-color;
+                    box-shadow: 0 0 3px $secondary-color;
+                    width: 80%;
                 }
 
                 textarea {
                     background-color: $primary-color;
-                    border-radius: 5px;
-                    box-shadow: 0 0 15px $secondary-color;
+                    border: 1px solid $muted-color;
+                    border-radius: 1px;
+                    box-shadow: 0 0 3px $secondary-color;
                     color: set-text-color($primary-color);
-                }
-
-                button {
-                    background-color: $primary-color;
-                    border-radius: 10px;
-                    box-shadow: 0 0 10px $secondary-color;
-                    color: set-text-color($primary-color);
-                    cursor: pointer;
-                    font-family: Orbitron, 'Courier New', Courier, monospace;
-                    letter-spacing: .2rem;
-                    margin: 2rem auto;
-                    padding: .4rem;
+                    width: 80%;
                 }
             }
         }
@@ -241,17 +253,12 @@ section {
         grid-column: 1 / -1;
         grid-row: 3 / -1;
         letter-spacing: .15rem;
-        height: 15vh;
-        top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         position: fixed;
+        text-align: center;
         width: 100%;
-
-        i {
-            margin: .5rem .8rem;
-        }
     }
 }
 
@@ -259,8 +266,6 @@ section {
   font-size: 3rem;
 
     .icon {
-        margin: 2rem 0;
-        padding: 1rem;
         text-shadow: -1px 2px 0 $muted-color;
 
         &-js {

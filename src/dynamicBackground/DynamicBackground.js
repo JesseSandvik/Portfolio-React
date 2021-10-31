@@ -12,8 +12,10 @@ function DynamicBackground(props) {
             <div className={classNames({
                 "item bg2": props.backgroundToggle,
                 "item bg2 open": !props.backgroundToggle,
-            })}>
-                <h5 onClick={props.backgroundToggleHandler}>open</h5>
+            })}
+            onClick={props.backgroundToggleHandler}
+            >
+                <h5>open</h5>
             </div>
             <div className={classNames({
                 "item bg3": props.backgroundToggle,
