@@ -7,6 +7,10 @@
                 .devLogo {
                     h1 {
                         border-bottom: 1px solid $accent-color-one;
+
+                        strong {
+                            color: $accent-color-one;
+                        }
                     }
 
                     i {
@@ -60,6 +64,10 @@
                 .devLogo {
                     h1 {
                         border-bottom: 1px solid $accent-color-two;
+
+                        strong {
+                            color: $accent-color-two;
+                        }
                     }
 
                     i {
@@ -113,6 +121,10 @@
                 .devLogo {
                     h1 {
                         border-bottom: 1px solid $accent-color-three;
+
+                        strong {
+                            color: $accent-color-three;
+                        }
                     }
 
                     i {

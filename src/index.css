@@ -2,6 +2,10 @@
   border-bottom: 1px solid #E6C79C;
 }
 
+.morning header.open .logo .devLogo h1 strong {
+  color: #E6C79C;
+}
+
 .morning header.open .logo .devLogo i {
   color: #E6C79C;
 }
@@ -36,6 +40,10 @@
   border-bottom: 1px solid #ACFCD9;
 }
 
+.afternoon header.open .logo .devLogo h1 strong {
+  color: #ACFCD9;
+}
+
 .afternoon header.open .logo .devLogo i {
   color: #ACFCD9;
 }
@@ -68,6 +76,10 @@
 
 .evening header.open .logo .devLogo h1 {
   border-bottom: 1px solid #7D70BA;
+}
+
+.evening header.open .logo .devLogo h1 strong {
+  color: #7D70BA;
 }
 
 .evening header.open .logo .devLogo i {
