@@ -1,5 +1,6 @@
 .home h1, .home h2, .home h3 {
   border-bottom: unset;
+  text-transform: uppercase;
 }
 
 .home .devIcons {
