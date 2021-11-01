@@ -1,3 +1,4 @@
+import './About.css';
 import React from 'react';
 import { motion } from 'framer-motion';
 import officeSelfie from '../images/self-office2-nobg.png';

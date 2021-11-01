@@ -1,0 +1,83 @@
+.about img {
+  background-color: #000000;
+  border: 1px solid #5D576B;
+  border-radius: 10px;
+  margin: 5vh auto;
+  max-width: 100%;
+}
+
+.about .item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  border: 3px solid #5D576B;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px #FDF7FA;
+          box-shadow: 0 0 3px #FDF7FA;
+  color: #FDF7FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .4rem;
+  margin: 5vh 0;
+  padding: 1vh 0 5vh;
+  text-align: center;
+  width: 100%;
+}
+
+.about .item h3 {
+  padding: 0 0 3vh;
+  width: 100%;
+}
+
+.about .devIcons {
+  font-size: 3rem;
+  margin: 5vh 0;
+}
+
+.about .devIcons .icon {
+  margin: 0 .5vw;
+  text-shadow: -1px 2px 0 #5D576B;
+}
+
+.about .devIcons .icon-js {
+  color: #f7df1e;
+}
+
+.about .devIcons .icon-react {
+  color: #7cc5d9;
+}
+
+.about .devIcons .icon-html {
+  color: #f06529;
+}
+
+.about .devIcons .icon-css {
+  color: #2965f1;
+}
+
+.about .devIcons .icon-sass {
+  color: #cd6799;
+}
+
+.about .devIcons .icon-node {
+  color: #68a063;
+}
+
+.about .devIcons .icon-npm {
+  color: #cc3534;
+}
+
+.about .devIcons .icon-git {
+  color: #f34f29;
+}
+/*# sourceMappingURL=About.css.map */

@@ -1,0 +1,46 @@
+.home h1, .home h2, .home h3 {
+  border-bottom: unset;
+}
+
+.home .devIcons {
+  font-size: 3rem;
+  margin: 5vh 0;
+}
+
+.home .devIcons .icon {
+  margin: 0 .5vw;
+  text-shadow: -1px 2px 0 #5D576B;
+}
+
+.home .devIcons .icon-js {
+  color: #f7df1e;
+}
+
+.home .devIcons .icon-react {
+  color: #7cc5d9;
+}
+
+.home .devIcons .icon-html {
+  color: #f06529;
+}
+
+.home .devIcons .icon-css {
+  color: #2965f1;
+}
+
+.home .devIcons .icon-sass {
+  color: #cd6799;
+}
+
+.home .devIcons .icon-node {
+  color: #68a063;
+}
+
+.home .devIcons .icon-npm {
+  color: #cc3534;
+}
+
+.home .devIcons .icon-git {
+  color: #f34f29;
+}
+/*# sourceMappingURL=Home.css.map */

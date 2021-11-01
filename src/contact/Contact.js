@@ -1,3 +1,4 @@
+import './Contact.css';
 import React from "react";
 import { motion } from 'framer-motion';
 import EmailForm from "../utils/EmailForm";

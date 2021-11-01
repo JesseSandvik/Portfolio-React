@@ -3,12 +3,11 @@ import { motion } from 'framer-motion';
 import { timeOfDayByHour } from "../utils/TimeOfDay";
 import DynamicBackground from "../dynamicBackground/DynamicBackground";
 import Footer from "../footer/Footer";
-import HeaderLogo from "../headerLogo/HeaderLogo";
+import Header from "../header/Header";
 import MobileHamburgerButton from "../mobileHamburgerButton/MobileHamburgerButton";
 import Navigation from "../navigation/Navigation";
 import Routes from "./Routes";
 import classNames from "../utils/ClassNames";
-import SocialIcons from "../utils/SocialIcons";
 
 export default function Layout() {
     const transition = {
@@ -111,23 +110,11 @@ export default function Layout() {
                         transition={transition}
                     />
                 </main>
-                <header className={classNames({
-                    "": backgroundToggle,
-                    "open": !backgroundToggle,
-                    })
-                }
-                >
-                    <div className="logo">
-                        <HeaderLogo
-                            backgroundToggle={backgroundToggle}
-                            timeOfDayString={timeOfDayString}
-                            toggleTimeOfDayColor={toggleTimeOfDayColor}
-                        />
-                    </div>
-                    <div className="social">
-                        <SocialIcons />
-                    </div>
-                </header>
+                <Header
+                    backgroundToggle={backgroundToggle}
+                    timeOfDayString={timeOfDayString}
+                    toggleTimeOfDayColor={toggleTimeOfDayColor}
+                />
                 <footer className={classNames({
                     "": backgroundToggle,
                     "open": !backgroundToggle,

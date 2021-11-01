@@ -1,0 +1,80 @@
+.projects img {
+  background-color: #000000;
+  border: 1px solid #5D576B;
+  border-radius: 10px;
+  margin: 5vh auto;
+  max-width: 100%;
+}
+
+.projects .project {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  border: 3px solid #5D576B;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px #FDF7FA;
+          box-shadow: 0 0 3px #FDF7FA;
+  color: #FDF7FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .2rem;
+  margin: 5vh 0;
+  padding: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.projects .project button {
+  width: 100%;
+}
+
+.projects .project img {
+  opacity: 0.9;
+}
+
+.projects button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  border: 3px solid #5D576B;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px #FDF7FA;
+          box-shadow: 0 0 3px #FDF7FA;
+  color: #FDF7FA;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .2rem;
+  margin: 5vh 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.projects button i {
+  font-size: 2rem;
+}
+
+.projects button:hover {
+  opacity: 0.9;
+}
+/*# sourceMappingURL=Projects.css.map */

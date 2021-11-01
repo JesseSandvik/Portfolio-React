@@ -1,0 +1,37 @@
+@import '../config';
+
+.projects {
+
+    img {
+        @include image-default-styling;
+    }
+    .project {
+        align-items: center;
+        background-color: $primary-color;
+        border: 3px solid $muted-color;
+        border-radius: 5px;
+        box-shadow: 0 0 3px $secondary-color;
+        color: set-text-color($primary-color);
+        display: flex;
+        flex-direction: column;
+        font-family: Orbitron, 'Courier New', Courier, monospace;
+        justify-content: center;
+        letter-spacing: .2rem;
+        margin: 5vh 0;
+        padding: 3rem;
+        text-align: center;
+        width: 100%;
+
+        button {
+            width: 100%;
+        }
+
+        img {
+            opacity: 0.9;
+        }
+    }
+
+    button {
+        @include button-default-styling;
+    }
+}

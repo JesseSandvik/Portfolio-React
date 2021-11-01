@@ -1,3 +1,4 @@
+import './Footer.css';
 import React from 'react';
 import classNames from "../utils/ClassNames";
 import SocialIcons from "../utils/SocialIcons";

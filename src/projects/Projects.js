@@ -1,3 +1,4 @@
+import './Projects.css';
 import React from 'react';
 import { motion } from 'framer-motion';
 import keyboard from '../images/shadow-keyboard.png';

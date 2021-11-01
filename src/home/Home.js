@@ -1,3 +1,4 @@
+import './Home.css';
 import React from 'react';
 import { motion } from 'framer-motion';
 import DeveloperIcons from '../utils/DeveloperIcons';
