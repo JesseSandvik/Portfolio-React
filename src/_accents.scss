@@ -18,13 +18,13 @@
                 a {
                     &:hover {
                         color: $primary-color;
-                        text-shadow: 0 0 15px $accent-color-one;
+                        text-shadow: 0 0 25px $accent-color-one;
                         @include transition-ease;
                     }
 
                     &:active {
                         color: $primary-color;
-                        text-shadow: 0 0 15px $accent-color-one;
+                        text-shadow: 0 0 25px $accent-color-one;
                     }
                 }
             }
@@ -71,13 +71,13 @@
                 a {
                     &:hover {
                         color: $primary-color;
-                        text-shadow: 0 0 15px $accent-color-two;
+                        text-shadow: 0 0 25px $accent-color-two;
                         @include transition-ease;
                     }
 
                     &:active {
                         color: $primary-color;
-                        text-shadow: 0 0 15px $accent-color-two;
+                        text-shadow: 0 0 25px $accent-color-two;
                     }
                 }
             }
@@ -124,13 +124,13 @@
                 a {
                     &:hover {
                         color: $primary-color;
-                        text-shadow: 0 0 15px $accent-color-three;
+                        text-shadow: 0 0 25px $accent-color-three;
                         @include transition-ease;
                     }
 
                     &:active {
                         color: $primary-color;
-                        text-shadow: 0 0 15px $accent-color-three;
+                        text-shadow: 0 0 25px $accent-color-three;
                     }
                 }
             }

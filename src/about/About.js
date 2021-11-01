@@ -35,28 +35,33 @@ export default function About({ initialMotion, animateMotion, exitMotion, transi
             </p>
             <h2>Technologies</h2>
             <small>Here is a brief overview of some of the technologies I've used up to this point.</small>
-            <br />
             <DeveloperIcons />
-            <h3>Frontend</h3>
-            <p>JavaScript(ES6)</p>
-            <p>React, React Router, React Hooks</p>
-            <p>HTML(5)</p>
-            <p>CSS(3), Bootstrap, SASS/SCSS</p>
-            <h3>Backend</h3>
-            <p>Node.js</p>
-            <p>Express</p>
-            <p>REST APIs</p>
-            <p>Knex</p>
-            <p>PostgreSQL</p>
-            <h3>Miscellaneous</h3>
-            <p>Node Package Manager(NPM)</p>
-            <p>Jest</p>
-            <p>React Testing Library</p>
-            <p>Mocha & Chai</p>
-            <p>Git</p>
-            <p>GitHub</p>
-            <p>Vercel</p>
-            <p>Heroku</p>
+            <div className="item">
+                <h3>Frontend</h3>
+                <p>JavaScript(ES6)</p>
+                <p>React, React Router, React Hooks</p>
+                <p>HTML(5)</p>
+                <p>CSS(3), Bootstrap, SASS/SCSS</p>
+            </div>
+            <div className="item">
+                <h3>Backend</h3>
+                <p>Node.js</p>
+                <p>Express</p>
+                <p>REST APIs</p>
+                <p>Knex</p>
+                <p>PostgreSQL</p>
+            </div>
+            <div className="item">
+                <h3>Miscellaneous</h3>
+                <p>Node Package Manager(NPM)</p>
+                <p>Jest</p>
+                <p>React Testing Library</p>
+                <p>Mocha & Chai</p>
+                <p>Git</p>
+                <p>GitHub</p>
+                <p>Vercel</p>
+                <p>Heroku</p>
+            </div>
         </motion.article>
         </>
     );

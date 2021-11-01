@@ -126,6 +126,7 @@ section {
                     background-color: $primary-color;
                     border: 1px solid $muted-color;
                     border-radius: 10px;
+                    margin: 5vh auto;
                     max-width: 100%;
                 }
 
@@ -150,6 +151,47 @@ section {
                     font-size: 1rem;
                 }
 
+                &.home {
+                    h1, h2, h3 {
+                        border-bottom: unset;
+                    }
+                }
+
+                &.about, &.projects, &.contact {
+                    h1 {
+                        font-size: 1.5rem;
+                        letter-spacing: 1rem;
+                        padding: 0 0 10vh;
+                    }
+
+                    h2 {
+                        padding: 5vh 0 0;
+                    }
+
+                    .item {
+                    align-items: center;
+                    background-color: $primary-color;
+                    border: 3px solid $muted-color;
+                    border-radius: 5px;
+                    box-shadow: 0 0 3px $secondary-color;
+                    color: set-text-color($primary-color);
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Orbitron, 'Courier New', Courier, monospace;
+                    justify-content: center;
+                    letter-spacing: .4rem;
+                    margin: 5vh 0;
+                    padding: 1vh 0 5vh;
+                    text-align: center;
+                    width: 100%;
+
+                    h3 {
+                        padding: 0 0 3vh;
+                        width: 100%;
+                    }
+                    }
+                }
+
                 .project {
                     align-items: center;
                     background-color: $primary-color;
@@ -162,10 +204,13 @@ section {
                     font-family: Orbitron, 'Courier New', Courier, monospace;
                     justify-content: center;
                     letter-spacing: .2rem;
+                    margin: 5vh 0;
+                    padding: 3rem;
                     text-align: center;
+                    width: 100%;
 
                     button {
-                        width: 40vw;
+                        width: 100%;
                     }
 
                     img {
@@ -193,6 +238,8 @@ section {
                 font-family: Orbitron, 'Courier New', Courier, monospace;
                 justify-content: center;
                 letter-spacing: .2rem;
+                margin: 5vh 0;
+                padding: 1rem;
                 text-align: center;
 
                 i {
@@ -217,11 +264,15 @@ section {
                 font-family: Orbitron, 'Courier New', Courier, monospace;
                 justify-content: center;
                 letter-spacing: .2rem;
+                margin: 5vh 0;
+                padding: 1rem;
                 text-align: center;
+                width: 100%;
 
                 label {
                     font-weight: 600;
                     letter-spacing: .2rem;
+                    padding: 1rem;
                 }
 
                 input {
@@ -259,13 +310,19 @@ section {
         position: fixed;
         text-align: center;
         width: 100%;
+
+        a {
+            margin: 0 1vw;
+        }
     }
 }
 
 .devIcons {
   font-size: 3rem;
+  margin: 5vh 0;
 
     .icon {
+        margin: 0 .5vw;
         text-shadow: -1px 2px 0 $muted-color;
 
         &-js {

@@ -8,14 +8,14 @@
 
 .morning header.open .social a:hover {
   color: #000000;
-  text-shadow: 0 0 15px #E6C79C;
+  text-shadow: 0 0 25px #E6C79C;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .morning header.open .social a:active {
   color: #000000;
-  text-shadow: 0 0 15px #E6C79C;
+  text-shadow: 0 0 25px #E6C79C;
 }
 
 .morning nav .link-active {
@@ -42,14 +42,14 @@
 
 .afternoon header.open .social a:hover {
   color: #000000;
-  text-shadow: 0 0 15px #ACFCD9;
+  text-shadow: 0 0 25px #ACFCD9;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .afternoon header.open .social a:active {
   color: #000000;
-  text-shadow: 0 0 15px #ACFCD9;
+  text-shadow: 0 0 25px #ACFCD9;
 }
 
 .afternoon nav .link-active {
@@ -76,14 +76,14 @@
 
 .evening header.open .social a:hover {
   color: #000000;
-  text-shadow: 0 0 15px #7D70BA;
+  text-shadow: 0 0 25px #7D70BA;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .evening header.open .social a:active {
   color: #000000;
-  text-shadow: 0 0 15px #7D70BA;
+  text-shadow: 0 0 25px #7D70BA;
 }
 
 .evening nav .link-active {
@@ -205,9 +205,6 @@
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  section main article form {
-    width: 90vw;
   }
   section footer {
     height: 10vh;
@@ -342,12 +339,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: Orbitron, 'Courier New', Courier, monospace;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    width: 100%;
-  }
-  section .desktop.open nav ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -355,7 +346,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 10vh 0;
+    font-family: Orbitron, 'Courier New', Courier, monospace;
+    font-weight: 600;
+    height: 100%;
+    letter-spacing: .2rem;
+    padding: 5vh 0 0;
+    width: 100%;
+  }
+  section .desktop.open nav ul li {
+    margin: 5vh 0;
   }
   section main {
     color: #000000;
@@ -402,9 +401,6 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  section main.open article.projects form, section main.open article.contact form {
-    width: 45vw;
   }
   section footer {
     height: 7vh;
@@ -645,6 +641,7 @@ section main article img {
   background-color: #000000;
   border: 1px solid #5D576B;
   border-radius: 10px;
+  margin: 5vh auto;
   max-width: 100%;
 }
 
@@ -669,6 +666,53 @@ section main article h3 {
   font-size: 1rem;
 }
 
+section main article.home h1, section main article.home h2, section main article.home h3 {
+  border-bottom: unset;
+}
+
+section main article.about h1, section main article.projects h1, section main article.contact h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+  padding: 0 0 10vh;
+}
+
+section main article.about h2, section main article.projects h2, section main article.contact h2 {
+  padding: 5vh 0 0;
+}
+
+section main article.about .item, section main article.projects .item, section main article.contact .item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  border: 3px solid #5D576B;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px #FDF7FA;
+          box-shadow: 0 0 3px #FDF7FA;
+  color: #FDF7FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .4rem;
+  margin: 5vh 0;
+  padding: 1vh 0 5vh;
+  text-align: center;
+  width: 100%;
+}
+
+section main article.about .item h3, section main article.projects .item h3, section main article.contact .item h3 {
+  padding: 0 0 3vh;
+  width: 100%;
+}
+
 section main article .project {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -691,11 +735,14 @@ section main article .project {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: .2rem;
+  margin: 5vh 0;
+  padding: 3rem;
   text-align: center;
+  width: 100%;
 }
 
 section main article .project button {
-  width: 40vw;
+  width: 100%;
 }
 
 section main article .project img {
@@ -732,6 +779,8 @@ section main article button {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: .2rem;
+  margin: 5vh 0;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -766,12 +815,16 @@ section main article form {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: .2rem;
+  margin: 5vh 0;
+  padding: 1rem;
   text-align: center;
+  width: 100%;
 }
 
 section main article form label {
   font-weight: 600;
   letter-spacing: .2rem;
+  padding: 1rem;
 }
 
 section main article form input {
@@ -817,11 +870,17 @@ section footer {
   width: 100%;
 }
 
+section footer a {
+  margin: 0 1vw;
+}
+
 .devIcons {
   font-size: 3rem;
+  margin: 5vh 0;
 }
 
 .devIcons .icon {
+  margin: 0 .5vw;
   text-shadow: -1px 2px 0 #5D576B;
 }
 

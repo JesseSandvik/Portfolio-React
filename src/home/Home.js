@@ -8,13 +8,14 @@ export default function Home({ initialMotion, animateMotion, exitMotion, transit
         <>
         <ScrollToTop />
         <motion.article
+            className="home"
             initial={initialMotion}
             animate={animateMotion}
             exit={exitMotion}
             transition={transition}
         >
-            <h3><b>Welcome to my portfolio!</b></h3>
-            <small>My name is</small>
+            <h3><b>Welcome!</b></h3>
+            <p>My name is</p>
             <h1><strong>Jesse Sandvik</strong>,</h1>
             <p>I am a</p>
             <h2><strong>full-stack software developer</strong></h2>
