@@ -58,7 +58,9 @@ export default function HeaderLogo(props) {
                     onClick={toggleTimeOfDayColor}
                     >
                 </i>
-                <small className="timeMessage">{setMessageByTimeOfDay()}</small>
+                <small className="timeMessage">
+                    {setMessageByTimeOfDay()}
+                </small>
             </div>
         </div>
     );

@@ -75,15 +75,23 @@ $muted-color: #5D576B;
 }
 
 @mixin transition-ease {
-    transition: all 0.5s ease-in-out;    
+    transition: 0.6s ease-in-out;
 }
 
-@mixin transition-ease-long {
-    transition: all 1s ease-in-out;    
+@mixin transition-ease-delay-one {
+    transition: all 0.6s ease-in-out 0.6s;    
 }
 
-@mixin transition-ease-extra-long {
-    transition: all 1.5s ease-in-out;    
+@mixin transition-ease-delay-two {
+    transition: all 0.8s ease-in-out 0.8s;    
+}
+
+@mixin transition-ease-delay-three {
+    transition: all 1.0s ease-in-out 1.0s;    
+}
+
+@mixin transition-ease-delay-four {
+    transition: all 1.2s ease-in-out 1.2s;
 }
 
 @mixin media-mobile {

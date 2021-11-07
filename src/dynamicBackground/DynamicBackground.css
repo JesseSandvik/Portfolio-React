@@ -29,14 +29,15 @@
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.3))), url("../images/self-desert-p1.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/self-desert-p1.jpg");
   background-size: cover;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  opacity: 1;
 }
 
 .bg .item.bg1.open {
-  background: transparent;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  opacity: 0;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: all 0.6s ease-in-out 0.6s;
+  transition: all 0.6s ease-in-out 0.6s;
 }
 
 .bg .item.bg2 {
@@ -44,29 +45,18 @@
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/self-desert-p2.jpg");
   background-size: cover;
   cursor: pointer;
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-}
-
-.bg .item.bg2.open {
-  cursor: default;
-  opacity: 0.3;
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-}
-
-.bg .item.bg2.open h5 {
-  -webkit-transform: translate(-250%);
-          transform: translate(-250%);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .bg .item.bg2:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.bg .item.bg2:hover h5 {
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .bg .item.bg2 h5 {
@@ -75,47 +65,53 @@
   font-family: Orbitron, 'Times New Roman', Times, serif;
   font-size: 3rem;
   letter-spacing: 1rem;
+  opacity: 1;
   text-transform: uppercase;
-  text-shadow: -1px 1px 5px #FDF7FA;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  text-shadow: -1px 1px 2px #FDF7FA;
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
-.bg .item.bg2 h5:hover {
-  color: #000000;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+.bg .item.bg2.open {
+  cursor: default;
+  opacity: 0.3;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: all 0.8s ease-in-out 0.8s;
+  transition: all 0.8s ease-in-out 0.8s;
+}
+
+.bg .item.bg2.open h5 {
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out 0.8s;
+  transition: all 0.8s ease-in-out 0.8s;
 }
 
 .bg .item.bg3 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../images/self-desert-p3.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/self-desert-p3.jpg");
   background-size: cover;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 .bg .item.bg3.open {
   opacity: 0.3;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 1.0s ease-in-out 1.0s;
+  transition: all 1.0s ease-in-out 1.0s;
 }
 
 .bg .item.bg4 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url("../images/self-desert-p4.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../images/self-desert-p4.jpg");
   background-size: cover;
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
 }
 
 .bg .item.bg4.open {
   opacity: 0.3;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out 1.2s;
+  transition: all 1.2s ease-in-out 1.2s;
 }
 /*# sourceMappingURL=DynamicBackground.css.map */

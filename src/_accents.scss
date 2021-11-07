@@ -21,14 +21,11 @@
             .social {
                 a {
                     &:hover {
-                        color: $primary-color;
-                        text-shadow: 0 0 25px $accent-color-one;
-                        @include transition-ease;
+                        color: $accent-color-one;
                     }
 
                     &:active {
-                        color: $primary-color;
-                        text-shadow: 0 0 25px $accent-color-one;
+                        color: $accent-color-one;
                     }
                 }
             }
@@ -45,7 +42,6 @@
         article {
             h1, h2, h3 {
                 color: $accent-color-one;
-                @include transition-ease-long;
             }
         }
     }
@@ -78,14 +74,11 @@
             .social {
                 a {
                     &:hover {
-                        color: $primary-color;
-                        text-shadow: 0 0 25px $accent-color-two;
-                        @include transition-ease;
+                        color: $accent-color-two;
                     }
 
                     &:active {
-                        color: $primary-color;
-                        text-shadow: 0 0 25px $accent-color-two;
+                        color: $accent-color-two;
                     }
                 }
             }
@@ -102,7 +95,7 @@
         article {
             h1, h2, h3 {
                 color: $accent-color-two;
-                @include transition-ease-long;
+                @include transition-ease;
             }
         }
     }
@@ -135,14 +128,11 @@
             .social {
                 a {
                     &:hover {
-                        color: $primary-color;
-                        text-shadow: 0 0 25px $accent-color-three;
-                        @include transition-ease;
+                        color: $accent-color-three;
                     }
 
                     &:active {
-                        color: $primary-color;
-                        text-shadow: 0 0 25px $accent-color-three;
+                        color: $accent-color-three;
                     }
                 }
             }
@@ -159,7 +149,7 @@
         article {
             h1, h2, h3 {
                 color: $accent-color-three;
-                @include transition-ease-long;
+                @include transition-ease;
             }
         }
     }

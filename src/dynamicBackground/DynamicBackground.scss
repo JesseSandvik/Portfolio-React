@@ -20,11 +20,13 @@
       rgba($primary-color, 0.3)),
       url('../images/self-desert-p1.jpg');
       background-size: cover;
-      @include transition-ease-long;
+      opacity: 1;
+      
 
       &.open {
-        background: transparent;
-        @include transition-ease-long;
+        opacity: 0;
+        transform: translate(-100%);
+        @include transition-ease-delay-one;
       }
 
     }
@@ -37,22 +39,15 @@
       url('../images/self-desert-p2.jpg');
       background-size: cover;
       cursor: pointer;
-      @include transition-ease-extra-long;
+      transition: all 3s ease-in-out;
 
-      &.open {
-        cursor: default;
-        opacity: 0.3;
-        transform: translate(-100%);
-        @include transition-ease-extra-long;
-
-        h5 {
-          transform: translate(-250%);
-          @include transition-ease;
-        }
-      }
 
       &:hover {
-        @include transition-ease;
+        transition: all 1.5s ease-in-out;
+
+        h5 {
+          transition: all 1.5s ease-in-out;
+        }
       }
 
       h5 {
@@ -61,13 +56,21 @@
         font-family: Orbitron, 'Times New Roman', Times, serif;
         font-size: 3rem;
         letter-spacing: 1rem;
+        opacity: 1;
         text-transform: uppercase;
-        text-shadow: -1px 1px 5px set-text-color($primary-color);
-        @include transition-ease-long;
+        text-shadow: -1px 1px 2px set-text-color($primary-color);
+        transition: all 3s ease-in-out;
+      }
 
-        &:hover {
-          color: $primary-color;
-          @include transition-ease-long;
+      &.open {
+        cursor: default;
+        opacity: 0.3;
+        transform: translate(-100%);
+        @include transition-ease-delay-two;
+
+        h5 {
+          opacity: 0;
+          @include transition-ease-delay-two;
         }
       }
     }
@@ -79,12 +82,11 @@
       rgba($primary-color, 0.7)),
       url('../images/self-desert-p3.jpg');
       background-size: cover;
-      @include transition-ease-long;
 
       &.open {
         opacity: 0.3;
         transform: translate(-100%);
-        @include transition-ease-long;
+        @include transition-ease-delay-three;
       }
 
     }
@@ -96,16 +98,15 @@
       rgba($primary-color, 0.9)),
       url('../images/self-desert-p4.jpg');
       background-size: cover;
-      @include transition-ease-extra-long;
 
       &.open {
         opacity: 0.3;
         transform: translate(-100%);
-        @include transition-ease-extra-long;
+        @include transition-ease-delay-four;
       }
 
     }
 
   }
-  
+
 }

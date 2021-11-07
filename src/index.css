@@ -11,15 +11,11 @@
 }
 
 .morning header.open .social a:hover {
-  color: #000000;
-  text-shadow: 0 0 25px #E6C79C;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  color: #E6C79C;
 }
 
 .morning header.open .social a:active {
-  color: #000000;
-  text-shadow: 0 0 25px #E6C79C;
+  color: #E6C79C;
 }
 
 .morning nav .link-active {
@@ -28,8 +24,6 @@
 
 .morning main article h1, .morning main article h2, .morning main article h3 {
   color: #E6C79C;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 .morning footer i {
@@ -49,15 +43,11 @@
 }
 
 .afternoon header.open .social a:hover {
-  color: #000000;
-  text-shadow: 0 0 25px #ACFCD9;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  color: #ACFCD9;
 }
 
 .afternoon header.open .social a:active {
-  color: #000000;
-  text-shadow: 0 0 25px #ACFCD9;
+  color: #ACFCD9;
 }
 
 .afternoon nav .link-active {
@@ -66,8 +56,8 @@
 
 .afternoon main article h1, .afternoon main article h2, .afternoon main article h3 {
   color: #ACFCD9;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .afternoon footer i {
@@ -87,15 +77,11 @@
 }
 
 .evening header.open .social a:hover {
-  color: #000000;
-  text-shadow: 0 0 25px #7D70BA;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  color: #7D70BA;
 }
 
 .evening header.open .social a:active {
-  color: #000000;
-  text-shadow: 0 0 25px #7D70BA;
+  color: #7D70BA;
 }
 
 .evening nav .link-active {
@@ -104,8 +90,8 @@
 
 .evening main article h1, .evening main article h2, .evening main article h3 {
   color: #7D70BA;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .evening footer i {
@@ -161,15 +147,15 @@
             transform: translate(-100%);
     visibility: hidden;
     width: 75vw;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
   section .mobile nav.open {
     visibility: visible;
     -webkit-transform: translate(0);
             transform: translate(0);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
   section .mobile nav ul {
     display: -webkit-box;
@@ -183,8 +169,8 @@
     margin: 10vh 5vw;
     overflow: hidden;
     width: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
   section .mobile nav ul li {
     margin: 5vh 0;
@@ -205,6 +191,7 @@
     margin: 10vh 0 3vh;
   }
   section main article {
+    padding: 15vh 3vw 30vh;
     width: 100vw;
   }
   section main article .links {
@@ -244,8 +231,6 @@
   }
   section header {
     padding: .5vh 0;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
   }
   section header .logo {
     -ms-grid-column: 1;
@@ -256,23 +241,18 @@
     color: #000000;
     font-size: 0;
     opacity: 1;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
   }
   section header .logo .devLogo i {
     color: #5D576B;
     -webkit-transform: translate(-350%);
             transform: translate(-350%);
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
   }
   section header .logo .devLogo .timeMessage {
     color: #5D576B;
+    cursor: pointer;
     font-family: Orbitron, 'Courier New', Courier, monospace;
     letter-spacing: .3rem;
     position: fixed;
-    -webkit-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
   }
   section header .social {
     grid-column: 3 / -1;
@@ -283,8 +263,8 @@
   }
   section header.open {
     padding: 2vh 0;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
   section header.open .logo {
     -ms-grid-column: 1;
@@ -294,21 +274,29 @@
     color: #FDF7FA;
     font-size: inherit;
     opacity: 1;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all 1.2s ease-in-out 1.2s;
+    transition: all 1.2s ease-in-out 1.2s;
+  }
+  section header.open .logo .devLogo .siteTitle h1 {
+    -webkit-transition: all 1.2s ease-in-out 1.2s;
+    transition: all 1.2s ease-in-out 1.2s;
+  }
+  section header.open .logo .devLogo .siteTitle strong {
+    -webkit-transition: all 1.2s ease-in-out 1.2s;
+    transition: all 1.2s ease-in-out 1.2s;
   }
   section header.open .logo .devLogo i {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all 1.0s ease-in-out 1.0s;
+    transition: all 1.0s ease-in-out 1.0s;
   }
   section header.open .logo .devLogo .timeMessage {
     color: #000000;
     font-size: 0;
     opacity: 0;
-    -webkit-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1.0s ease-in-out 1.0s;
+    transition: all 1.0s ease-in-out 1.0s;
   }
   section .mobile {
     visibility: hidden;
@@ -323,12 +311,7 @@
   }
   section .desktop nav {
     color: #000000;
-    height: 0;
     opacity: 0;
-    -webkit-transform: translate(0, -100%);
-            transform: translate(0, -100%);
-    -webkit-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
   }
   section .desktop.open nav {
     color: #FDF7FA;
@@ -340,12 +323,9 @@
     opacity: 1;
     padding: 5vh 1vw 0;
     position: fixed;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-    visibility: visible;
     width: 25vw;
-    -webkit-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1.2s ease-in-out 1.2s;
+    transition: all 1.2s ease-in-out 1.2s;
   }
   section .desktop.open nav ul {
     -webkit-box-align: center;
@@ -371,37 +351,50 @@
   section main {
     color: #000000;
     height: 0;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    margin: 0 25vw;
+    opacity: 0;
+    visibility: hidden;
+  }
+  section main p {
+    opacity: 0;
   }
   section main article {
     color: #000000;
     font-size: .1rem;
+    height: 0;
     letter-spacing: .7rem;
-    -webkit-transform: translate(-150%);
-            transform: translate(-150%);
-    -webkit-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    width: 50vw;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
   section main.open {
     color: #FDF7FA;
     -ms-grid-column: 2;
     grid-column: 2 / 2;
     height: inherit;
-    margin: 0 25vw;
-    position: relative;
-    -webkit-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 1.2s ease-in-out 1.2s;
+    transition: all 1.2s ease-in-out 1.2s;
+  }
+  section main.open p {
+    opacity: 1;
+    -webkit-transition: all 1.2s ease-in-out 1.2s;
+    transition: all 1.2s ease-in-out 1.2s;
   }
   section main.open article {
     color: #FDF7FA;
     font-size: 1rem;
+    height: inherit;
     letter-spacing: .2rem;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-    width: 50vw;
-    -webkit-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    opacity: 1;
+    padding: 15vh 3vw 30vh;
+    position: relative;
+    visibility: visible;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
   section main.open article.projects .links, section main.open article.contact .links {
     display: -webkit-box;
@@ -416,23 +409,21 @@
   }
   section footer {
     height: 7vh;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
   }
   section footer a {
     font-size: 0;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    opacity: 0;
   }
   section footer.open {
     height: 10vh;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
   section footer.open a {
     font-size: inherit;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    opacity: 1;
+    -webkit-transition: all 1.0s ease-in-out 1.0s;
+    transition: all 1.0s ease-in-out 1.0s;
   }
   .morning .dynbg .bg .item.bg2.open {
     -webkit-box-shadow: inset 0 0 0 5px #E6C79C;
@@ -443,7 +434,7 @@
             box-shadow: inset 0 0 0 5px #E6C79C;
   }
   .morning .dynbg .bg .item.bg2:hover h5 {
-    text-shadow: -1px 1px 8px #E6C79C;
+    text-shadow: -1px 1px 5px #E6C79C;
   }
   .afternoon .dynbg .bg .item.bg2.open {
     -webkit-box-shadow: inset 0 0 0 5px #ACFCD9;
@@ -454,7 +445,7 @@
             box-shadow: inset 0 0 0 5px #ACFCD9;
   }
   .afternoon .dynbg .bg .item.bg2:hover h5 {
-    text-shadow: -1px 1px 8px #ACFCD9;
+    text-shadow: -1px 1px 5px #ACFCD9;
   }
   .evening .dynbg .bg .item.bg2.open {
     -webkit-box-shadow: inset 0 0 0 5px #7D70BA;
@@ -465,7 +456,7 @@
             box-shadow: inset 0 0 0 5px #7D70BA;
   }
   .evening .dynbg .bg .item.bg2:hover h5 {
-    text-shadow: -1px 1px 8px #7D70BA;
+    text-shadow: -1px 1px 5px #7D70BA;
   }
 }
 
@@ -506,8 +497,8 @@ section nav a:hover {
 }
 
 section nav .link-active {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 section main {
@@ -537,7 +528,6 @@ section main article {
       -ms-flex-pack: start;
           justify-content: flex-start;
   letter-spacing: .3rem;
-  padding: 15vh 3vw 30vh;
   text-align: center;
 }
 
