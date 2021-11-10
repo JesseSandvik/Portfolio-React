@@ -64,10 +64,10 @@
   cursor: pointer;
   font-family: Orbitron, 'Times New Roman', Times, serif;
   font-size: 3rem;
-  letter-spacing: 1rem;
+  letter-spacing: 1.2rem;
   opacity: 1;
   text-transform: uppercase;
-  text-shadow: -1px 1px 2px #FDF7FA;
+  text-shadow: -1px 1px 5px #FDF7FA;
   -webkit-transition: all 3s ease-in-out;
   transition: all 3s ease-in-out;
 }
