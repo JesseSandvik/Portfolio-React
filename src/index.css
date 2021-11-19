@@ -277,14 +277,6 @@
     -webkit-transition: all 1.2s ease-in-out 1.2s;
     transition: all 1.2s ease-in-out 1.2s;
   }
-  section header.open .logo .devLogo .siteTitle h1 {
-    -webkit-transition: all 1.2s ease-in-out 1.2s;
-    transition: all 1.2s ease-in-out 1.2s;
-  }
-  section header.open .logo .devLogo .siteTitle strong {
-    -webkit-transition: all 1.2s ease-in-out 1.2s;
-    transition: all 1.2s ease-in-out 1.2s;
-  }
   section header.open .logo .devLogo i {
     -webkit-transform: translateX(0);
             transform: translateX(0);

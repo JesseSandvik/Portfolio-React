@@ -191,14 +191,6 @@
                             font-size: inherit;
                             opacity: 1;
                             @include transition-ease-delay-four;
-
-                            h1 {
-                                @include transition-ease-delay-four;
-                            }
-
-                            strong {
-                                @include transition-ease-delay-four;
-                            }
                         }
 
                         i {
