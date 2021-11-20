@@ -10,7 +10,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #000000;
+  background: url("../images/contact.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 3px solid #5D576B;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 3px #FDF7FA;
@@ -87,6 +90,8 @@
   margin: 5vh 0;
   padding: 1rem;
   text-align: center;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .contact button i {
@@ -95,5 +100,11 @@
 
 .contact button:hover {
   opacity: 0.9;
+}
+
+.contact button:hover {
+  border: 3px solid #FDF7FA;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 /*# sourceMappingURL=Contact.css.map */

@@ -8,7 +8,10 @@
     
     form {
         align-items: center;
-        background-color: $primary-color;
+        background: url("../images/contact.png");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
         border: 3px solid $muted-color;
         border-radius: 5px;
         box-shadow: 0 0 3px $secondary-color;
@@ -51,5 +54,11 @@
 
     button {
         @include button-default-styling;
+        @include transition-ease;
+
+        &:hover {
+            border: 3px solid $secondary-color;
+            @include transition-ease;
+        }
     }
 }
