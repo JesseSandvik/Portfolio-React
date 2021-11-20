@@ -101,6 +101,138 @@
 
         main {
             grid-column: 1 / -1;
+            margin: 15vh 0 3vh;
+
+            article {
+                padding: 15vh 3vw 30vh;
+                width: 100vw;
+
+                .about {
+
+                    &-top {
+                        flex-direction: column;
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        footer {
+            height: 10vh;
+
+            a {
+                font-size: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+@include media-medium {
+    .homePage {
+        visibility: hidden;
+    }
+
+    .dynbg {
+        visibility: hidden;
+    }
+    
+    section {
+        background-image:
+            linear-gradient(to right,
+            rgba($primary-color, 0.5),
+            rgba($primary-color, 0.8)),
+            url('./images/self-desert-bw.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid $muted-color;
+
+        header {
+            padding: 5vh 0 0;
+
+            .logo {
+                grid-column: 1 / -1;
+
+                .timeMessage {
+                    font-size: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+
+            .social {
+                grid-column: 1 / -1;
+                padding: 2vh 0 0;
+
+                a {
+                    margin: 2vh 10vw;
+                }
+            }
+        }
+
+        .mobile {
+            visibility: visible;
+
+            nav {
+                background: $primary-color;
+                border: 3px solid $muted-color;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                font-family: Orbitron, 'Courier New', Courier, monospace;
+                font-weight: 600;
+                height: 100%;
+                left: 0;
+                letter-spacing: .2rem;
+                position: fixed;
+                top: 0;
+                transform: translate(-100%);
+                visibility: hidden;
+                width: 75vw;
+                @include transition-ease;
+
+                &.open {
+                    visibility: visible;
+                    transform: translate(0);
+                    @include transition-ease;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    margin: 10vh 5vw;
+                    overflow: hidden;
+                    width: 100%;
+                    @include transition-ease;
+
+                    li {
+                        margin: 5vh 0;
+                    }
+                }
+            }
+        }
+
+        .desktop {
+            visibility: hidden;
+
+            nav {
+                height: 0;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                visibility: hidden;
+                width: 0;
+            }
+        }
+
+        main {
+            grid-column: 1 / -1;
             margin: 10vh 0 3vh;
 
             article {

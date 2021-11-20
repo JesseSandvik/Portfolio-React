@@ -110,7 +110,132 @@
   color: #7D70BA;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 750px) {
+  .homePage {
+    visibility: hidden;
+  }
+  .dynbg {
+    visibility: hidden;
+  }
+  section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("./images/self-desert-bw.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./images/self-desert-bw.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #5D576B;
+  }
+  section header {
+    padding: 5vh 0 0;
+  }
+  section header .logo {
+    grid-column: 1 / -1;
+  }
+  section header .logo .timeMessage {
+    font-size: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  section header .social {
+    grid-column: 1 / -1;
+    padding: 2vh 0 0;
+  }
+  section header .social a {
+    margin: 2vh 10vw;
+  }
+  section .mobile {
+    visibility: visible;
+  }
+  section .mobile nav {
+    background: #000000;
+    border: 3px solid #5D576B;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: Orbitron, 'Courier New', Courier, monospace;
+    font-weight: 600;
+    height: 100%;
+    left: 0;
+    letter-spacing: .2rem;
+    position: fixed;
+    top: 0;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    visibility: hidden;
+    width: 75vw;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+  section .mobile nav.open {
+    visibility: visible;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+  section .mobile nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    margin: 10vh 5vw;
+    overflow: hidden;
+    width: 100%;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+  section .mobile nav ul li {
+    margin: 5vh 0;
+  }
+  section .desktop {
+    visibility: hidden;
+  }
+  section .desktop nav {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    visibility: hidden;
+    width: 0;
+  }
+  section main {
+    grid-column: 1 / -1;
+    margin: 15vh 0 3vh;
+  }
+  section main article {
+    padding: 15vh 3vw 30vh;
+    width: 100vw;
+  }
+  section main article .about-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section main article .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section footer {
+    height: 10vh;
+  }
+  section footer a {
+    font-size: 0;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1330px) {
   .homePage {
     visibility: hidden;
   }
@@ -656,7 +781,7 @@ section main article small {
 section main article.about h1, section main article.projects h1, section main article.contact h1 {
   font-size: 1.5rem;
   letter-spacing: 1rem;
-  padding: 0 0 10vh;
+  padding: 0 0 1vh 0;
 }
 
 section main article.about h2, section main article.projects h2, section main article.contact h2 {

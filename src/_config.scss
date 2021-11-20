@@ -95,7 +95,13 @@ $muted-color: #5D576B;
 }
 
 @mixin media-mobile {
-    @media screen and (max-width: 1330px) {
+    @media screen and (max-width: 750px) {
+        @content;
+    }
+}
+
+@mixin media-medium {
+    @media screen and (min-width: 750px) and (max-width: 1330px) {
         @content;
     }
 }
