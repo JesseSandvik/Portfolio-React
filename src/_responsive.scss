@@ -312,6 +312,7 @@
                 border-radius: 15px;
                 background: $primary-color;
                 box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+                color: $muted-color;
                 cursor: pointer;
                 font-size: 2rem;
                 letter-spacing: 0.2rem;
@@ -320,6 +321,7 @@
                 @include transition-ease;
 
                 &:hover {
+                    color: set-text-color($primary-color);
                     opacity: 0.9;
                 }
             }

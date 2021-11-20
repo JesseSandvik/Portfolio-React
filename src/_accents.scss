@@ -8,6 +8,16 @@
         }
     }
 
+    .bg {
+        .item {
+            &.bg2 {
+                &.open {
+                    box-shadow: inset 0 0 0 5px $accent-color-one;
+                }
+            }
+        }
+    }
+
     header {
         &.open {
             .logo {
@@ -65,6 +75,16 @@
     .homePage {
         h1 {
             border-bottom: 1px solid $accent-color-two;
+        }
+    }
+
+    .bg {
+        .item {
+            &.bg2 {
+                &.open {
+                    box-shadow: inset 0 0 0 5px $accent-color-two;
+                }
+            }
         }
     }
 
@@ -126,6 +146,16 @@
     .homePage {
         h1 {
             border-bottom: 1px solid $accent-color-three;
+        }
+    }
+
+    .bg {
+        .item {
+            &.bg2 {
+                &.open {
+                    box-shadow: inset 0 0 0 5px $accent-color-three;
+                }
+            }
         }
     }
 

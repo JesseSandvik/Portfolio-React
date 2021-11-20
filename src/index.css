@@ -2,6 +2,11 @@
   border-bottom: 1px solid #E6C79C;
 }
 
+.morning .bg .item.bg2.open {
+  -webkit-box-shadow: inset 0 0 0 5px #E6C79C;
+          box-shadow: inset 0 0 0 5px #E6C79C;
+}
+
 .morning header.open .logo .devLogo h1 {
   border-bottom: 1px solid #E6C79C;
 }
@@ -36,6 +41,11 @@
 
 .afternoon .homePage h1 {
   border-bottom: 1px solid #ACFCD9;
+}
+
+.afternoon .bg .item.bg2.open {
+  -webkit-box-shadow: inset 0 0 0 5px #ACFCD9;
+          box-shadow: inset 0 0 0 5px #ACFCD9;
 }
 
 .afternoon header.open .logo .devLogo h1 {
@@ -74,6 +84,11 @@
 
 .evening .homePage h1 {
   border-bottom: 1px solid #7D70BA;
+}
+
+.evening .bg .item.bg2.open {
+  -webkit-box-shadow: inset 0 0 0 5px #7D70BA;
+          box-shadow: inset 0 0 0 5px #7D70BA;
 }
 
 .evening header.open .logo .devLogo h1 {
@@ -448,6 +463,7 @@
     background: #000000;
     -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
             box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: #5D576B;
     cursor: pointer;
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -457,6 +473,7 @@
     transition: 0.6s ease-in-out;
   }
   .homePage .enterSite p:hover {
+    color: #FDF7FA;
     opacity: 0.9;
   }
   .dynbg {
