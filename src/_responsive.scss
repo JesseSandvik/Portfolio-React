@@ -2,6 +2,10 @@
 
 @include media-mobile {
 
+    .homePage {
+        visibility: hidden;
+    }
+
     .dynbg {
         visibility: hidden;
     }
@@ -124,9 +128,75 @@
 
 @include media-desktop {
 
+    .homePage {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 65vh;
+        opacity: 1;
+        position: fixed;
+        text-transform: capitalize;
+        text-align: center;
+        visibility: visible;
+        width: 100vw;
+        @include devIcons-default-styling;
+        @include transition-ease;
+
+        .icon {
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+        &.open {
+            opacity: 0;
+            @include transition-ease;
+        }
+
+        h1 {
+            font-family: Orbitron, 'Courier New', Courier, monospace;
+            font-weight: 600;
+            letter-spacing: .7rem;
+            font-size: 2.5rem;
+            margin: .5rem;
+            padding: 1rem;
+        }
+
+        h2 {
+            font-family: Orbitron, 'Courier New', Courier, monospace;
+            font-weight: 600;
+            letter-spacing: .5rem;
+            font-size: 2rem;
+            padding: 1rem;
+            margin: .5rem;
+        }
+
+        .enterSite {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            p {
+                border-radius: 15px;
+                background: $primary-color;
+                box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+                cursor: pointer;
+                font-size: 2rem;
+                letter-spacing: 0.2rem;
+                padding: 1rem;
+                width: 25vw;
+                @include transition-ease;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
     .dynbg {
         visibility: visible;
-
+        
         .bg {
             display: flex;
             height: 100vh;
@@ -343,20 +413,12 @@
     }
 
     &.morning {
-        .dynbg {
-            .bg {
-                .item {
-                    &.bg2 {
-                        &.open {
-                            box-shadow: inset 0 0 0 5px $accent-color-one;
-                        }
-
-                        &:hover {
-                            box-shadow: inset 0 0 0 5px $accent-color-one;
-                            h5 {
-                                text-shadow: -1px 1px 5px $accent-color-one;
-                            }
-                        }
+        .homePage {
+            .enterSite {
+                p {
+                    &:hover {
+                        box-shadow: inset 0 0 0 5px $accent-color-one;
+                        @include transition-ease;
                     }
                 }
             }
@@ -364,20 +426,11 @@
     }
 
     &.afternoon {
-        .dynbg {
-            .bg {
-                .item {
-                    &.bg2 {
-                        &.open {
-                            box-shadow: inset 0 0 0 5px $accent-color-two;
-                        }
-
-                        &:hover {
-                            box-shadow: inset 0 0 0 5px $accent-color-two;
-                            h5 {
-                                text-shadow: -1px 1px 5px $accent-color-two;
-                            }
-                        }
+        .homePage {
+            .enterSite {
+                p {
+                    &:hover {
+                        box-shadow: inset 0 0 0 5px $accent-color-two;
                     }
                 }
             }
@@ -385,20 +438,12 @@
     }
 
     &.evening {
-        .dynbg {
-            .bg {
-                .item {
-                    &.bg2 {
-                        &.open {
-                            box-shadow: inset 0 0 0 5px $accent-color-three;
-                        }
-
-                        &:hover {
-                            box-shadow: inset 0 0 0 5px $accent-color-three;
-                            h5 {
-                                text-shadow: -1px 1px 5px $accent-color-three;
-                            }
-                        }
+        .homePage {
+            .enterSite {
+                p {
+                    &:hover {
+                        box-shadow: inset 0 0 0 5px $accent-color-three;
+                        @include transition-ease;
                     }
                 }
             }

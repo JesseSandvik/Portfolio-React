@@ -1,6 +1,13 @@
 @import './config';
 
 .morning {
+
+    .homePage {
+        h1 {
+            border-bottom: 1px solid $accent-color-one;
+        }
+    }
+
     header {
         &.open {
             .logo {
@@ -54,6 +61,13 @@
 }
 
 .afternoon {
+
+    .homePage {
+        h1 {
+            border-bottom: 1px solid $accent-color-two;
+        }
+    }
+
     header {
         &.open {
             .logo {
@@ -108,6 +122,13 @@
 }
 
 .evening {
+
+    .homePage {
+        h1 {
+            border-bottom: 1px solid $accent-color-three;
+        }
+    }
+
     header {
         &.open {
             .logo {

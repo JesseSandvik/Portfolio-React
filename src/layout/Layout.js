@@ -8,6 +8,7 @@ import MobileHamburgerButton from "../mobileHamburgerButton/MobileHamburgerButto
 import Navigation from "../navigation/Navigation";
 import Routes from "./Routes";
 import classNames from "../utils/ClassNames";
+import HomePage from "../homePage/homePage";
 
 export default function Layout() {
     const transition = {
@@ -82,6 +83,10 @@ export default function Layout() {
                     backgroundToggleHandler={backgroundToggleHandler}
                 />
             </div>
+            <HomePage
+                backgroundToggle={backgroundToggle}
+                backgroundToggleHandler={backgroundToggleHandler}
+            />
             <motion.section
                 initial={initialMotion}
                 animate={animateMotion}

@@ -1,3 +1,7 @@
+.morning .homePage h1 {
+  border-bottom: 1px solid #E6C79C;
+}
+
 .morning header.open .logo .devLogo h1 {
   border-bottom: 1px solid #E6C79C;
 }
@@ -28,6 +32,10 @@
 
 .morning footer i {
   color: #E6C79C;
+}
+
+.afternoon .homePage h1 {
+  border-bottom: 1px solid #ACFCD9;
 }
 
 .afternoon header.open .logo .devLogo h1 {
@@ -62,6 +70,10 @@
 
 .afternoon footer i {
   color: #ACFCD9;
+}
+
+.evening .homePage h1 {
+  border-bottom: 1px solid #7D70BA;
 }
 
 .evening header.open .logo .devLogo h1 {
@@ -99,6 +111,9 @@
 }
 
 @media screen and (max-width: 1330px) {
+  .homePage {
+    visibility: hidden;
+  }
   .dynbg {
     visibility: hidden;
   }
@@ -215,6 +230,110 @@
 }
 
 @media screen and (min-width: 1330px) {
+  .homePage {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    min-height: 65vh;
+    opacity: 1;
+    position: fixed;
+    text-transform: capitalize;
+    text-align: center;
+    visibility: visible;
+    width: 100vw;
+    font-size: 3rem;
+    margin: 5vh 0;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+  .homePage .icon {
+    margin: 0 .5vw;
+    text-shadow: -1px 2px 0 #5D576B;
+  }
+  .homePage .icon-js {
+    color: #f7df1e;
+  }
+  .homePage .icon-react {
+    color: #7cc5d9;
+  }
+  .homePage .icon-html {
+    color: #f06529;
+  }
+  .homePage .icon-css {
+    color: #2965f1;
+  }
+  .homePage .icon-sass {
+    color: #cd6799;
+  }
+  .homePage .icon-node {
+    color: #68a063;
+  }
+  .homePage .icon-npm {
+    color: #cc3534;
+  }
+  .homePage .icon-git {
+    color: #f34f29;
+  }
+  .homePage .icon {
+    font-size: 4rem;
+    margin: 1rem;
+  }
+  .homePage.open {
+    opacity: 0;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+  .homePage h1 {
+    font-family: Orbitron, 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: .7rem;
+    font-size: 2.5rem;
+    margin: .5rem;
+    padding: 1rem;
+  }
+  .homePage h2 {
+    font-family: Orbitron, 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .homePage .enterSite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .homePage .enterSite p {
+    border-radius: 15px;
+    background: #000000;
+    -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    width: 25vw;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+  .homePage .enterSite p:hover {
+    opacity: 0.9;
+  }
   .dynbg {
     visibility: visible;
   }
@@ -417,38 +536,21 @@
     -webkit-transition: all 1.0s ease-in-out 1.0s;
     transition: all 1.0s ease-in-out 1.0s;
   }
-  .morning .dynbg .bg .item.bg2.open {
+  .morning .homePage .enterSite p:hover {
     -webkit-box-shadow: inset 0 0 0 5px #E6C79C;
             box-shadow: inset 0 0 0 5px #E6C79C;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
-  .morning .dynbg .bg .item.bg2:hover {
-    -webkit-box-shadow: inset 0 0 0 5px #E6C79C;
-            box-shadow: inset 0 0 0 5px #E6C79C;
-  }
-  .morning .dynbg .bg .item.bg2:hover h5 {
-    text-shadow: -1px 1px 5px #E6C79C;
-  }
-  .afternoon .dynbg .bg .item.bg2.open {
+  .afternoon .homePage .enterSite p:hover {
     -webkit-box-shadow: inset 0 0 0 5px #ACFCD9;
             box-shadow: inset 0 0 0 5px #ACFCD9;
   }
-  .afternoon .dynbg .bg .item.bg2:hover {
-    -webkit-box-shadow: inset 0 0 0 5px #ACFCD9;
-            box-shadow: inset 0 0 0 5px #ACFCD9;
-  }
-  .afternoon .dynbg .bg .item.bg2:hover h5 {
-    text-shadow: -1px 1px 5px #ACFCD9;
-  }
-  .evening .dynbg .bg .item.bg2.open {
+  .evening .homePage .enterSite p:hover {
     -webkit-box-shadow: inset 0 0 0 5px #7D70BA;
             box-shadow: inset 0 0 0 5px #7D70BA;
-  }
-  .evening .dynbg .bg .item.bg2:hover {
-    -webkit-box-shadow: inset 0 0 0 5px #7D70BA;
-            box-shadow: inset 0 0 0 5px #7D70BA;
-  }
-  .evening .dynbg .bg .item.bg2:hover h5 {
-    text-shadow: -1px 1px 5px #7D70BA;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
 }
 
