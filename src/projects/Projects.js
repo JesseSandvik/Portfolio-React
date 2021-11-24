@@ -1,5 +1,5 @@
 import './Projects.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import ScrollToTop from '../utils/ScrollToTop';
 import classNames from '../utils/ClassNames';
@@ -7,6 +7,20 @@ import classNames from '../utils/ClassNames';
 export default function Projects({ initialMotion, animateMotion, exitMotion, transition }) {
     const [projectDescToggle, setProjectDescToggle] = useState(false);
     const [projectView, setProjectView] = useState("pTables");
+
+    useEffect(() => {
+        let projectViewTimer =
+        setTimeout(() => {
+            if (projectView === "pTables") {
+                setProjectView("pTimer");
+            } else if (projectView === "pTimer") {
+                setProjectView("pTables");
+            }
+        }, 9000);
+        return () => {
+            clearTimeout(projectViewTimer);
+        };
+    }, [projectView]);
 
     const projectDescToggleHandler = (event) => {
         event.preventDefault();
@@ -17,8 +31,10 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
         event.preventDefault();
         if (projectView === "pTables") {
             setProjectView("pTimer");
+            clearTimeout();
         } else if (projectView === "pTimer") {
             setProjectView("pTables");
+            clearTimeout();
         }
     }
 
@@ -53,7 +69,13 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
                         ></i>
                     </h2>
                     {projectView === "pTables" && (
-                        <div className="project">
+                        <motion.div
+                            className="project"
+                            initial={initialMotion}
+                            animate={animateMotion}
+                            exit={exitMotion}
+                            transition={transition}
+                        >
                             <h3>Periodic Tables</h3>
                             <small>A restaurant reservation management application.</small>
                             <motion.div
@@ -86,10 +108,16 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
                                     <small>Repo</small>
                                 </button>
                             </div>
-                        </div>
+                        </motion.div>
                     )}
                     {projectView === "pTimer" && (
-                        <div className="project">
+                        <motion.div
+                            className="project"
+                            initial={initialMotion}
+                            animate={animateMotion}
+                            exit={exitMotion}
+                            transition={transition}
+                        >
                             <h3>Pomodoro Timer</h3>
                             <small>A timer application specifically built to utilize the Pomodoro technique.</small>
                             <motion.div
@@ -123,7 +151,7 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
                                         <small>Repo</small>
                                     </button>
                                 </div>
-                            </div>
+                            </motion.div>
                     )}
                 </div>
             </div>
