@@ -2,29 +2,30 @@
 
 .about {
 
-    &-top {
+    &-body {
         display: flex;
+    }
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 10vh 1rem;
+        width: 25vw;
 
         img {
-            border-bottom: 1px solid $muted-color;
-            border-radius: 10px;
-            margin: 5vh auto;
+            margin: 1rem auto;
             max-width: 100%;
         }
     }
 
-    &-bottom {
+    &-right {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+        width: 25vw;
 
         .item {
             align-items: center;
-            background-color: $primary-color;
-            border: 3px solid $muted-color;
-            border-radius: 5px;
-            box-shadow: 0 0 3px $secondary-color;
             color: set-text-color($primary-color);
             display: flex;
             flex-direction: column;
@@ -33,19 +34,14 @@
             padding: 1rem;
             text-align: center;
             width: 100%;
-
-            p {
-                padding: 1rem;
-            }
+            @include transition-ease;
     
             h3 {
-                padding: 0 0 3vh;
-                width: 100%;
+                color: $muted-color;
+                letter-spacing: 1.2rem;
+                padding: 1rem;
+                text-transform: uppercase;
             }
         }
-    }
-
-    .devIcons {
-        @include devIcons-default-styling;
     }
 }

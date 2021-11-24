@@ -1,38 +1,42 @@
-.about-top {
+.about-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about-top img {
-  border-bottom: 1px solid #5D576B;
-  border-radius: 10px;
-  margin: 5vh auto;
+.about-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1rem 10vh 1rem;
+  width: 25vw;
+}
+
+.about-left img {
+  margin: 1rem auto;
   max-width: 100%;
 }
 
-.about-bottom {
+.about-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  width: 25vw;
 }
 
-.about-bottom .item {
+.about-right .item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #000000;
-  border: 3px solid #5D576B;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 3px #FDF7FA;
-          box-shadow: 0 0 3px #FDF7FA;
   color: #FDF7FA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,56 +52,14 @@
   padding: 1rem;
   text-align: center;
   width: 100%;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
-.about-bottom .item p {
+.about-right .item h3 {
+  color: #5D576B;
+  letter-spacing: 1.2rem;
   padding: 1rem;
-}
-
-.about-bottom .item h3 {
-  padding: 0 0 3vh;
-  width: 100%;
-}
-
-.about .devIcons {
-  font-size: 3rem;
-  margin: 5vh 0;
-}
-
-.about .devIcons .icon {
-  margin: 0 .5vw;
-  text-shadow: -1px 2px 0 #5D576B;
-}
-
-.about .devIcons .icon-js {
-  color: #f7df1e;
-}
-
-.about .devIcons .icon-react {
-  color: #7cc5d9;
-}
-
-.about .devIcons .icon-html {
-  color: #f06529;
-}
-
-.about .devIcons .icon-css {
-  color: #2965f1;
-}
-
-.about .devIcons .icon-sass {
-  color: #cd6799;
-}
-
-.about .devIcons .icon-node {
-  color: #68a063;
-}
-
-.about .devIcons .icon-npm {
-  color: #cc3534;
-}
-
-.about .devIcons .icon-git {
-  color: #f34f29;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=About.css.map */

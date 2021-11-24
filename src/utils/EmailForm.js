@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion';
 
 function EmailForm() {
     return (
@@ -29,7 +30,7 @@ function EmailForm() {
             cols="40"
             >
         </textarea>
-        <button title="Send Email" type="submit">Send</button>
+        <motion.button whileHover={{ scale: 1.05 }} title="Send Email" type="submit">Send</motion.button>
     </form>
 
     );

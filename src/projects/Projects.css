@@ -1,20 +1,37 @@
-.projects img {
-  background-color: #000000;
-  border: 1px solid #5D576B;
-  border-radius: 10px;
-  margin: 5vh auto;
-  max-width: 100%;
+.projects-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.projects .project {
+.projects-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  width: 25vw;
+}
+
+.projects-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  width: 25vw;
+}
+
+.projects-right .project {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #000000;
-  border: 3px solid #5D576B;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 3px #FDF7FA;
-          box-shadow: 0 0 3px #FDF7FA;
   color: #FDF7FA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,34 +40,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Orbitron, 'Courier New', Courier, monospace;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: .2rem;
-  margin: 5vh 0;
-  padding: 3rem;
   text-align: center;
-  width: 100%;
 }
 
-.projects .project button {
-  width: 100%;
-}
-
-.projects .project img {
-  opacity: 0.9;
-}
-
-.projects button {
+.projects-right .project button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #000000;
   border: 3px solid #5D576B;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 3px #FDF7FA;
-          box-shadow: 0 0 3px #FDF7FA;
   color: #FDF7FA;
   cursor: pointer;
   display: -webkit-box;
@@ -60,21 +63,128 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Orbitron, 'Courier New', Courier, monospace;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Orbitron, 'Courier New', Courier, monospace;
   letter-spacing: .2rem;
-  margin: 5vh 0;
+  margin: 1rem;
   padding: 1rem;
   text-align: center;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
-.projects button i {
+.projects-right .project button small {
+  padding: 1rem;
+}
+
+.projects-right .project button i {
   font-size: 2rem;
 }
 
-.projects button:hover {
+.projects-right .project button:hover {
   opacity: 0.9;
+}
+
+.projects-right .project button:hover {
+  border: 3px solid #FDF7FA;
+  scale: 1.1;
+}
+
+.projects-right .project-main1 {
+  background-image: url("../images/projects/periodicTables/PeriodicTables1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.projects-right .project-main1 p {
+  opacity: 0;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.projects-right .project-main1:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/projects/periodicTables/PeriodicTables1.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/projects/periodicTables/PeriodicTables1.png");
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.projects-right .project-main1:hover p {
+  opacity: 1;
+}
+
+.projects-right .project-main1.open {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/projects/periodicTables/PeriodicTables1.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/projects/periodicTables/PeriodicTables1.png");
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.projects-right .project-main1.open p {
+  opacity: 1;
+}
+
+.projects-right .project-main2 {
+  background-image: url("../images/projects/pomodoroTimer/PomodoroTimer1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.projects-right .project-main2 p {
+  opacity: 0;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.projects-right .project-main2:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/projects/pomodoroTimer/PomodoroTimer1.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/projects/pomodoroTimer/PomodoroTimer1.png");
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.projects-right .project-main2:hover p {
+  opacity: 1;
+}
+
+.projects-right .project-main2.open {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/projects/pomodoroTimer/PomodoroTimer1.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/projects/pomodoroTimer/PomodoroTimer1.png");
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.projects-right .project-main2.open p {
+  opacity: 1;
 }
 /*# sourceMappingURL=Projects.css.map */

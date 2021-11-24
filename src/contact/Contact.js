@@ -15,8 +15,8 @@ export default function Contact({ initialMotion, animateMotion, exitMotion, tran
             exit={exitMotion}
             transition={transition}
         >
-            <h1>Contact</h1>
-            <p>I am usually very responsive, you should expect to hear back from me within 12 to 24 hours of receiving your message.</p>
+            <h1><small>Fill Out This Form To</small>Contact<small>Me</small></h1>
+            <p>I am usually very responsive. You can expect to hear back from me within 12 to 24 hours of receiving your message.</p>
             <EmailForm />
         </motion.article>
         </>

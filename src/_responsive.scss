@@ -20,6 +20,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         border: 1px solid $muted-color;
+        overflow-x: hidden;
 
         header {
             padding: 5vh 0 0;
@@ -39,7 +40,7 @@
                 padding: 2vh 0 0;
 
                 a {
-                    margin: 2vh 10vw;
+                    margin: 2vh 7vw;
                 }
             }
         }
@@ -104,13 +105,43 @@
             margin: 15vh 0 3vh;
 
             article {
-                padding: 15vh 3vw 30vh;
+                padding: 0 3vw 30vh;
                 width: 100vw;
+
+                &.about, &.projects, &.contact {
+                    
+                    h1 {
+                        letter-spacing: 1rem;
+                    }
+                }
 
                 .about {
 
-                    &-top {
+                    &-body {
                         flex-direction: column;
+                    }
+
+                    &-left {
+                        width: 100vw;
+                    }
+
+                    &-right {
+                        width: 100vw;
+                    }
+                }
+
+                .projects {
+
+                    &-body {
+                        flex-direction: column;
+                    }
+
+                    &-left {
+                        width: 100vw;
+                    }
+
+                    &-right {
+                        width: 100vw;
                     }
                 }
 
@@ -233,11 +264,48 @@
 
         main {
             grid-column: 1 / -1;
-            margin: 10vh 0 3vh;
+            margin: 0 0 3vh;
 
             article {
                 padding: 15vh 3vw 30vh;
                 width: 100vw;
+
+                &.about, &.projects, &.contact {
+                    
+                    h1 {
+                        letter-spacing: 1rem;
+                    }
+                }
+
+                .about {
+
+                    &-body {
+                        flex-direction: column;
+                    }
+
+                    &-left {
+                        width: 100vw;
+                    }
+
+                    &-right {
+                        width: 100vw;
+                    }
+                }
+
+                .projects {
+
+                    &-body {
+                        flex-direction: column;
+                    }
+
+                    &-left {
+                        width: 100vw;
+                    }
+
+                    &-right {
+                        width: 100vw;
+                    }
+                }
 
                 .links {
                     display: flex;
@@ -508,17 +576,24 @@
                     height: inherit;
                     letter-spacing: .2rem;
                     opacity: 1;
-                    padding: 15vh 3vw 30vh;
+                    padding: 10vh 3vw 15vh;
                     position: relative;
                     visibility: visible;
                     @include transition-ease;
 
-                    &.projects, &.contact {
+                    &.about, &.projects, &.contact {
+
+                        h1 {
+                            letter-spacing: 2.5rem;
+                            font-size: 2rem;
+                        }
 
                         .links {
+                            align-items: center;
                             display: flex;
                             flex-direction: row;
-                            flex-wrap: wrap;
+                            justify-content: center;
+                            width: 100vw;
                         }
                     }
                 }

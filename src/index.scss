@@ -64,7 +64,6 @@ section {
                 }
 
                 h1 {
-                    border-bottom: 1px solid set-text-color($primary-color);
                     text-transform: uppercase;
                     width: 100%;
                 }
@@ -76,23 +75,47 @@ section {
                 }
 
                 h3 {
-                    border-bottom: 1px solid $muted-color;
                     font-size: 1rem;
                 }
 
                 small {
                     color: $muted-color;
+                    padding: 0 0 1rem;
                 }
 
                 &.about, &.projects, &.contact {
                     h1 {
-                        font-size: 1.5rem;
-                        letter-spacing: 1rem;
-                        padding: 0 0 1vh 0;
+                        background-image:
+                        linear-gradient(to right,
+                        rgba($primary-color, 0.3),
+                        rgba($primary-color, 0.3)),
+                        url('./images/self-office2-nobg.png');
+                        background-position: right;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        border-radius: 10px;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0;
+                        min-height: 25vh;
+                        text-align: center;
+
+                        small {
+                            font-size: .8rem;
+                            letter-spacing: .5rem;
+                            padding: 1rem;
+                        }
                     }
 
-                    h2 {
-                        padding: 5vh 0 0;
+                    h2, h3 {
+                        padding: 0 0 1vh;
+
+                        i {
+                            cursor: pointer;
+                            margin: 0 1rem;
+                        }
                     }
                 }
         }

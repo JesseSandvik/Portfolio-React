@@ -2,36 +2,135 @@
 
 .projects {
 
-    img {
-        @include image-default-styling;
+    &-body {
+        display: flex;
     }
-    .project {
-        align-items: center;
-        background-color: $primary-color;
-        border: 3px solid $muted-color;
-        border-radius: 5px;
-        box-shadow: 0 0 3px $secondary-color;
-        color: set-text-color($primary-color);
+
+    &-left {
         display: flex;
         flex-direction: column;
-        font-family: Orbitron, 'Courier New', Courier, monospace;
-        justify-content: center;
-        letter-spacing: .2rem;
-        margin: 5vh 0;
-        padding: 3rem;
-        text-align: center;
-        width: 100%;
-
-        button {
-            width: 100%;
-        }
-
-        img {
-            opacity: 0.9;
-        }
+        padding: 1rem;
+        width: 25vw;
     }
 
-    button {
-        @include button-default-styling;
+    &-right {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 25vw;
+
+        .project {
+            align-items: center;
+            color: set-text-color($primary-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            letter-spacing: .2rem;
+            text-align: center;
+
+            button {
+                @include button-default-styling;
+
+                &:hover {
+                    border: 3px solid set-text-color($primary-color);
+                    scale: 1.1;
+                }
+            }
+
+            &-main1 {
+                background-image: url('../images/projects/periodicTables/PeriodicTables1.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                @include transition-ease;
+
+                p {
+                    opacity: 0;
+                    @include transition-ease;
+                }
+
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,
+                    rgba($primary-color, 0.7),
+                    rgba($primary-color, 0.7)),
+                    url('../images/projects/periodicTables/PeriodicTables1.png');
+                    @include transition-ease;
+
+                    p {
+                        opacity: 1;
+                    }
+                }
+
+                &.open {
+                    background-image:
+                    linear-gradient(to right,
+                    rgba($primary-color, 0.7),
+                    rgba($primary-color, 0.7)),
+                    url('../images/projects/periodicTables/PeriodicTables1.png');
+                    @include transition-ease;
+
+                    p {
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+            &-main2 {
+                background-image: url('../images/projects/pomodoroTimer/PomodoroTimer1.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                @include transition-ease;
+
+                p {
+                    opacity: 0;
+                    @include transition-ease;
+                }
+
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,
+                    rgba($primary-color, 0.7),
+                    rgba($primary-color, 0.7)),
+                    url('../images/projects/pomodoroTimer/PomodoroTimer1.png');
+                    @include transition-ease;
+
+                    p {
+                        opacity: 1;
+                    }
+                }
+
+                &.open {
+                    background-image:
+                    linear-gradient(to right,
+                    rgba($primary-color, 0.7),
+                    rgba($primary-color, 0.7)),
+                    url('../images/projects/pomodoroTimer/PomodoroTimer1.png');
+                    @include transition-ease;
+
+                    p {
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+        }
+
     }
+
 }
