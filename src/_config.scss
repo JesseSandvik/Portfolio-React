@@ -3,7 +3,7 @@ $secondary-color: #FDF7FA;
 $accent-color-one: #E6C79C;
 $accent-color-two: #ACFCD9;
 $accent-color-three: #7D70BA;
-$muted-color: #5D576B;
+$muted-color: #B7B6C2;
 
 @mixin image-default-styling {
     background-color: $primary-color;
@@ -49,7 +49,6 @@ $muted-color: #5D576B;
       
         .icon {
             margin: 0 .5vw;
-            text-shadow: -1px 2px 0 $muted-color;
       
         &-js {
             color: #f7df1e;

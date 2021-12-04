@@ -6,15 +6,17 @@ import classNames from '../utils/ClassNames';
 
 export default function Projects({ initialMotion, animateMotion, exitMotion, transition }) {
     const [projectDescToggle, setProjectDescToggle] = useState(false);
-    const [projectView, setProjectView] = useState("pTables");
+    const [projectView, setProjectView] = useState("spires");
 
     useEffect(() => {
         let projectViewTimer =
         setTimeout(() => {
-            if (projectView === "pTables") {
+            if (projectView === "spires") {
+                setProjectView("pTables");
+            } else if (projectView === "pTables") {
                 setProjectView("pTimer");
             } else if (projectView === "pTimer") {
-                setProjectView("pTables");
+                setProjectView("spires");
             }
         }, 9000);
         return () => {
@@ -29,11 +31,14 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
 
     const projectViewHandler = (event) => {
         event.preventDefault();
-        if (projectView === "pTables") {
+        if (projectView === "spires") {
+            setProjectView("pTables");
+            clearTimeout();
+        } else if (projectView === "pTables") {
             setProjectView("pTimer");
             clearTimeout();
         } else if (projectView === "pTimer") {
-            setProjectView("pTables");
+            setProjectView("spires");
             clearTimeout();
         }
     }
@@ -51,9 +56,9 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
             <h1><small>Some Recent</small>Projects<small>Of Mine</small></h1>
             <div className="projects-body">
                 <div className="projects-left">
-                    <p>Here are some recent applications I've been working on.</p>
-                    <p>Some of these are still in active development,
-                        so be sure to stop by from time to time to see how the codebases have matured.
+                    <p>Here are some recent applications that I have been working on.</p>
+                    <p>Some of these applications are still in active development,
+                        so be sure to stop by to see how the codebases have matured over time!
                     </p>
                 </div>
                 <div className="projects-right">
@@ -68,6 +73,47 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
                             onClick={projectViewHandler}
                         ></i>
                     </h2>
+                    {projectView === "spires" && (
+                        <motion.div
+                            className="project"
+                            initial={initialMotion}
+                            animate={animateMotion}
+                            exit={exitMotion}
+                            transition={transition}
+                        >
+                            <h3>Spires</h3>
+                            <small>A workflow & communcation application.</small>
+                            <motion.div
+                                onClick={projectDescToggleHandler}
+                                whileHover={{ scale: 1.2 }}
+                                className={classNames({
+                                    "project-main3": !projectDescToggle,
+                                    "project-main3 open": projectDescToggle
+                                })}
+                            >
+                                <div>
+                                    <p>
+                                        Spires is a workflow application built to streamline the development process. Projects can be given
+                                        specified "due dates" and "due times" to keep users on track to meet their deadlines.
+                                    </p>
+                                    <p>
+                                    Tasks can be created and deleted for each project. Each task can be set between "available"(not started),
+                                    "in progress"(working on), or "completed"(task finished).
+                                    </p>
+                                </div>
+                            </motion.div>
+                            <div className="links">
+                                <button onClick={() => window.open("https://spires-app.herokuapp.com")}>
+                                    <i className="fas fa-link"></i>
+                                    <small>App</small>
+                                </button>
+                                <button onClick={() => window.open("https://github.com/JesseSandvik/spires-front-end")}>
+                                    <i className="fab fa-github-alt"></i>
+                                    <small>Repo</small>
+                                </button>
+                            </div>
+                        </motion.div>
+                    )}
                     {projectView === "pTables" && (
                         <motion.div
                             className="project"

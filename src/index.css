@@ -138,7 +138,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid #5D576B;
+    border: 1px solid #B7B6C2;
     overflow-x: hidden;
   }
   section header {
@@ -164,7 +164,7 @@
   }
   section .mobile nav {
     background: #000000;
-    border: 3px solid #5D576B;
+    border: 3px solid #B7B6C2;
     border-radius: 5px;
     font-size: 1.2rem;
     font-family: Orbitron, 'Courier New', Courier, monospace;
@@ -285,7 +285,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid #5D576B;
+    border: 1px solid #B7B6C2;
   }
   section header {
     padding: 5vh 0 0;
@@ -310,7 +310,7 @@
   }
   section .mobile nav {
     background: #000000;
-    border: 3px solid #5D576B;
+    border: 3px solid #B7B6C2;
     border-radius: 5px;
     font-size: 1.2rem;
     font-family: Orbitron, 'Courier New', Courier, monospace;
@@ -447,7 +447,6 @@
   }
   .homePage .icon {
     margin: 0 .5vw;
-    text-shadow: -1px 2px 0 #5D576B;
   }
   .homePage .icon-js {
     color: #f7df1e;
@@ -512,7 +511,7 @@
     background: #000000;
     -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
             box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-    color: #5D576B;
+    color: #B7B6C2;
     cursor: pointer;
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -553,12 +552,12 @@
     opacity: 1;
   }
   section header .logo .devLogo i {
-    color: #5D576B;
+    color: #B7B6C2;
     -webkit-transform: translate(-350%);
             transform: translate(-350%);
   }
   section header .logo .devLogo .timeMessage {
-    color: #5D576B;
+    color: #B7B6C2;
     cursor: pointer;
     font-family: Orbitron, 'Courier New', Courier, monospace;
     letter-spacing: .3rem;
@@ -838,7 +837,7 @@ section main article h1 {
 }
 
 section main article h2 {
-  border-bottom: 1px solid #5D576B;
+  border-bottom: 1px solid #B7B6C2;
   color: #FDF7FA;
   width: 100%;
 }
@@ -848,7 +847,7 @@ section main article h3 {
 }
 
 section main article small {
-  color: #5D576B;
+  color: #B7B6C2;
   padding: 0 0 1rem;
 }
 
