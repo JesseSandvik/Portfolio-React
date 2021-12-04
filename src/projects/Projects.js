@@ -29,7 +29,21 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
         (!projectDescToggle ? setProjectDescToggle(true) : setProjectDescToggle(false));
     }
 
-    const projectViewHandler = (event) => {
+    const projectViewLeftHandler = (event) => {
+        event.preventDefault();
+        if (projectView === "spires") {
+            setProjectView("pTimer");
+            clearTimeout();
+        } else if (projectView === "pTimer") {
+            setProjectView("pTables");
+            clearTimeout();
+        } else if (projectView === "pTables") {
+            setProjectView("spires");
+            clearTimeout();
+        }
+    }
+
+    const projectViewRightHandler = (event) => {
         event.preventDefault();
         if (projectView === "spires") {
             setProjectView("pTables");
@@ -65,12 +79,12 @@ export default function Projects({ initialMotion, animateMotion, exitMotion, tra
                     <h2>
                         <i
                             className="fas fa-caret-square-left"
-                            onClick={projectViewHandler}
+                            onClick={projectViewLeftHandler}
                         ></i>
                             Projects
                         <i
                             className="fas fa-caret-square-right"
-                            onClick={projectViewHandler}
+                            onClick={projectViewRightHandler}
                         ></i>
                     </h2>
                     {projectView === "spires" && (
