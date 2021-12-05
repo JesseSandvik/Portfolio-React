@@ -28,7 +28,7 @@ export default function Layout() {
     };
 
     const [backgroundToggle, setBackgroundToggle] = useState(true);
-    const [timeOfDayManualToggle, setTimeOfDayManualToggle] = useState("");
+    const [timeOfDayManualToggle, setTimeOfDayManualToggle] = useState(timeOfDayByHour);
 
     const timeOfDayString = getTimeOfDay();
 
