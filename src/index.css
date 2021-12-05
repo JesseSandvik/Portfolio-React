@@ -7,6 +7,10 @@
           box-shadow: inset 0 0 0 5px #E6C79C;
 }
 
+.morning .bg .item.bg2.open .page {
+  color: #E6C79C;
+}
+
 .morning header.open .logo .devLogo h1 {
   border-bottom: 1px solid #E6C79C;
 }
@@ -27,8 +31,16 @@
   color: #E6C79C;
 }
 
+.morning nav a:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #E6C79C;
+          box-shadow: inset 0 0 0 3px #E6C79C;
+}
+
 .morning nav .link-active {
+  -webkit-box-shadow: inset 0 0 0 3px #E6C79C;
+          box-shadow: inset 0 0 0 3px #E6C79C;
   color: #E6C79C;
+  opacity: 0.5;
 }
 
 .morning main article h1, .morning main article h2, .morning main article h3 {
@@ -103,6 +115,10 @@
           box-shadow: inset 0 0 0 5px #7D70BA;
 }
 
+.evening .bg .item.bg2.open .page {
+  color: #7D70BA;
+}
+
 .evening header.open .logo .devLogo h1 {
   border-bottom: 1px solid #7D70BA;
 }
@@ -123,8 +139,16 @@
   color: #7D70BA;
 }
 
+.evening nav a:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #7D70BA;
+          box-shadow: inset 0 0 0 3px #7D70BA;
+}
+
 .evening nav .link-active {
+  -webkit-box-shadow: inset 0 0 0 3px #7D70BA;
+          box-shadow: inset 0 0 0 3px #7D70BA;
   color: #7D70BA;
+  opacity: 0.5;
 }
 
 .evening main article h1, .evening main article h2, .evening main article h3 {
