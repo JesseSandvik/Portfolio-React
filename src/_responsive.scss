@@ -50,19 +50,18 @@
 
             nav {
                 background: $primary-color;
-                border: 3px solid $muted-color;
-                border-radius: 5px;
                 font-size: 1.2rem;
                 font-family: Orbitron, 'Courier New', Courier, monospace;
                 font-weight: 600;
                 height: 100%;
                 left: 0;
                 letter-spacing: .2rem;
+                opacity: 0.9;
                 position: fixed;
                 top: 0;
                 transform: translate(-100%);
                 visibility: hidden;
-                width: 75vw;
+                width: 100vw;
                 @include transition-ease;
 
                 &.open {
@@ -82,6 +81,20 @@
 
                     li {
                         margin: 5vh 0;
+
+                        a {
+                            border-radius: 10px;
+                            @include transition-ease;
+
+                            &:hover {
+                                padding: 0.5rem;
+                            }
+                        }
+
+                        .link-active {
+                            border-radius: 10px;
+                            padding: 0.5rem;
+                        }
                     }
                 }
             }
@@ -212,19 +225,18 @@
 
             nav {
                 background: $primary-color;
-                border: 3px solid $muted-color;
-                border-radius: 5px;
                 font-size: 1.2rem;
                 font-family: Orbitron, 'Courier New', Courier, monospace;
                 font-weight: 600;
                 height: 100%;
                 left: 0;
                 letter-spacing: .2rem;
+                opacity: 0.9;
                 position: fixed;
                 top: 0;
                 transform: translate(-100%);
                 visibility: hidden;
-                width: 75vw;
+                width: 33vw;
                 @include transition-ease;
 
                 &.open {
@@ -244,6 +256,20 @@
 
                     li {
                         margin: 5vh 0;
+
+                        a {
+                            border-radius: 10px;
+                            @include transition-ease;
+
+                            &:hover {
+                                padding: 0.5rem;
+                            }
+                        }
+
+                        .link-active {
+                            border-radius: 10px;
+                            padding: 0.5rem;
+                        }
                     }
                 }
             }
@@ -527,7 +553,37 @@
                         width: 100%;
 
                         li {
-                            margin: 5vh 0;
+                            background-color: $m-c-1;
+                            border-radius: 10px;
+                            margin: 1.5rem;
+                            width: 50%;
+
+                            a {
+                                align-items: center;
+                                border-radius: 10px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                padding: 0.5rem;
+                                text-align: center;
+                                width: 100%;
+                                @include transition-ease;
+
+                                i {
+                                    color: $primary-color;
+                                    opacity: 0;
+                                    @include transition-ease;
+                                }
+                            }
+
+                            .link-active {
+                                letter-spacing: .4rem;
+                                @include transition-ease;
+
+                                i {
+                                    opacity: 1;
+                                }
+                            }
                         }
                     }
                 }

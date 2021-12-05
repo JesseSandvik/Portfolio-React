@@ -83,6 +83,10 @@
             &.bg2 {
                 &.open {
                     box-shadow: inset 0 0 0 5px $accent-color-two;
+
+                    .page {
+                        color: $accent-color-two;
+                    }
                 }
             }
         }
@@ -120,8 +124,16 @@
     }
 
     nav {
+
+        a {
+            &:hover {
+                box-shadow: inset 0 0 0 3px $accent-color-two;
+            }
+        }
         .link-active {
+            box-shadow: inset 0 0 0 3px $accent-color-two;
             color: $accent-color-two;
+            opacity: 0.5;
         }
     }
 
