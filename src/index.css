@@ -815,6 +815,7 @@
   }
   section footer {
     height: auto;
+    padding: 0.5rem;
   }
   section footer h6 {
     margin: 0.5rem;
