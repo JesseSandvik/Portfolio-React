@@ -657,7 +657,11 @@
         }
 
         footer {
-            height: 7vh;
+            height: auto;
+
+            h6 {
+                margin: 0.5rem;
+            }
 
             a {
                 font-size: 0;
@@ -665,7 +669,7 @@
             }
 
             &.open {
-                height: 10vh;
+                padding: 1rem;
                 @include transition-ease;
 
                 a {
