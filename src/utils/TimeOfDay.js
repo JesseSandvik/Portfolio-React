@@ -12,3 +12,17 @@ export function timeOfDayByHour() {
         }
         return timeOfDay;
     }
+
+export function setMessageByTimeOfDay(timeOfDayString) {
+        let messageByTimeOfDay = "";
+        if (timeOfDayString === "morning") {
+            messageByTimeOfDay = "Good Morning"
+        } else if (timeOfDayString === "afternoon") {
+            messageByTimeOfDay = "Good Afternoon"
+        } else if (timeOfDayString === "evening") {
+            messageByTimeOfDay = "Good Evening"
+        } else {
+            messageByTimeOfDay = "";            
+        }
+        return messageByTimeOfDay;
+    }

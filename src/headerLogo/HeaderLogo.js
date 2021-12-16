@@ -1,4 +1,5 @@
 import React from 'react';
+import { setMessageByTimeOfDay } from '../utils/TimeOfDay';
 
 export default function HeaderLogo(props) {
     const { timeOfDayString, toggleTimeOfDayColor } = props;
@@ -31,20 +32,6 @@ export default function HeaderLogo(props) {
         return classNameByTimeOfDay;
     };
 
-    function setMessageByTimeOfDay() {
-        let messageByTimeOfDay = "";
-        if (timeOfDayString === "morning") {
-            messageByTimeOfDay = "Good Morning"
-        } else if (timeOfDayString === "afternoon") {
-            messageByTimeOfDay = "Good Afternoon"
-        } else if (timeOfDayString === "evening") {
-            messageByTimeOfDay = "Good Evening"
-        } else {
-            messageByTimeOfDay = "";            
-        }
-        return messageByTimeOfDay;
-    }
-
     return (
         <div className="devLogo" onClick={props.toggleTimeOfDayColor}>
             <div className="siteTitle">
@@ -59,7 +46,7 @@ export default function HeaderLogo(props) {
                     >
                 </i>
                 <small className="timeMessage">
-                    {setMessageByTimeOfDay()}
+                    {setMessageByTimeOfDay(timeOfDayString)}
                 </small>
             </div>
         </div>
